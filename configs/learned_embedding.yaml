@@ -1,0 +1,17 @@
+height: 8
+width: 8
+channels: 1
+patch_size: 8
+embedding_dim: 16
+train_samples: 512
+val_samples: 128
+test_samples: 256
+epochs: 12
+batch_size: 32
+lr: 0.002
+heads: 2
+depth: 2
+patience: 3
+noise: 0.025
+experiment: E06
+sigma: 0.45

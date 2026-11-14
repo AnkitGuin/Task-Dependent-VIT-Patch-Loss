@@ -1,0 +1,16 @@
+height: 32
+width: 32
+channels: 1
+patch_size: 4
+embedding_dim: 8
+train_samples: 256
+val_samples: 64
+test_samples: 128
+epochs: 6
+batch_size: 32
+lr: 0.001
+heads: 2
+depth: 2
+patience: 3
+noise: 0.025
+experiment: E00
