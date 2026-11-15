@@ -1,0 +1,15 @@
+# Observed direct package versions on Python 3.13.3; not a validated clean/transitive lock.
+# CPU torch/torchvision builds were installed from the PyTorch CPU wheel index.
+# A fresh full dependency resolution and other platforms have not been tested.
+numpy==2.2.5
+scipy==1.15.2
+torch==2.9.1+cpu
+scikit-learn==1.6.1
+matplotlib==3.10.1
+pandas==2.2.3
+PyYAML==6.0.2
+tqdm==4.67.1
+threadpoolctl==3.6.0
+torchvision==0.24.1+cpu
+pytest==9.2.0
+ruff==0.17.5
