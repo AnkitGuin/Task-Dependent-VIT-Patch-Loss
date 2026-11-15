@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering\small\caption{Independent E06 seeds, held-out accuracy. Frozen and learned models begin from the same projection; this is a designed Gaussian task, not natural-image accuracy.}\label{tab:learned}
+\begin{tabular}{rcc}\toprule Seed & Frozen & Learned\\\midrule
+0 & 0.5156 & 0.8320\\
+1 & 0.4453 & 0.8320\\
+2 & 0.5234 & 0.8086\\
+\midrule Mean & \MeanFrozen & \MeanLearned\\\bottomrule\end{tabular}\end{table}
+\begin{table}[t]
+\centering\footnotesize\caption{Observed E09 held-out accuracy for three seeds. Models trained from scratch with six-epoch cap; failure to learn XOR is not proof of representation loss.}\label{tab:models}
+\begin{tabular}{llccc}\toprule Task & Model & Seed 0 & Seed 1 & Seed 2\\\midrule
+frequency & ViT fixed & 0.688 & 1.000 & 0.766\\
+frequency & ViT learned & 0.703 & 1.000 & 0.773\\
+frequency & CNN & 1.000 & 1.000 & 1.000\\
+relational & ViT fixed & 0.500 & 0.500 & 0.500\\
+relational & ViT learned & 0.500 & 0.500 & 0.500\\
+relational & CNN & 0.500 & 0.602 & 0.500\\
+\bottomrule\end{tabular}\end{table}

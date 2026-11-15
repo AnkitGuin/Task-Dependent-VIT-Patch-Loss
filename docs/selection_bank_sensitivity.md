@@ -1,0 +1,3 @@
+# Exploratory candidate-bank restriction
+
+After inspecting primary outcomes, report the original eight selectors on two restricted banks: (a) the twelve locally constructed random/DCT/PCA candidates, excluding both transferred DeiT conditions; and (b) all orthonormal-row candidates, excluding only the native-singular-scaled DeiT condition. Reuse original diagnostic scores and downstream test predictions, refreeze maxima within each restricted bank, and compute each bank's own empirical oracle and regret. Do not tune or refit any score. These post-hoc checks test whether observations depend on resolution-mismatched pretrained transfers or conditioning; they are not prospective confirmation or new independent experiments.

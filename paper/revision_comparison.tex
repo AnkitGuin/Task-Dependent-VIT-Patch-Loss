@@ -1,0 +1,17 @@
+\begin{table}[tb]\centering\small
+\caption{Revision selection regret (percentage points), averaged over seeds and budgets. The three observed domains receive equal weight. Rank uses uniform tie expectations; correlations are within candidate banks, then averaged. A fixed policy supplies no meaningful full-bank ranking, so its correlation is omitted.}\label{tab:revision}
+\begin{tabular}{lrrrrr}\toprule
+Selector & CIFAR-10 & CIFAR-100 & SVHN & Mean & $\rho$\\\midrule
+Rank / uniform ties & 3.106 & 1.454 & 0.627 & 1.729 & --\\
+Reconstruction & 0.772 & 0.356 & 0.240 & 0.456 & 0.489\\
+Mean retention & 0.772 & 0.356 & 0.240 & 0.456 & 0.528\\
+Covariance retention & 0.249 & 0.174 & 0.240 & 0.221 & 0.473\\
+Cross-fitted retention & 0.643 & 0.162 & 0.514 & 0.440 & 0.554\\
+Fixed H-score & 5.330 & 4.002 & 2.008 & 3.780 & -0.190\\
+Adaptive H-score & 0.992 & 1.607 & 0.197 & 0.932 & 0.231\\
+Profile LogME & 0.452 & 1.318 & 1.180 & 0.983 & 0.337\\
+Diagnostic probe & 0.302 & 0.214 & 0.491 & 0.336 & 0.410\\
+Tuned diagnostic probe & 0.571 & 0.414 & 0.522 & 0.502 & 0.418\\
+Fixed DCT (p=4) & 0.253 & 0.072 & 0.556 & 0.294 & --\\
+\bottomrule\end{tabular}
+\end{table}

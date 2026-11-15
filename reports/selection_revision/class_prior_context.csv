@@ -1,0 +1,4 @@
+dataset,test_majority_class,test_majority_fraction,balanced_uniform_reference,balanced_training_constant_class,balanced_training_constant_accuracy
+cifar10,0,0.1,0.1,0,0.1
+cifar100,0,0.01,0.01,0,0.01
+svhn,1,0.1958743085433313,0.1,0,0.06699446834665028

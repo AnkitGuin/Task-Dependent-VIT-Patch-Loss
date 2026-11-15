@@ -1,0 +1,35 @@
+{
+  "units": 30,
+  "candidate_heads": 420,
+  "domains": [
+    "cifar10",
+    "cifar100",
+    "svhn"
+  ],
+  "source_sha256": "84fd13c6b0dd458814edcc25580402b621c345a5b3d80fd49e2f91118075a50e",
+  "test_set_hashes": {
+    "cifar10": "f4d95ca5bf402ca9d980a6689a0b150878f9142d045d5ed8d5690c6563d46bb7",
+    "cifar100": "d5fc1a50e13fb6a669817ec6a9fdc0b7ef3a74011c47075c474c63d1f9e5349d",
+    "svhn": "ef86d146e0fb8f6430191ab55a75ffce6a9b6e130fb44f0d6d4e95c60573d885"
+  },
+  "hashes_and_prediction_accuracy_verified": true,
+  "grid_min_count": 0,
+  "grid_max_count": 5,
+  "strict_upper_improvements": 0,
+  "lower_half_grid_selected": 269,
+  "bank_fits_sec": 31.875466599827632,
+  "covariance_vs_profile": [
+    {
+      "dataset": "all",
+      "metric": "covariance_tar",
+      "reference": "fixed_dct",
+      "accuracy_gain_pp": 0.07271645154681705,
+      "seed_ci_low": -0.04062696168817943,
+      "seed_ci_high": 0.1840465375947529,
+      "joint_ci_low": -0.05583456771153621,
+      "joint_ci_high": 0.2025887574267634
+    }
+  ],
+  "historical_max_accuracy_delta_pp": 0.04814907453726952,
+  "historical_mean_covariance_regret_delta_pp": 3.7518759374993715e-06
+}

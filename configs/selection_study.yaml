@@ -1,0 +1,19 @@
+study: frozen_tokenizer_selection_v1
+datasets: [cifar10, cifar100]
+seeds: [0, 1, 2, 3, 4]
+budgets: [256, 768]
+patch_sizes: [2, 4, 8, 16]
+operator_samples: 1000
+diagnostic_samples: 1000
+validation_samples: 500
+test_samples: 2000
+pca_patch_cap: 8000
+ridge_alphas: [0.1, 1.0, 10.0, 100.0, 1000.0]
+covariance_shrinkage: 0.1
+cheap_probe_alpha: 10.0
+allow_download: true
+pretrained: true
+data_root: data/selection_local
+output: runs/selection_primary
+threads: 2
+bootstrap_samples: 2000

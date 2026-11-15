@@ -1,0 +1,12 @@
+\begin{table}[tb]\centering\small
+\caption{Most frequently selected candidate, with fractional counts for tied selections. All candidate frequencies, including remaining mass, are supplied as CSV. SVHN contains ten dataset/seed/budget units, not ten independent domains.}\label{tab:frequencies}
+\begin{tabular}{llrlr}\toprule
+Selector & Modal candidate & Count & SVHN modal candidate & Count\\\midrule
+Mean retention & p16\_pca & 30/30 & p16\_pca & 10/10\\
+Covariance retention & p04\_dct & 10/30 & p16\_pca & 10/10\\
+Profile LogME & p16\_deit\_native\_svd & 7/30 & p16\_deit\_native\_svd & 4/10\\
+Adaptive H-score & p16\_pca & 21/30 & p16\_pca & 7/10\\
+Tuned diagnostic probe & p16\_random & 6/30 & p16\_random & 3/10\\
+Fixed DCT (p=4) & p04\_dct & 30/30 & p04\_dct & 10/10\\
+\bottomrule\end{tabular}
+\end{table}

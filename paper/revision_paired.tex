@@ -1,0 +1,11 @@
+\begin{table}[tb]\centering\small
+\caption{Paired accuracy gain over fixed DCT, in percentage points, with 95\% joint seed/image bootstrap intervals. Only SVHN provides independent prospective evaluation of the CIFAR-developed fixed policy. The pooled column is descriptive. Full seed-only and all pairwise-reference results accompany the code.}\label{tab:paired}
+\begin{tabular}{lrr}\toprule
+Selector & Three-domain gain [CI] & SVHN gain [CI]\\\midrule
+Covariance retention & +0.073 [-0.056, +0.203] & +0.316 [+0.017, +0.639]\\
+Profile LogME & -0.689 [-1.104, -0.355] & -0.623 [-1.004, -0.289]\\
+Adaptive H-score & -0.638 [-1.133, -0.180] & +0.359 [+0.036, +0.689]\\
+Diagnostic probe & -0.042 [-0.155, +0.072] & +0.065 [-0.136, +0.268]\\
+Tuned diagnostic probe & -0.209 [-0.426, -0.002] & +0.034 [-0.441, +0.456]\\
+\bottomrule\end{tabular}
+\end{table}

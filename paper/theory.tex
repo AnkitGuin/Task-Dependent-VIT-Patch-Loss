@@ -1,0 +1,75 @@
+\section{Mathematical results}\label{sec:theory}
+\paragraph{Conventions.} Let $X\in\mathbb R^{H\times W\times C}$ and let $x=\mathrm{vec}(X)\in\mathbb R^n$, $n=HWC$. Assume $p\mid H,W$ and the patch ordering is fixed and known. Put $m=p^2C$ and $N=HW/p^2$. Throughout, all algebraic statements use exact arithmetic unless otherwise stated.
+
+\begin{theorem}[Lossless ordered raw extraction]\label{thm:reshape}
+The map which extracts every $p\times p$ patch, retains every pixel and the patch order, and concatenates all entries, is a permutation $Q_p\in\mathbb R^{n\times n}$. Therefore $Q_p^{-1}=Q_p^\top$, $Q_p^\top Q_p=I_n$, and $\|Q_p x\|_2=\|x\|_2$ for all $x$.
+\end{theorem}
+\begin{proof}
+Every input entry is assigned to exactly one patch and one patch coordinate because patches partition the image grid, and each such coordinate is assigned to exactly one input entry. Thus each row and each column in the extraction matrix contains exactly one unit entry; all other entries are zero. Such a permutation matrix has orthonormal rows and columns. Multiplying by its transpose reverses the permutation, and its squared norm is unchanged.
+\end{proof}
+The conclusion does not cover dropping border pixels, treating tokens as an unordered set, quantization, or applying a stride/filter that discards dimensions. In particular a patch size above one is \emph{not} itself a rank-reducing operation.
+
+\begin{proposition}[Rank criterion]\label{prop:rank}
+For a fixed shared per-patch linear map $W\in\mathbb R^{d\times m}$, with complete ordered token output and a known additive offset, define
+\begin{equation}\label{eq:operator}
+ A=(I_N\otimes W)Q_p\in\mathbb R^{Nd\times n}.
+\end{equation}
+Then $\mathrm{rank}(A)=N\mathrm{rank}(W)$ and $\dim\ker A=N(m-\mathrm{rank}(W))$. Moreover $A$ is injective if and only if $\mathrm{rank}(W)=m$.
+\end{proposition}
+\begin{proof}
+Right multiplication by the invertible $Q_p$ leaves rank unchanged. The Kronecker factor is block diagonal with $N$ copies of $W$, so its row and column spaces decompose as a direct sum over patches, and its rank is exactly $N\mathrm{rank}(W)$. Rank--nullity and $n=Nm$ yield the nullity. Injectivity holds precisely when the nullity is zero, equivalently $\mathrm{rank}(W)=m$. A fixed affine offset disappears when comparing two token outputs.
+\end{proof}
+The proposition does not imply that every observed finite sample contains a collision. Full column rank requires $d\ge m$ but mere width $d\ge m$ is not enough unless the matrix genuinely has full column rank. It also does not guarantee numerical stability for ill-conditioned matrices.
+
+\begin{proposition}[Constructed label collision]\label{prop:collision}
+Fix a $W$ with $\mathrm{rank}(W)<m$. There exist distinct images $x_\pm\in[0,1]^n$ satisfying $Ax_+=Ax_-$, and a balanced binary task with full-image optimal 0--1 risk zero but token-only risk $1/2$.
+\end{proposition}
+\begin{proof}
+Choose $u\in\ker W$, $\|u\|_2=1$, and patch index $j$. Let $\delta=Q_p^\top(e_j\otimes u)$, and choose an interior base image $b\in[0.34,0.66]^n$. For any $0<\epsilon\le 0.2/\|u\|_\infty$, define $x_\pm=b\pm\epsilon\delta$. They are distinct because $\delta\ne0$, and valid in $[0,1]^n$. By construction,
+\begin{equation}\label{eq:collision}
+ Ax_+-Ax_-=2\epsilon(I_N\otimes W)(e_j\otimes u)=0.
+\end{equation}
+Let $\Pr[(X,Y)=(x_+,1)]=\Pr[(X,Y)=(x_-,0)]=1/2$. Seeing $X$ identifies $Y$ without error. But the same token value occurs for both labels and its posterior is $(1/2,1/2)$, so every token classifier has error $1/2$.
+\end{proof}
+This establishes only an \emph{adversarially chosen task for a fixed projection}; a learned $W$ can rotate away from the original null space. It does not show that real-world classes usually collide under ViT tokenization.
+
+\begin{theorem}[Exact Gaussian Bayes risk]\label{thm:gaussian}
+Let $Y\in\{-1,+1\}$ have equal prior probabilities and
+\begin{equation}\label{eq:gauss_model}
+ X\mid Y=y\sim\mathcal N(\mu+yv/2,\sigma^2I_n),\qquad\sigma>0.
+\end{equation}
+For any fixed deterministic linear representation $Z=AX+b$, define
+\begin{equation}\label{eq:projector}
+ P_A=A^\top(AA^\top)^\dagger A.
+\end{equation}
+Then, writing $\Phi$ for the standard normal CDF, its optimal 0--1 risk is
+\begin{equation}\label{eq:bayes}
+ \boxed{R^*(Z)=\Phi\left(-\frac{\|P_Av\|_2}{2\sigma}\right)}.
+\end{equation}
+For the raw image, $R^*(X)=\Phi(-\|v\|_2/(2\sigma))$.
+\end{theorem}
+\begin{proof}
+Conditionally, $Z\mid Y=y\sim\mathcal N(A\mu+b+yAv/2,\sigma^2AA^\top)$. Both distributions are supported on the same affine subspace even when $A$ is rank-deficient. Equal priors and equal covariances imply the likelihood-ratio rule on that support: decide $+1$ when
+\begin{equation}\label{eq:discriminant}
+ S=(Av)^\top(\sigma^2 AA^\top)^\dagger(Z-A\mu-b)\ge0.
+\end{equation}
+Set $D^2=v^\top A^\top(AA^\top)^\dagger Av=v^\top P_A v=\|P_A v\|_2^2$. Then $S\mid Y=y$ is univariate normal with mean $yD^2/(2\sigma^2)$ and variance $D^2/\sigma^2$. If $D>0$, either conditional misclassification probability equals $\Phi(-D/(2\sigma))$. If $D=0$, the two feature distributions coincide and any constant prediction has error $1/2$, agreeing with $\Phi(0)$. Applying the same calculation with $A=I_n$ gives the raw-image expression.
+\end{proof}
+The formula is \emph{exact only} under the equal-prior, shared isotropic Gaussian model and fixed linear representation with complete observed output. It is not a general natural-image Bayes bound or a characterization of arbitrary nonlinear transformers. In particular it yields the three extremes
+\begin{align}
+ v\in\ker A&\implies R^*(Z)=1/2,\label{eq:nullcase}\\
+ v\in\operatorname{row}(A)&\implies R^*(Z)=R^*(X),\label{eq:rowcase}\\
+ \mathrm{rank}(A)=n&\implies R^*(Z)=R^*(X).\label{eq:fullcase}
+\end{align}
+
+\begin{proposition}[Data processing and task sufficiency]\label{prop:dpi}
+For discrete $Y$ and any deterministic $Z=P(X)$, $I(Y;Z)\le I(Y;X)$ and $R^*(Z)\ge R^*(X)$. Both inequalities can be equalities even if $P$ is noninjective.
+\end{proposition}
+\begin{proof}
+The first follows from the Markov chain $Y\to X\to Z$ by the data-processing inequality~\citep{coverthomas2006}. Every measurable decision rule based on $Z$ is also a measurable decision rule based on $X$ by composition, so its infimum risk cannot be smaller than the raw-image infimum. Equality holds whenever the conditional label distribution (or, for the 0--1 risk inequality, a Bayes-optimal decision) factors through $Z$.
+\end{proof}
+For a nonzero contrast vector define the task-alignment retention coefficient
+\begin{equation}\label{eq:tar}
+ \alpha(v;A)=\frac{\|P_Av\|_2}{\|v\|_2},\qquad \mathrm{TAR}=\alpha(v;A)^2.
+\end{equation}
+For shared patch maps, this projector acts separately with $P_W=W^\top(WW^\top)^\dagger W$ after the permutation $Q_p$; it is not necessary to form the massive matrix $A$. No theorem above guarantees that mean-based TAR predicts XOR, class covariance differences, optimization, translation invariance, or generalization after learned embedding updates.

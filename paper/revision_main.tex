@@ -1,0 +1,184 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=0.85in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,array,graphicx,caption,subcaption}
+\usepackage{url,natbib,microtype}
+\usepackage[colorlinks=true,allcolors=blue]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\setlength{\parskip}{0.12em}
+\setlength{\parindent}{1em}
+\graphicspath{{../reports/selection_revision/figures/}{../reports/selection/figures/}}
+\input{selection_results.tex}
+\input{selection_secondary_results.tex}
+\input{selection_followup_results.tex}
+\input{revision_macros.tex}
+\title{Selecting Frozen Linear Patch Operators:\\An Empirical Audit under Matched Feature Budgets}
+\author{Ankit Guin}
+\date{November 2026}
+\hypersetup{pdftitle={Selecting Frozen Linear Patch Operators: An Empirical Audit under Matched Feature Budgets},pdfauthor={Ankit Guin},pdfsubject={Controlled empirical audit of frozen linear patch representation selection}}
+\begin{document}
+\maketitle
+\begin{abstract}
+Can inexpensive statistical scores select compressed visual representations usefully when feature dimension, patch size and downstream regularization are controlled? We audit frozen shared linear patch operators with eleven selection rules on CIFAR-10, CIFAR-100 and an independent SVHN domain: two feature budgets, fourteen candidates and five training-subset seeds give 420 candidate heads in thirty evaluation units. Exact-content deduplication precedes training; selectors and validation-selected ridge penalties are frozen before evaluation on every official test image. Baselines include numerically refined profile-evidence LogME, adaptive H-score and diagnostic probes. A fixed DCT policy is developed on historical CIFAR evidence and locked before SVHN evaluation. Mean regrets are \RevCovRegret{} percentage points for covariance retention, \RevLogmeRegret{} for profile LogME and \RevFixedRegret{} for fixed DCT. However, covariance's pooled accuracy gain over fixed DCT is only \RevCovFixedGain{} points, with a paired 95\% seed/image interval of \RevCovFixedCI{}. Its SVHN choices also match an unlabeled reconstruction rule, and absolute SVHN accuracy is weak. Domain-specific outcomes, matched-patch-size comparisons, selection frequencies and measured time/memory therefore qualify aggregate rankings. The contribution is a controlled empirical decision audit with explicit development and evaluation boundaries; these observations do not establish that label-dependent selection is generally necessary or that one score is universally superior.
+\end{abstract}
+
+\section{Introduction}
+Choosing a representation before fitting every downstream classifier can save time, but the selection step has its own label and computational costs. A representation that retains image variance or class-mean energy need not be the best input to a finite-sample regularized head. Consequently, small differences among statistical selectors are meaningful only relative to competitive implementations, uncertainty and a credible fixed-policy alternative.
+
+Vision Transformers provide a concrete setting: ordered extraction of complete patches is reversible, whereas a subsequent linear map can reduce dimension~\citep{dosovitskiy2021vit}. Patch-size scaling and pixel-token studies already investigate trained architectures at much larger scale~\citep{wang2025scaling,nguyen2025pixels}. We ask a narrower question: \emph{can inexpensive statistical scores reliably select frozen compressed linear patch representations under matched feature budgets, and does the resulting accuracy gain justify selection cost?} We do not transfer a full pretrained encoder or infer end-to-end Transformer performance.
+
+Our empirical contribution has three parts. First, a fourteen-candidate bank controls global rank and output dimension, with secondary comparisons also matching patch size and dense projection dimensions. Second, one unified revision cohort evaluates competitive evidence, shrinkage and probe baselines on content-clean training splits and full official test sets, including an external digit domain. Third, a CIFAR-developed fixed rule, paired image/seed uncertainty and fresh-process resource measurements test the practical value of task-aware selection. These experiments extend an earlier two-CIFAR preliminary study; they do not turn its exploratory findings into independent confirmations. The rank and Gaussian arguments supply established theoretical context, with proofs and synthetic controls in the appendix.
+
+\section{Related work and precise scope}
+H-score evaluates representations through class-conditional means and feature covariance~\citep{bao2019hscore}. LogME evaluates Bayesian linear-model evidence~\citep{you2021logme}. The published ECML PKDD study of \citet{ibrahim2023transferability} already identifies covariance-estimation problems, develops shrinkage H-score and evaluates substantially larger experiment collections. Covariance awareness and estimator instability are therefore prior art. Ledoit--Wolf shrinkage~\citep{ledoit2004covariance} and cross-validated contrast distances~\citep{diedrichsen2016crossvalidated} likewise precede this work.
+
+Evaluation design is itself established research. \citet{agostinelli2022stable} show that transferability-metric orderings change with candidate pools, targets and evaluation measures. More recently, \citet{singh2026benchmark} show how static model hierarchies can favor dataset-agnostic heuristics. Our fixed-policy comparison directly addresses that concern within a deliberately restricted shared-patch bank; neither design sensitivity nor the usefulness of simple heuristics is claimed as a new general discovery. Unlike these broader source-model benchmarks, we vary raw-pixel patch operators under explicit scalar-output and projection-dimension constraints.
+
+LEEP~\citep{nguyen2020leep} and negative conditional entropy~\citep{tran2019transferability} evaluate source predictions or labels. Random, PCA and DCT patch maps have no pretrained source classifier or source-label vocabulary. Attaching such a classifier would change this experiment and introduce source supervision; these methods are discussed but not assigned artificial source outputs. Our transferred DeiT condition uses only its patch matrix~\citep{touvron2021deit}, with its ImageNet-data advantage explicitly retained. Overlapping/convolutional stems and anti-aliasing are established architectural choices~\citep{wu2021cvt,xiao2021convs,qian2021alias}, outside the controlled bank. The study also differs from information-loss audits at multimodal connectors~\citep{li2025lost}. No exhaustive novelty or state-of-the-art claim is made.
+
+\section{Scores and theoretical context}
+For $x\in\mathbb R^{HWC}$, patch dimension $m=Cp^2$, token count $N=HW/p^2$ and $W\in\mathbb R^{d\times m}$, the complete ordered representation is $z=Ax+b$ with $A=(I_N\otimes W)Q_p$. Since $Q_p$ is a permutation, $\operatorname{rank}(A)=N\operatorname{rank}(W)$. Compression can discard directions without discarding every task's relevant signal. Appendix~\ref{sec:theory} records the elementary injectivity and collision arguments.
+
+For balanced Gaussian classes $X\mid Y=y\sim\mathcal N(\mu+yv/2,\Sigma)$, $\Sigma\succ0$, standard equal-covariance discrimination gives
+\begin{equation}\label{eq:general_gaussian}
+R^*(AX)=\Phi\!\left(-\tfrac12\sqrt{v^\top A^\top(A\Sigma A^\top)^\dagger Av}\right).
+\end{equation}
+Only for isotropic covariance does this depend solely on Euclidean row-space alignment. This is established Gaussian theory, not a general natural-image accuracy formula.
+
+At patch position $j$, let $B_j=\sum_c\pi_c(\mu_{cj}-\mu_j)(\mu_{cj}-\mu_j)^\top$, and let $P_W$ project onto the rows of $W$. Mean retention is
+\begin{equation}\label{eq:mean_retention}
+T_{\rm mean}=\frac{\sum_j\operatorname{tr}(P_WB_j)}{\sum_j\operatorname{tr}(B_j)}.
+\end{equation}
+It is an energy ratio, not mutual information. Equal population means make it undefined, even if nonlinear labels are recoverable; estimated means also contain sampling noise. Covariance retention replaces Euclidean energies by within-class-whitened energies:
+\begin{equation}\label{eq:covret}
+T_{\rm cov}=\frac{\sum_j\operatorname{tr}\{(WS_\lambda W^\top)^{-1}WB_jW^\top\}}
+{\sum_j\operatorname{tr}(S_\lambda^{-1}B_j)},\quad
+S_\lambda=(1-\lambda)S+\lambda\operatorname{tr}(S)I/m.
+\end{equation}
+Here $S$ pools within-class patch residual covariance across positions. This approximation omits cross-patch dependence and supplies no multiclass Bayes guarantee. The locked default is $\lambda=.1$; predetermined .01 and .5 values form a sensitivity analysis. Cross-fitted retention replaces squared contrasts by cross-inner-products between independent stratified diagnostic halves. Its components can be unbiased for a fixed independent operator, but the ratio need not be; nonpositive denominators trigger a disclosed uniform fallback.
+
+Rank, reconstruction retention, fixed-shrinkage H-score, adaptive H-score, profile LogME and diagnostic probes complete the comparison. Adaptive H-score uses Ledoit--Wolf covariance and the $(1-\alpha)$ correction~\citep{ibrahim2023transferability}. Profile LogME uses the published integrated Gaussian evidence objective, profiles the noise precision analytically, searches a broad log prior/noise-ratio grid, refines interior maxima and compares the analytic infinite-ratio null limit. All classwise refinement statuses and bounds are saved; failed refinement aborts the unit. Features are centered and divided by a single RMS scalar; one-hot targets are uncentered. This is an independent, numerically checked implementation, not a claim of bitwise reproduction of author code. The eleven-step implementation is retained only in the preliminary results.
+
+\section{Revision experimental protocol}
+\paragraph{Domains and label budgets.}
+We use official CIFAR-10/100~\citep{krizhevsky2009cifar} and cropped SVHN~\citep{netzer2011svhn} train/test partitions at native $32\times32$ RGB resolution, fixed ImageNet channel normalization and no augmentation. Seeds 10--14 each draw 1,000 operator-fit, 1,000 diagnostic and 500 validation images, balanced within each training subset. Operators fit without labels; downstream heads use labels from both operator and diagnostic subsets, totaling 2,000 training labels. Selectors use the same 1,000 diagnostic labels; validation consumes another 500 labels. Fixed DCT uses no diagnostic labels for selection, although the common head-training protocol remains unchanged. These budgets refer to distinct roles, not an additional 1,000 head-training images.
+
+\paragraph{Content separation and full testing.}
+Before sampling, SHA256 hashes of raw pixels identify exact duplicates. Training rows matching any official test content, all conflicting-label training-content groups, and repetitions after the first otherwise valid training occurrence are removed. This uses test images, never test labels. Operator, diagnostic and validation content sets are pairwise disjoint and test-disjoint. All official test images remain: 10,000 for each CIFAR dataset and 26,032 for SVHN, with natural test class frequencies. Repeated test content is disclosed and retained to preserve the full official benchmark. Near duplicates are not certified absent. CIFAR-100 loses 10 training rows matching test content, 18 rows in conflicting-label groups and five additional repeated rows. Exact IDs, exclusion counts, hashes and class counts accompany the evidence.
+
+\paragraph{Operators and matched budgets.}
+For $p\in\{2,4,8,16\}$ and budget $B\in\{256,768\}$, set $d=B/N$. Each patch size has random orthonormal, low-frequency DCT and unlabeled PCA maps; PCA uses at most 8,000 operator-fit patches. DCT includes a fixed orthonormal color transform. At $p=16$, add SVD-truncated DeiT-tiny patch weights and their orthonormal-row counterpart, giving fourteen candidates. The pair spans the same retained subspace with different singular scaling. Each candidate has global rank $B$ and equal linear-head parameter count within a budget. Dense projection cost is $2B(3p^2)$ multiply/add FLOPs per image; equal feature count does not equal equal tokenization or Transformer compute. Within-$p,B$ comparisons separately match projection dimensions. Only the patch matrix is transferred, with external ImageNet data and an original-resolution mismatch disclosed.
+
+\paragraph{Heads, probes and frozen choices.}
+Multiclass least-squares ridge heads are solved by eigendecomposition. A thirteen-value grid, $\{10^{-2},10^{-1},\ldots,10^{10}\}$, selects penalties by validation accuracy; ties favor larger penalties. The common scalar normalization preserves orthogonal-coordinate invariance. The fixed diagnostic probe fits 500 diagnostic images and evaluates the other 500 with penalty 10. Its tuned counterpart maximizes diagnostic held-out accuracy over the same thirteen-value grid; that joint candidate/penalty search can overfit its small diagnostic evaluation half and is not treated as an unbiased accuracy estimate. No official test labels choose candidates or penalties. All scores, eligible tie sets, sensitivity choices, head penalties and within-p choices are serialized before any test predictions, then verified unchanged by hash.
+
+\paragraph{Fixed policy and development boundary.}
+The policy $p04\_dct$ is locked at both budgets using already observed historical CIFAR evidence. Its SVHN result is prospective evaluation on an independent domain. Its revised CIFAR performance remains descriptive because those domains informed policy development. Fresh CIFAR seeds improve repeatability, not domain independence. The local revision protocol and one documented pre-final-run penalty-grid amendment are distributed with the code; this is not an external preregistration. A partial narrower-grid revision run is preserved and excluded. The original preliminary and exploratory CIFAR cohorts remain available separately.
+
+\paragraph{Endpoints and uncertainty.}
+Selection accuracy is the uniform expectation across maximizing candidates; undefined scores fall back to uniform bank choice and are counted. Regret is best observed candidate test accuracy minus selected accuracy, relative to a noisy finite-bank empirical oracle. Spearman correlation measures within-bank ranking; constant scores have undefined correlation. We report each domain and budget, selection frequencies and absolute accuracies alongside regret.
+
+Paired intervals resample training-seed blocks within each observed domain, preserving budgets and selectors. A joint bootstrap also resamples common test-image weights shared across every seed, budget and selector in that domain. A multinomial over joint correctness patterns implements exactly the image bootstrap for paired mean accuracy, without treating repeated test images across seeds as independent replications. Domains receive equal aggregate weight; the domains themselves are not resampled as a credible population sample. We retain 4,000 draws, seed-only and joint intervals, and all reference comparisons. These intervals are conditional on the observed domains and models. They omit policy-development uncertainty, broader domain variation, near-duplicate dependence and multiple-comparison correction. They support neither a universal winner nor an equivalence claim from an interval containing zero.
+
+\section{Results}
+\subsection{Per-domain performance and competitive baselines}
+\input{revision_comparison.tex}
+\input{revision_absolute.tex}
+Tables~\ref{tab:revision} and \ref{tab:absolute} separate selection regret from absolute low-label classification accuracy. Mean regrets are \RevCovRegret{} points for covariance retention, \RevLogmeRegret{} for profile LogME, \RevTunedRegret{} for the tuned diagnostic probe and \RevFixedRegret{} for fixed DCT. These thirty units contain three domains, not thirty independent classification problems. The CIFAR development and external-domain roles must remain distinct even when averaging their observations.
+
+Mean retention and unlabeled reconstruction select the same $p16\_pca$ candidate in all thirty units. On SVHN, covariance retention also chooses that candidate in all ten units. Its external-domain gain over fixed DCT therefore does not demonstrate a benefit of label-dependent scoring: an unlabeled rule attains the same selections there. Adaptive H-score has the lowest observed SVHN regret, while fixed DCT has the lowest CIFAR-100 regret; the pooled ordering is not a universal one. Cross-fitted retention is undefined in \RevCrossfitUndefined{} of thirty units and uses the declared uniform fallback; these failures are included in its reported regret.
+
+The independent-domain task is also weak for this bank/head combination: its mean bank-oracle accuracies are below the SVHN test majority-class frequency of \RevSvhnMajority{}\%. This test-informed constant-class reference is descriptive, not a new prospective selector. Table~\ref{tab:balance} adds explicitly secondary balanced-accuracy context because training subsets are balanced whereas SVHN's test distribution is not. It does not replace the locked ordinary-accuracy endpoint. Small regret and a positive conditional selection gain do not establish a useful or competitive SVHN classifier.
+
+\begin{figure}[tb]\centering
+\includegraphics[width=.94\linewidth]{regret_by_domain.pdf}
+\caption{Revision mean regret by observed domain, averaged over seeds and budgets. Domain-dependent orderings are visible without treating repeated seeds as new domains. Paired intervals are reported separately.}\label{fig:domains}
+\end{figure}
+
+\subsection{Does task-aware selection improve on fixed DCT?}
+\input{revision_paired.tex}
+The overall covariance-minus-profile-LogME accuracy difference is \RevCovLogmeGain{} percentage points, with joint 95\% interval \RevCovLogmeCI{}. A small point difference alone does not establish useful superiority. The independent SVHN covariance-minus-fixed-policy gain is \RevSvhnCovGain{} points, interval \RevSvhnCovCI{}; the corresponding profile-LogME gain is \RevSvhnLogmeGain{}, interval \RevSvhnLogmeCI{}. Table~\ref{tab:paired} makes the fixed-policy comparison explicit rather than treating an expensive selector's proximity to the bank oracle as sufficient practical evidence. Equal scores or overlapping intervals do not prove equivalence.
+
+\subsection{Candidate choices, matching and numerical sensitivity}
+\input{revision_frequencies.tex}
+\input{revision_matched.tex}
+\input{revision_shrinkage.tex}
+Table~\ref{tab:frequencies} reports modal selections; complete fractional counts expose remaining candidate mass. Table~\ref{tab:matched} restricts each comparison to one patch size and budget, hence matching dense projection dimensions. Each smaller bank has its own test oracle, so its regret cannot be compared directly with full-bank regret as if the decision problem were unchanged. Table~\ref{tab:shrinkage} keeps every predetermined covariance setting; it does not select a favorable shrinkage value after testing.
+
+The lower and upper grid endpoints were selected by \RevLowerGridCount{} and \RevUpperGridCount{} of 420 heads, respectively; \RevUpperImprovementCount{} paths strictly improve from the penultimate to the largest penalty. Accuracy ties favor larger penalties, so an endpoint can indicate a plateau rather than monotonic improvement; complete validation paths are retained. The finite grid does not certify a continuous optimum. Classwise profile-evidence convergence records replace the short iteration cap as the main baseline.
+
+Fixed H-score's mean within-bank rank correlation is \RevHscoreRho{}, versus \RevAdaptiveRho{} for adaptive H-score. The released family-by-domain audit records both scores, adaptive shrinkage and actual head accuracy. This distinguishes an implementation/convergence check from an empirical ranking failure: all fixed-shrinkage covariance systems are positive definite, adaptive shrinkage is estimated from the same diagnostic data, and native/orthonormal DeiT maps separately expose conditioning sensitivity. These controls do not identify a single causal explanation for poor H-score behavior; cross-patch dependence, regularization and a restricted operator family remain plausible sources of mismatch. No favorable transformation is selected using test accuracy.
+
+\subsection{Computational value}
+\input{revision_cost.tex}
+Resource measurements include the feature extraction and statistics needed to score all candidates. Each method runs in a fresh process on identical hardware, at two numerical-library threads, for seed 10 of every domain/budget, repeated three times. Bank fitting is shared for task-aware methods; fixed DCT constructs only its specified operator and requires no bank search. Warm selection assumes candidate operators are already fitted; cold selection includes their actual fitting cost once. Downstream selected-head fitting and test inference are excluded and separately recorded. Median head fitting per candidate is \RevHeadSeconds{} seconds in the final cohort. Such inexpensive heads mean that avoiding a full-bank fit does not automatically yield a net application speedup; selector overhead can be a material part of the low-label computation.
+
+Peak resident memory includes the Python/scientific runtime and loaded operators, so incremental sampled RSS is also provided. Ten-millisecond sampling can miss brief peaks. The reference implementation uses a comprehensive shared patch-statistics routine; when benchmarking a patch-retention method alone, its full routine cost is charged, including reusable components. Specialized minimal implementations could be faster. The measured cost/accuracy tradeoff, rather than a universal asymptotic speedup, is the practical result. A fixed-policy accuracy close to that of task-aware selection remains a reason to use the fixed policy unless a particular application values the measured gain enough to pay for selection.
+
+In this implementation, covariance retention is faster than profile LogME and either diagnostic probe, with slightly higher peak memory. Fixed DCT has negligible selection cost. Thus covariance retention offers a measured time advantage over other label-dependent comparators, while its uncertain pooled accuracy gain over the fixed rule and the low cost of head fitting limit a broader efficiency argument.
+
+\section{Discussion and limitations}
+The central contribution is a controlled empirical decision audit. Existing transferability work already establishes covariance-estimation instability, candidate-pool dependence and the possibility of strong fixed heuristics. Our narrower evidence examines those issues for shared frozen linear raw-pixel patch maps while fixing output dimension and separately matching projection dimensions. It explicitly evaluates what additional diagnostic labels and computation buy over a developed fixed rule.
+
+Within this final bank, covariance retention has the lowest pooled observed regret and a positive conditional accuracy difference from profile LogME. Its pooled gain over fixed DCT remains small with uncertainty spanning zero, and its SVHN selections are identical to unlabeled reconstruction. Thus the evidence supports a conditional comparison of scoring rules, while failing to establish that label-dependent selection is generally necessary. Weak absolute SVHN accuracy further limits any claim of practical downstream utility. These negative conclusions are central results of the audit.
+
+Three domains improve on a two-CIFAR study but still support limited external generalization: SVHN is one independent digit domain, not a diverse collection of application domains. There is no medical, satellite, segmentation or full-encoder experiment. Five training-subset seeds quantify within-domain repeatability. CIFAR-10 and CIFAR-100 remain related datasets; neither is independent policy validation. SVHN uses its official naturally imbalanced test distribution, while training subsets are class balanced. Cross-domain aggregate accuracies should not be mistaken for comparable task difficulty.
+
+The diagnostic bank is restricted to fourteen candidates, two dimensions and linear heads trained on only 2,000 labels. A metric's failure to predict this regularized finite-sample head does not disprove representation sufficiency or imply failure under end-to-end adaptation. The ImageNet-transferred patch condition has external supervision and scale mismatch; no full DeiT accuracy claim follows. Matching patch size and output dimension controls dense projection geometry, not entire-model compute. The covariance-retention approximation ignores cross-patch dependence, and its shrinkage settings cover only a small predetermined range.
+
+Regret uses the maximum of noisy observed test accuracies and is descriptive. Paired accuracy differences avoid claiming an unbiased population oracle, but the conditional bootstrap does not cover unseen domains or every source of dependence. Exact-content filtering removes detected leakage before final training, yet cannot certify absence of near duplicates. The fixed policy was selected with historical CIFAR results, and even its independent SVHN evaluation is one held-out domain. The public release is versioned and checksum-verifiable; no archival DOI or completed independent installation on another platform is claimed.
+
+\section{Reproducibility and conclusion}
+The revision distribution contains versioned source, a locked environment specification, the local protocol/configuration, official indices and content audits, operator matrices, selected heads, validation paths, pretest choices, full predictions, checksum manifests, replay tools and table/figure generation scripts. Code, the manuscript and matching source/evidence archives are supplied in the \href{https://github.com/AnkitGuin/Task-Dependent-VIT-Patch-Loss/releases/tag/v2026.11.15-v2}{public repository release v2026.11.15-v2}. Per-file SHA256 manifests and external ZIP checksums identify the version; the tagged source and reproduction guide explain all cohorts. Raw dataset images and full pretrained-model files are excluded; preparation verifies their published checksums. Third-party attribution and the DeiT license accompany derived patch matrices. The preliminary study and exploratory follow-ups remain explicitly separate from the final cohort. The supplied reviewer-response document maps each criticism to changes and evidence. This is a public versioned release, not a claim of an issued archival DOI or independent scientific replication.
+
+For these frozen linear patch banks, statistical selection must be judged against both a competitive evidence/probe baseline and a fixed rule developed outside the evaluation domain. Full-test, paired and cost measurements make that judgment reviewable without elevating small conditional differences into general superiority. The resulting benchmark is a scoped empirical contribution; broader claims require more independent domains and downstream model families.
+
+\clearpage
+\appendix
+\input{theory.tex}
+
+\section{Secondary class-prior context}
+\input{revision_balance.tex}
+Balanced accuracy is a post-outcome descriptive sensitivity endpoint. It is not used to reselect any main tokenizer or penalty, and no secondary bootstrap superiority claim is made. The empirical test-majority reference uses test labels and must not be reported as a prospectively developed classifier. Because CIFAR official test classes are balanced, its ordinary and balanced accuracies agree; SVHN's naturally imbalanced official test distribution motivates the additional context.
+
+\section{Mean-retention null and distributional controls}
+For one patch, sample two independent Gaussian classes from the same isotropic distribution with fixed positive sample counts. For a fixed rank-$r$ orthogonal projector in dimension $m$, $0<r<m$, the empirical squared-mean-difference retention has distribution $\operatorname{Beta}(r/2,(m-r)/2)$ and expectation $r/m$. In a projector-adapted basis, retained and discarded Gaussian squared norms are independent chi-squared variables; their variance factor cancels in the ratio. The population ratio remains undefined under equal class means. Increasing samples shrinks unnormalized noise energy, not its ratio into a valid information fraction.
+
+The historical supporting control generated 4,000 independent null tasks per sample size and compared observed ratios to the analytic Beta law. A separate anisotropic Gaussian control uses two rank-one maps with equal Euclidean retention .5 but analytic risks approximately .00020 and .45549. Token-space Monte Carlo agrees within the recorded pointwise binomial intervals. These controls validate implementations under their stated distributions, not a universal natural-image theorem.
+\begin{figure}[htb]\centering\includegraphics[width=.83\linewidth]{null_tar_calibration.pdf}
+\caption{Supporting null calibration, enlarged for readability. Positive empirical mean retention occurs without population class separation.}\end{figure}
+\begin{figure}[htb]\centering\includegraphics[width=.83\linewidth]{anisotropic_counterexample.pdf}
+\caption{Supporting anisotropic Gaussian example: equal retained Euclidean energy need not imply equal optimal risk.}\end{figure}
+
+\section{Preliminary study and detected leakage}
+The historical study used seeds 0--4, two CIFAR domains and 2,000 test images per seed. Its initial five-penalty grid and eleven-step LogME were specified before that study. Subsequently, 264/280 validation paths improved from penalty 100 to 1,000, and \LogmeNonconverged{} classwise evidence fits missed their stated convergence criterion. Expanded penalties, adaptive H-score and profile evidence were exploratory corrections. They motivated the unified revision; they do not constitute independently predeclared successes.
+\input{selection_followups.tex}
+The historical content audit also identified one operator/diagnostic duplicate at CIFAR-100 seed 1 and one diagnostic/test duplicate at seed 4. An exclusion-only audit holds historical choices and heads fixed and removes the latter test image. Its maximum absolute selected-accuracy change across units/selectors is \RevHistoricalMaxDelta{} percentage points; the pooled covariance-retention regret changes by \RevHistoricalCovDelta{} points. These exact numerical deltas are distributed as CSV. Excluding one test image cannot repair fitting contamination; the final study instead removes content overlap before fitting every operator and head. Differences between historical and final results must not be attributed solely to deduplication, because seeds, test sizes, penalties and baselines also change.
+
+\section{Pretrained rank and optimization controls}
+Observed DeiT-tiny and ViT-B/16 patch matrices have different rank properties: the former compresses its 768-dimensional RGB patch space; the latter has full column rank at the observed numerical tolerance. This limits claims that all conventional ViT patch maps necessarily discard dimensions. Conditioning still affects numerical reconstruction and finite-sample regularization.
+
+The historical matched-noise relational control uses identical data, initialization and optimizer with epoch caps 6 and 80, validation-only checkpoint selection and five seeds. The longer-budget tiny ViT solves held-out XOR in all five seeds, reversing the earlier short-budget failure. A raw MLP is a capacity control; CNN outcomes remain variable. A training failure therefore cannot serve as an information-impossibility certificate. These controls support scope restrictions, not the main representation-selection result.
+\begin{center}\begin{minipage}{.88\linewidth}\centering
+\includegraphics[width=\linewidth]{pretrained_spectra.pdf}
+\captionof{figure}{Actual downloaded patch-matrix singular spectra, displayed at readable size. The selection bank transfers only DeiT's patch matrix.}
+\end{minipage}\end{center}
+\begin{center}\begin{minipage}{.88\linewidth}\centering
+\includegraphics[width=\linewidth]{xor_training_budget.pdf}
+\captionof{figure}{Supporting training-budget control, enlarged from the previous combined panel. Every observed seed is retained.}
+\end{minipage}\end{center}
+
+\section{Executable reproduction and resource boundary}
+The repository's \href{https://github.com/AnkitGuin/Task-Dependent-VIT-Patch-Loss/blob/main/docs/selection_revision_reproducibility.md}{revision reproduction guide} provides the complete command sequence. Its executable entry points are:
+\begin{description}
+\item[Configuration:] \path{configs/selection_revision.yaml}.
+\item[Main execution:] \path{scripts/run_selection_revision.py}.
+\item[Independent replay:] \path{scripts/verify_selection_revision.py}.
+\item[Isolated resources:] \path{scripts/benchmark_selection_revision.py}.
+\item[Tables and figures:] \path{scripts/analyze_selection_revision.py}.
+\end{description}
+Measurements use a \RevHardware{} CPU with approximately 16 GB RAM, Windows 11 and two numerical-library threads. Cohort manifests record source hashes, dependency versions, hardware and all artifact checksums. Warm/cold selection timings cover the declared selection stage only; downloading, data decoding, imports, selected-head training and final testing are not hidden speedup claims.
+\clearpage
+\bibliographystyle{plainnat}
+\bibliography{references}
+\end{document}

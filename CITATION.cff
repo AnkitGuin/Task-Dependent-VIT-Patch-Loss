@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Please cite the versioned research code and evidence when using this audit."
+type: software
+title: "Selecting Frozen Linear Patch Operators: An Empirical Audit under Matched Feature Budgets"
+authors:
+  - family-names: Guin
+    given-names: Ankit
+version: "2026.11.15-v2"
+date-released: "2026-11-15"
+repository-code: "https://github.com/AnkitGuin/Task-Dependent-VIT-Patch-Loss"
+url: "https://github.com/AnkitGuin/Task-Dependent-VIT-Patch-Loss/releases/tag/v2026.11.15-v2"
+license: MIT

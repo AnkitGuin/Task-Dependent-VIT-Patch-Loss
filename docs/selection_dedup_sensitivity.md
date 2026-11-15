@@ -1,0 +1,5 @@
+# Exact-content overlap sensitivity
+
+The checkpoint/data replay audit found one exact pixel duplicate between the CIFAR-100 operator and diagnostic subsets at seed 1, and one between diagnostic and official-test subsets at seed 4. Official indices remain disjoint. These observations were discovered after primary execution and do not justify silently changing the prospectively specified partitions.
+
+Retain the primary outcomes, disclose the duplicate counts, and add an exploratory evaluation that removes test examples whose exact normalized pixel hash appears in any operator/diagnostic/validation example. Selection scores, operators, validation-selected heads and pretest choices remain frozen. Recompute all candidate test accuracies and selection regret on the remaining test cases; report the number removed. This checks the influence of exact-content overlap without using test labels to choose exclusions. It does not certify absence of near-duplicates or cure all correlations between samples.

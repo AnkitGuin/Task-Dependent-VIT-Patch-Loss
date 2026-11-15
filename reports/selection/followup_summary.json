@@ -1,0 +1,237 @@
+{
+  "expanded_best_metric": "covariance_tar",
+  "expanded_best_regret": 0.00394999999999999,
+  "upper_boundary_count": 2,
+  "upper_plateau_count": 37,
+  "expanded_metadata": {
+    "status": "completed",
+    "cohort": "validation-driven expanded-grid follow-up",
+    "wallclock_sec": 804.9728959000204,
+    "config": {
+      "study": "frozen_tokenizer_selection_v1",
+      "datasets": [
+        "cifar10",
+        "cifar100"
+      ],
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "budgets": [
+        256,
+        768
+      ],
+      "patch_sizes": [
+        2,
+        4,
+        8,
+        16
+      ],
+      "operator_samples": 1000,
+      "diagnostic_samples": 1000,
+      "validation_samples": 500,
+      "test_samples": 2000,
+      "pca_patch_cap": 8000,
+      "ridge_alphas": [
+        0.1,
+        1.0,
+        10.0,
+        100.0,
+        1000.0
+      ],
+      "covariance_shrinkage": 0.1,
+      "cheap_probe_alpha": 10.0,
+      "allow_download": true,
+      "pretrained": true,
+      "data_root": "data/selection_local",
+      "output": "runs/selection_primary",
+      "threads": 2,
+      "bootstrap_samples": 2000
+    },
+    "alphas": [
+      0.1,
+      1.0,
+      10.0,
+      100.0,
+      1000.0,
+      10000.0,
+      100000.0,
+      1000000.0,
+      10000000.0,
+      100000000.0
+    ],
+    "protocol_sha256": "122e86c259655a7f2fbc01ad2a27b55904080b615836192726ec9292625fafa4",
+    "script_sha256": "7212928e804148c386bda67846b50d53122f497c7cf5772cae280b129ceaf988",
+    "root_artifact_sha256": {
+      "candidates.csv": "5167ec262b701ba573f7b30a22af50c4b5bbf3a729daa9b277170a2d8af0210c",
+      "selection_by_unit.csv": "3c37daa5858e9a1c49cc92d61b845ad48ea2aa6c60e044bda70aacbea0abc74a",
+      "summary.csv": "2f42f3fc1fd4e40c5730954973a6ab15a58c0807ffb3a8e7531006082e03682e"
+    }
+  },
+  "probe_metadata": {
+    "status": "completed",
+    "cohort": "exploratory joint candidate/penalty diagnostic validation baseline",
+    "wallclock_sec": 141.35419370001182,
+    "config": {
+      "study": "frozen_tokenizer_selection_v1",
+      "datasets": [
+        "cifar10",
+        "cifar100"
+      ],
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "budgets": [
+        256,
+        768
+      ],
+      "patch_sizes": [
+        2,
+        4,
+        8,
+        16
+      ],
+      "operator_samples": 1000,
+      "diagnostic_samples": 1000,
+      "validation_samples": 500,
+      "test_samples": 2000,
+      "pca_patch_cap": 8000,
+      "ridge_alphas": [
+        0.1,
+        1.0,
+        10.0,
+        100.0,
+        1000.0
+      ],
+      "covariance_shrinkage": 0.1,
+      "cheap_probe_alpha": 10.0,
+      "allow_download": true,
+      "pretrained": true,
+      "data_root": "data/selection_local",
+      "output": "runs/selection_primary",
+      "threads": 2,
+      "bootstrap_samples": 2000
+    },
+    "alphas": [
+      0.1,
+      1.0,
+      10.0,
+      100.0,
+      1000.0,
+      10000.0,
+      100000.0,
+      1000000.0,
+      10000000.0,
+      100000000.0
+    ],
+    "protocol_sha256": "c9aa2d5b88f9085ee86baac852084620921f950a7321151ab250d3da3ce94da7",
+    "script_sha256": "4a26ffc107d27d01ce2170a508895afbcd94db3b119990797de6d429148411f4",
+    "artifact_sha256": {
+      "choices.json": "b6994352a9cca04cd40ce3cb68ebe0ccdc128018f637f7e82fa8c3a02ec8d4b2",
+      "E11-cifar10-b256-s0_pretest.json": "bc141fe941e20298eeb2aed718c5aed0aab0aa0bde236d75c5d7e940f55c4b60",
+      "E11-cifar10-b256-s1_pretest.json": "448c8687ce1d3f623b43befe3c5d86ca5613a1c37adbe05475df212cbc969dfb",
+      "E11-cifar10-b256-s2_pretest.json": "d6084166435aea44d9a0e7004225b973d59a5a7b34cd838b8578aff5d8957bd1",
+      "E11-cifar10-b256-s3_pretest.json": "f41d5165dbaa4a0ca29a0ce333c4d27dcbb43aec6bf428661acf957400be6f97",
+      "E11-cifar10-b256-s4_pretest.json": "ea3a400823cd41eb06caa5762f991f6358f73e8408aa47c0f950fe4d326eb9ce",
+      "E11-cifar10-b768-s0_pretest.json": "b2adc564770b07ae6445a275c6353196a1e97ba4bb11490af71071e2d1301eef",
+      "E11-cifar10-b768-s1_pretest.json": "201a85ed652a0181e58687efa46337f7d07ba94f4a4be83c9d9b2b301b5c595b",
+      "E11-cifar10-b768-s2_pretest.json": "4fb33aca0c271bcebf24a200bff0c9b337a4ba448527649fddde172f38b555a5",
+      "E11-cifar10-b768-s3_pretest.json": "14bd93f310f9566b7d3eaa57cdbe232d519aad92b1607d73f639cd63b1a3e99d",
+      "E11-cifar10-b768-s4_pretest.json": "871f25962d6fc675831c7721f13fb94b172e91a79e3ea5c9b4fddbf260836432",
+      "E11-cifar100-b256-s0_pretest.json": "a437bf44e4e503fe8c8e4d24efc9eba390630d4f2c152f5601b31bb67241d85d",
+      "E11-cifar100-b256-s1_pretest.json": "7fa392a2f493ee4b0d0d030b8c33d2e31c4fda1581943d4680658d5d2d7dbc03",
+      "E11-cifar100-b256-s2_pretest.json": "d6220fd716cf45468738c2479128d6a61e0bd50baa2a4bec68ce2ebe09eae9bc",
+      "E11-cifar100-b256-s3_pretest.json": "26892ae7018511e688c36393ad95f1634af86ba6271271ea5adf0cdf5dcc0ec0",
+      "E11-cifar100-b256-s4_pretest.json": "5a6ff0c5e38238033e3a3cf7df0d190b307204d6fecd4761c5babdcd864538eb",
+      "E11-cifar100-b768-s0_pretest.json": "a87e445527fcd2e0de9211d215e8ec08d543a04d27c5853dd59e51e3e1606e44",
+      "E11-cifar100-b768-s1_pretest.json": "33d3cc03bddbaf00e53c09488e146fba5b0d4d0b8f62a723d21f13651e0eb803",
+      "E11-cifar100-b768-s2_pretest.json": "f0e7920fbdd1b4e9c9b135f8a5a9e9c4866b8e4072d384abc9448e78a6719cf5",
+      "E11-cifar100-b768-s3_pretest.json": "ba55f3e87b1f530fd04cc8132496bd670222f7ea26f5b3994e9e1f3efd4b0c5f",
+      "E11-cifar100-b768-s4_pretest.json": "eb9f56ab76c709b573c991a2013f1ffab1413dd99542be2fcae5d491ccdb042a",
+      "scores.csv": "8a43d2663176e6a842ff6f7861e08b239095a8278ac31312fc1a583c0db77bb8",
+      "validation_curves.csv": "d46cecc9a3b400fa8c31e0fe4a1876d3f59364bd97ce6e320ee9dc0391b88ad7"
+    }
+  },
+  "permutation_metadata": {
+    "status": "completed",
+    "cohort": "post-primary diagnostic label-permutation negative control",
+    "wallclock_sec": 87.77665990000241,
+    "config": {
+      "study": "frozen_tokenizer_selection_v1",
+      "datasets": [
+        "cifar10",
+        "cifar100"
+      ],
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "budgets": [
+        256,
+        768
+      ],
+      "patch_sizes": [
+        2,
+        4,
+        8,
+        16
+      ],
+      "operator_samples": 1000,
+      "diagnostic_samples": 1000,
+      "validation_samples": 500,
+      "test_samples": 2000,
+      "pca_patch_cap": 8000,
+      "ridge_alphas": [
+        0.1,
+        1.0,
+        10.0,
+        100.0,
+        1000.0
+      ],
+      "covariance_shrinkage": 0.1,
+      "cheap_probe_alpha": 10.0,
+      "allow_download": true,
+      "pretrained": true,
+      "data_root": "data/selection_local",
+      "output": "runs/selection_primary",
+      "threads": 2,
+      "bootstrap_samples": 2000
+    },
+    "protocol_sha256": "f1866af06055ba91f809f5183a348b3813d0a9f9c6eada36da84097f5a5297e1",
+    "script_sha256": "0f9cb1811cdb7d1f96388712c642003fb25ef1ec6a45f1f4958f0fb7769937d7",
+    "artifact_sha256": {
+      "E11-cifar10-b256-s0_pretest.json": "40aa74ea96453c6a5209e9f09d9e05904ab6e372d898847899eefb834ba8cda2",
+      "E11-cifar10-b256-s1_pretest.json": "213008e26c911003f68307cc24c4a571cd25bcd8777ab1f1b9e345bc02ce6077",
+      "E11-cifar10-b256-s2_pretest.json": "bfaae98afec654de81f1470c967283a9fa3a5d73c6b822d34e2a18a50a4ba705",
+      "E11-cifar10-b256-s3_pretest.json": "f1d182dc3897deca5e66e959557115e366323cf1a6b52cd95e0405db9e1c35f1",
+      "E11-cifar10-b256-s4_pretest.json": "b97304cbdadba9b9939a129686df250c1d902e239bdfca68a6ce5e5cbb9bf554",
+      "E11-cifar10-b768-s0_pretest.json": "d93fb3204fd1ff1694757d3b5958b762c79d65147cf6d4a029cbeb4a52b1b33e",
+      "E11-cifar10-b768-s1_pretest.json": "908ac6307411f5a7e8bc798969317ab93fc2079b88f73b2feea51ff3a69315a0",
+      "E11-cifar10-b768-s2_pretest.json": "0b9b8943f9c0ac773855827c271cbcf925255aa4eccf8628a97d03704d063882",
+      "E11-cifar10-b768-s3_pretest.json": "624c00ade49f7ca350e0a24c3e6fdf9bfc3ed478c63bf674f5bd629db08c5903",
+      "E11-cifar10-b768-s4_pretest.json": "684930833b0d73ee26781d1e72d52bce24e8483816e00ecde04bdf1f3060f2e1",
+      "E11-cifar100-b256-s0_pretest.json": "fb644b84444dffeec2165d2b05e309b202c205819fb04f9c2d7bdcf444fe9e00",
+      "E11-cifar100-b256-s1_pretest.json": "ca0fbcce4d3df46d1e4a79fc0db16f9418f7ffd02a0542b5ce3137a8789bd6ad",
+      "E11-cifar100-b256-s2_pretest.json": "bbff1131c8a4ec9d73dfaf387c4315c79bfa38c4913384c8f8963d1354d4d971",
+      "E11-cifar100-b256-s3_pretest.json": "e84bc9eaa7c5639975bea4828d24cfff191a529c10b8612a3d614da34530f073",
+      "E11-cifar100-b256-s4_pretest.json": "bec330ea32bd9b185fabff325473ba1c8bca7b33a370fe19e841ae3b38552d73",
+      "E11-cifar100-b768-s0_pretest.json": "a3fc02d1d21b482d65f64e4fc901490611f797156c2903c1c340291a31ce8f65",
+      "E11-cifar100-b768-s1_pretest.json": "e325d23e00d3b3c52e4a3b583a48958b0140516cf33a2f4ba8556d9de940a4c8",
+      "E11-cifar100-b768-s2_pretest.json": "71975f1745dc7975c7d8e070dfc1854caa678b3ef0821a13ad73e1e5ac453722",
+      "E11-cifar100-b768-s3_pretest.json": "7df422a2e1daa1b0424a6bd57526a3cc7571a2f87bbe552186893dea4440d7e6",
+      "E11-cifar100-b768-s4_pretest.json": "8cb0b7cae89f641fcbc270cebc5a86a69129c4a057fa62833b9f76ccb39b6b18",
+      "selection_by_unit.csv": "ff6cccdd4d79eb95610f1cfacd45ed6df121ac0aa215ad7645ceda62aca0ea80",
+      "summary.csv": "54304ded51cb2bf89bc3b4b52d6d56524dc9eb59cc106cbbd26ef04eec66710f"
+    }
+  }
+}

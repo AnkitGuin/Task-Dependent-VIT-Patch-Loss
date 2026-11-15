@@ -1,0 +1,17 @@
+bank,metric,regret
+local_only,cheap_probe,0.004674999999999998
+local_only,covariance_tar,0.0033749999999999974
+local_only,crossfit_tar,0.004749999999999997
+local_only,hscore,0.020399999999999995
+local_only,logme,0.0061
+local_only,mean_tar,0.007874999999999998
+local_only,rank,0.018677083333333337
+local_only,reconstruction,0.007874999999999998
+orthonormal_only,cheap_probe,0.004662499999999998
+orthonormal_only,covariance_tar,0.0033749999999999974
+orthonormal_only,crossfit_tar,0.004749999999999997
+orthonormal_only,hscore,0.032249999999999994
+orthonormal_only,logme,0.006175000000000001
+orthonormal_only,mean_tar,0.007874999999999998
+orthonormal_only,rank,0.02251923076923077
+orthonormal_only,reconstruction,0.007874999999999998

@@ -1,0 +1,7 @@
+# Validation-driven downstream regularization follow-up
+
+This separate post-primary analysis is motivated by the original **validation curves**: accuracy improves from alpha=100 to alpha=1,000 in 264 of 280 candidates, ties in five and decreases in eleven. Most selected penalties lie at the upper boundary. The original prospective results remain intact, but that grid is insufficient evidence of robustness to downstream regularization.
+
+Keep the primary data partitions, candidate operators, diagnostic scores and pretest score-maximizing sets fixed. Refit downstream and raw-reference heads on the original fitting data, expanding the common validation grid to `{0.1,1,10,100,1000,10000,100000,1000000,10000000,100000000}`. Choose by validation accuracy only, with the original larger-alpha tie policy. Save the expanded validation curves, selected heads and hyperparameters before evaluating official-test labels. Report boundary and upper-grid plateau counts, rather than asserting that any finite grid proves a globally optimal head.
+
+Re-evaluate the original selectors against these newly selected head outcomes and recompute the bank's empirical oracle. Also show all fixed-policy results descriptively. Preserve the initial results and label the expanded-grid cohort as a follow-up; do not retroactively present it as the original prospective design or tune score formulas on its test outcomes.

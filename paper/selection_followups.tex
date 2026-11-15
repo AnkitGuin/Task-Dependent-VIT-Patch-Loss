@@ -1,0 +1,21 @@
+The original validation paths improve from penalty 100 to 1,000 in 264 of 280 cases, motivating a separate expanded-grid follow-up rather than a robustness claim from the initial grid. Operators, scores and score-based choices remain fixed; penalties are chosen using validation data only before new test outcomes. The expanded grid reaches $10^8$. 2 of 280 heads select that upper value, while 37 have identical validation accuracy over the largest three penalties; a finite grid still does not prove global optimality. Table~\ref{tab:grid} reports both outcome definitions, so any changed ordering remains visible. The additional diagnostic-probe grid jointly selects candidate and penalty from the same diagnostic label budget; it does not use official-test labels. The lowest observed expanded-grid regret remains covariance retention (0.395 points), closely followed by the fixed-penalty diagnostic probe (0.427). The paired conditional bootstrap interval for their regret difference includes zero; we do not assert statistical superiority. Profile-evidence LogME also improves to 0.4225 points of regret, compared with 0.9225 under the original heads. This stronger evidence baseline further narrows the observed difference from covariance retention. A hindsight audit of all fixed candidates gives p04 dct a mean expanded-grid regret of 0.425 points; this is still not a prospectively chosen rule.
+
+Matching patch size as well as feature budget changes the comparison: expanded-grid within-patch-bank regrets average 0.183 for LogME, 0.211 for covariance retention, and 0.646 for mean retention. These smaller banks have their own oracles and cannot be compared numerically with global-bank regret as though they were the same task. The change in ordering further limits any universal winner claim.
+
+In the diagnostic-label shuffle control, mean retention selects the same candidate in 100\% of the 100 unit/permutation cases. Under the original heads, shuffled-label covariance retention has 0.82 points of mean regret, with its candidate choice changing in all cases. This is a bank-specific negative control: it does not imply that the mean-retention formula is label-independent in general or constitute a formal permutation significance test.
+\begin{table}[t]
+\centering\small
+\caption{Post-primary validation-grid sensitivity (accuracy percentage points). Scores and operator maps are fixed; only downstream penalties are reselected on validation data. Regret uses each head grid's own empirical bank oracle. Diagnostic probe grid, adaptive H-score and profile LogME are exploratory additions.}\label{tab:grid}
+\begin{tabular}{lrr}\toprule Selector & Original-grid regret & Expanded-grid regret\\\midrule
+Covariance retention & 0.3375 & 0.3950\\
+LogME (profile; exploratory) & 0.9225 & 0.4225\\
+Diagnostic probe (fixed penalty) & 0.4662 & 0.4275\\
+Cross-fitted retention & 0.4750 & 0.5125\\
+LogME (11 steps) & 1.0075 & 0.5900\\
+Diagnostic probe (grid; exploratory) & 0.6219 & 0.7044\\
+Reconstruction energy & 0.7875 & 0.7425\\
+Mean retention & 0.7875 & 0.7425\\
+H-score (adaptive; exploratory) & 1.5000 & 1.1675\\
+Rank (uniform ties) & 2.6591 & 2.4595\\
+H-score (fixed shrinkage) & 3.8850 & 2.9875\\
+\bottomrule\end{tabular}\end{table}

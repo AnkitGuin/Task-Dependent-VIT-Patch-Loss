@@ -1,0 +1,321 @@
+dataset,seed,budget,bank,metric,selected_accuracy,oracle_accuracy,regret,spearman,tie_count,undefined_fallback,eligible_candidates,realized_candidate,realized_accuracy
+cifar10,0,256,local_only,rank,0.327625,0.368,0.040374999999999994,,12,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_pca', 'p16_random']",p16_pca,0.3495
+cifar10,0,256,local_only,reconstruction,0.3495,0.368,0.018500000000000016,0.4728553661283838,1,False,['p16_pca'],p16_pca,0.3495
+cifar10,0,256,local_only,mean_tar,0.3495,0.368,0.018500000000000016,0.5499132776456018,1,False,['p16_pca'],p16_pca,0.3495
+cifar10,0,256,local_only,covariance_tar,0.368,0.368,0.0,0.8231186002975568,1,False,['p04_dct'],p04_dct,0.368
+cifar10,0,256,local_only,crossfit_tar,0.3635,0.368,0.004500000000000004,0.6374790861878952,1,False,['p16_dct'],p16_dct,0.3635
+cifar10,0,256,local_only,hscore,0.347,0.368,0.02100000000000002,0.28021058733533855,1,False,['p08_random'],p08_random,0.347
+cifar10,0,256,local_only,logme,0.368,0.368,0.0,0.9527159969401509,1,False,['p04_dct'],p04_dct,0.368
+cifar10,0,256,local_only,cheap_probe,0.3675,0.368,0.0005000000000000004,0.9103704744721839,1,False,['p08_dct'],p08_dct,0.3675
+cifar10,0,256,orthonormal_only,rank,0.3172307692307692,0.368,0.05076923076923079,,13,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_deit_rowspace', 'p16_pca', 'p16_random']",p16_pca,0.3495
+cifar10,0,256,orthonormal_only,reconstruction,0.3495,0.368,0.018500000000000016,0.5254475397260966,1,False,['p16_pca'],p16_pca,0.3495
+cifar10,0,256,orthonormal_only,mean_tar,0.3495,0.368,0.018500000000000016,0.6464930462598572,1,False,['p16_pca'],p16_pca,0.3495
+cifar10,0,256,orthonormal_only,covariance_tar,0.368,0.368,0.0,0.8555716484545344,1,False,['p04_dct'],p04_dct,0.368
+cifar10,0,256,orthonormal_only,crossfit_tar,0.3635,0.368,0.004500000000000004,0.7152689022449483,1,False,['p16_dct'],p16_dct,0.3635
+cifar10,0,256,orthonormal_only,hscore,0.347,0.368,0.02100000000000002,0.11279240381554954,1,False,['p08_random'],p08_random,0.347
+cifar10,0,256,orthonormal_only,logme,0.368,0.368,0.0,0.9628619837912765,1,False,['p04_dct'],p04_dct,0.368
+cifar10,0,256,orthonormal_only,cheap_probe,0.3675,0.368,0.0005000000000000004,0.929656056748156,1,False,['p08_dct'],p08_dct,0.3675
+cifar10,0,768,local_only,rank,0.34095833333333325,0.3555,0.01454166666666673,,12,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_pca', 'p16_random']",p16_pca,0.3465
+cifar10,0,768,local_only,reconstruction,0.3465,0.3555,0.009000000000000008,0.2842122758581141,1,False,['p16_pca'],p16_pca,0.3465
+cifar10,0,768,local_only,mean_tar,0.3465,0.3555,0.009000000000000008,0.4175464299643898,1,False,['p16_pca'],p16_pca,0.3465
+cifar10,0,768,local_only,covariance_tar,0.355,0.3555,0.0005000000000000004,0.5438629970124406,1,False,['p02_dct'],p02_dct,0.355
+cifar10,0,768,local_only,crossfit_tar,0.3475,0.3555,0.008000000000000007,0.5193014423086528,1,False,['p08_dct'],p08_dct,0.3475
+cifar10,0,768,local_only,hscore,0.3465,0.3555,0.009000000000000008,-0.3473705593821394,1,False,['p16_pca'],p16_pca,0.3465
+cifar10,0,768,local_only,logme,0.3465,0.3555,0.009000000000000008,0.7859697505212043,1,False,['p08_random'],p08_random,0.3465
+cifar10,0,768,local_only,cheap_probe,0.3435,0.3555,0.011999999999999955,0.22007042253521122,1,False,['p04_pca'],p04_pca,0.3435
+cifar10,0,768,orthonormal_only,rank,0.3414999999999999,0.3555,0.014000000000000068,,13,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_deit_rowspace', 'p16_pca', 'p16_random']",p16_pca,0.3465
+cifar10,0,768,orthonormal_only,reconstruction,0.3465,0.3555,0.009000000000000008,0.25619931926251754,1,False,['p16_pca'],p16_pca,0.3465
+cifar10,0,768,orthonormal_only,mean_tar,0.3465,0.3555,0.009000000000000008,0.3719022376391383,1,False,['p16_pca'],p16_pca,0.3465
+cifar10,0,768,orthonormal_only,covariance_tar,0.355,0.3555,0.0005000000000000004,0.48760515601575916,1,False,['p02_dct'],p02_dct,0.355
+cifar10,0,768,orthonormal_only,crossfit_tar,0.3475,0.3555,0.008000000000000007,0.4517923479468051,1,False,['p08_dct'],p08_dct,0.3475
+cifar10,0,768,orthonormal_only,hscore,0.3465,0.3555,0.009000000000000008,-0.4325085282173683,1,False,['p16_pca'],p16_pca,0.3465
+cifar10,0,768,orthonormal_only,logme,0.3465,0.3555,0.009000000000000008,0.7906366089069089,1,False,['p08_random'],p08_random,0.3465
+cifar10,0,768,orthonormal_only,cheap_probe,0.3435,0.3555,0.011999999999999955,0.2614110384263772,1,False,['p04_pca'],p04_pca,0.3435
+cifar10,1,256,local_only,rank,0.32566666666666666,0.361,0.03533333333333333,,12,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_pca', 'p16_random']",p16_pca,0.351
+cifar10,1,256,local_only,reconstruction,0.351,0.361,0.010000000000000009,0.5218922189120679,1,False,['p16_pca'],p16_pca,0.351
+cifar10,1,256,local_only,mean_tar,0.351,0.361,0.010000000000000009,0.5989501304292861,1,False,['p16_pca'],p16_pca,0.351
+cifar10,1,256,local_only,covariance_tar,0.36,0.361,0.0010000000000000009,0.80910807093079,1,False,['p04_dct'],p04_dct,0.36
+cifar10,1,256,local_only,crossfit_tar,0.3535,0.361,0.007500000000000007,0.7180396300468049,1,False,['p16_dct'],p16_dct,0.3535
+cifar10,1,256,local_only,hscore,0.337,0.361,0.023999999999999966,-0.0035026323416917316,1,False,['p08_random'],p08_random,0.337
+cifar10,1,256,local_only,logme,0.3535,0.361,0.007500000000000007,0.9211923058649254,1,False,['p16_dct'],p16_dct,0.3535
+cifar10,1,256,local_only,cheap_probe,0.36,0.361,0.0010000000000000009,0.8280701754385966,1,False,['p04_dct'],p04_dct,0.36
+cifar10,1,256,orthonormal_only,rank,0.31484615384615383,0.361,0.046153846153846156,,13,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_deit_rowspace', 'p16_pca', 'p16_random']",p16_pca,0.351
+cifar10,1,256,orthonormal_only,reconstruction,0.351,0.361,0.010000000000000009,0.6189827038658207,1,False,['p16_pca'],p16_pca,0.351
+cifar10,1,256,orthonormal_only,mean_tar,0.351,0.361,0.010000000000000009,0.6850075256115081,1,False,['p16_pca'],p16_pca,0.351
+cifar10,1,256,orthonormal_only,covariance_tar,0.36,0.361,0.0010000000000000009,0.8280613060604979,1,False,['p04_dct'],p04_dct,0.36
+cifar10,1,256,orthonormal_only,crossfit_tar,0.3535,0.361,0.007500000000000007,0.7785426897512322,1,False,['p16_dct'],p16_dct,0.3535
+cifar10,1,256,orthonormal_only,hscore,0.337,0.361,0.023999999999999966,-0.0577717190274766,1,False,['p08_random'],p08_random,0.337
+cifar10,1,256,orthonormal_only,logme,0.3535,0.361,0.007500000000000007,0.9381026756366436,1,False,['p16_dct'],p16_dct,0.3535
+cifar10,1,256,orthonormal_only,cheap_probe,0.36,0.361,0.0010000000000000009,0.8595041322314051,1,False,['p04_dct'],p04_dct,0.36
+cifar10,1,768,local_only,rank,0.34141666666666665,0.354,0.012583333333333335,,12,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_pca', 'p16_random']",p16_pca,0.342
+cifar10,1,768,local_only,reconstruction,0.342,0.354,0.011999999999999955,0.3824584946732647,1,False,['p16_pca'],p16_pca,0.342
+cifar10,1,768,local_only,mean_tar,0.342,0.354,0.011999999999999955,0.4421079846681774,1,False,['p16_pca'],p16_pca,0.342
+cifar10,1,768,local_only,covariance_tar,0.3485,0.354,0.005500000000000005,0.49824868113397774,1,False,['p02_dct'],p02_dct,0.3485
+cifar10,1,768,local_only,crossfit_tar,0.342,0.354,0.011999999999999955,0.6175476611238034,1,False,['p16_pca'],p16_pca,0.342
+cifar10,1,768,local_only,hscore,0.332,0.354,0.021999999999999964,-0.554389377599778,1,False,['p02_random'],p02_random,0.332
+cifar10,1,768,local_only,logme,0.332,0.354,0.021999999999999964,0.20701881821763865,1,False,['p02_random'],p02_random,0.332
+cifar10,1,768,local_only,cheap_probe,0.3445,0.354,0.009500000000000008,0.380281690140845,1,False,['p04_random'],p04_random,0.3445
+cifar10,1,768,orthonormal_only,rank,0.3411153846153846,0.354,0.012884615384615383,,13,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_deit_rowspace', 'p16_pca', 'p16_random']",p16_pca,0.342
+cifar10,1,768,orthonormal_only,reconstruction,0.342,0.354,0.011999999999999955,0.44352785377704645,1,False,['p16_pca'],p16_pca,0.342
+cifar10,1,768,orthonormal_only,mean_tar,0.342,0.354,0.011999999999999955,0.4958696501855178,1,False,['p16_pca'],p16_pca,0.342
+cifar10,1,768,orthonormal_only,covariance_tar,0.3485,0.354,0.005500000000000005,0.5041341443552764,1,False,['p02_dct'],p02_dct,0.3485
+cifar10,1,768,orthonormal_only,crossfit_tar,0.342,0.354,0.011999999999999955,0.6336112196814949,1,False,['p16_pca'],p16_pca,0.342
+cifar10,1,768,orthonormal_only,hscore,0.332,0.354,0.021999999999999964,-0.5234179640847132,1,False,['p02_random'],p02_random,0.332
+cifar10,1,768,orthonormal_only,logme,0.332,0.354,0.021999999999999964,0.21212201702380482,1,False,['p02_random'],p02_random,0.332
+cifar10,1,768,orthonormal_only,cheap_probe,0.3445,0.354,0.009500000000000008,0.25659029330375543,1,False,['p04_random'],p04_random,0.3445
+cifar10,2,256,local_only,rank,0.34262499999999996,0.376,0.033375000000000044,,12,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_pca', 'p16_random']",p16_pca,0.36
+cifar10,2,256,local_only,reconstruction,0.36,0.376,0.016000000000000014,0.5384615384615385,1,False,['p16_pca'],p16_pca,0.36
+cifar10,2,256,local_only,mean_tar,0.36,0.376,0.016000000000000014,0.6223776223776225,1,False,['p16_pca'],p16_pca,0.36
+cifar10,2,256,local_only,covariance_tar,0.3725,0.376,0.003500000000000003,0.7832167832167832,1,False,['p04_dct'],p04_dct,0.3725
+cifar10,2,256,local_only,crossfit_tar,0.376,0.376,0.0,0.7132867132867133,1,False,['p08_dct'],p08_dct,0.376
+cifar10,2,256,local_only,hscore,0.34,0.376,0.035999999999999976,0.06293706293706294,1,False,['p04_random'],p04_random,0.34
+cifar10,2,256,local_only,logme,0.376,0.376,0.0,0.9720279720279721,1,False,['p08_dct'],p08_dct,0.376
+cifar10,2,256,local_only,cheap_probe,0.374,0.376,0.0020000000000000018,0.9510489510489512,1,False,['p16_dct'],p16_dct,0.374
+cifar10,2,256,orthonormal_only,rank,0.32923076923076916,0.376,0.04676923076923084,,13,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_deit_rowspace', 'p16_pca', 'p16_random']",p16_pca,0.36
+cifar10,2,256,orthonormal_only,reconstruction,0.36,0.376,0.016000000000000014,0.5989010989010989,1,False,['p16_pca'],p16_pca,0.36
+cifar10,2,256,orthonormal_only,mean_tar,0.36,0.376,0.016000000000000014,0.7032967032967032,1,False,['p16_pca'],p16_pca,0.36
+cifar10,2,256,orthonormal_only,covariance_tar,0.3725,0.376,0.003500000000000003,0.8296703296703297,1,False,['p04_dct'],p04_dct,0.3725
+cifar10,2,256,orthonormal_only,crossfit_tar,0.376,0.376,0.0,0.7747252747252747,1,False,['p08_dct'],p08_dct,0.376
+cifar10,2,256,orthonormal_only,hscore,0.34,0.376,0.035999999999999976,-0.016483516483516484,1,False,['p04_random'],p04_random,0.34
+cifar10,2,256,orthonormal_only,logme,0.376,0.376,0.0,0.9780219780219779,1,False,['p08_dct'],p08_dct,0.376
+cifar10,2,256,orthonormal_only,cheap_probe,0.374,0.376,0.0020000000000000018,0.9615384615384615,1,False,['p16_dct'],p16_dct,0.374
+cifar10,2,768,local_only,rank,0.3499583333333333,0.362,0.012041666666666673,,12,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_pca', 'p16_random']",p16_pca,0.35
+cifar10,2,768,local_only,reconstruction,0.35,0.362,0.01200000000000001,0.31468531468531474,1,False,['p16_pca'],p16_pca,0.35
+cifar10,2,768,local_only,mean_tar,0.35,0.362,0.01200000000000001,0.4055944055944056,1,False,['p16_pca'],p16_pca,0.35
+cifar10,2,768,local_only,covariance_tar,0.3615,0.362,0.0005000000000000004,0.5454545454545455,1,False,['p02_dct'],p02_dct,0.3615
+cifar10,2,768,local_only,crossfit_tar,0.35,0.362,0.01200000000000001,0.44755244755244755,1,False,['p16_pca'],p16_pca,0.35
+cifar10,2,768,local_only,hscore,0.35,0.362,0.01200000000000001,-0.2797202797202798,1,False,['p16_pca'],p16_pca,0.35
+cifar10,2,768,local_only,logme,0.3515,0.362,0.01050000000000001,0.7412587412587414,1,False,['p08_dct'],p08_dct,0.3515
+cifar10,2,768,local_only,cheap_probe,0.359,0.362,0.0030000000000000027,0.201066018974522,1,False,['p16_dct'],p16_dct,0.359
+cifar10,2,768,orthonormal_only,rank,0.3497692307692307,0.362,0.012230769230769267,,13,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_deit_rowspace', 'p16_pca', 'p16_random']",p16_pca,0.35
+cifar10,2,768,orthonormal_only,reconstruction,0.35,0.362,0.01200000000000001,0.3626373626373627,1,False,['p16_pca'],p16_pca,0.35
+cifar10,2,768,orthonormal_only,mean_tar,0.35,0.362,0.01200000000000001,0.4450549450549451,1,False,['p16_pca'],p16_pca,0.35
+cifar10,2,768,orthonormal_only,covariance_tar,0.3615,0.362,0.0005000000000000004,0.521978021978022,1,False,['p02_dct'],p02_dct,0.3615
+cifar10,2,768,orthonormal_only,crossfit_tar,0.35,0.362,0.01200000000000001,0.48901098901098894,1,False,['p16_pca'],p16_pca,0.35
+cifar10,2,768,orthonormal_only,hscore,0.35,0.362,0.01200000000000001,-0.2582417582417582,1,False,['p16_pca'],p16_pca,0.35
+cifar10,2,768,orthonormal_only,logme,0.3515,0.362,0.01050000000000001,0.7417582417582418,1,False,['p08_dct'],p08_dct,0.3515
+cifar10,2,768,orthonormal_only,cheap_probe,0.359,0.362,0.0030000000000000027,0.2130064768030775,1,False,['p16_dct'],p16_dct,0.359
+cifar10,3,256,local_only,rank,0.3090416666666667,0.345,0.03595833333333326,,12,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_pca', 'p16_random']",p16_pca,0.33
+cifar10,3,256,local_only,reconstruction,0.33,0.345,0.014999999999999958,0.4125874125874127,1,False,['p16_pca'],p16_pca,0.33
+cifar10,3,256,local_only,mean_tar,0.33,0.345,0.014999999999999958,0.5034965034965035,1,False,['p16_pca'],p16_pca,0.33
+cifar10,3,256,local_only,covariance_tar,0.34,0.345,0.004999999999999949,0.7902097902097903,1,False,['p04_dct'],p04_dct,0.34
+cifar10,3,256,local_only,crossfit_tar,0.3355,0.345,0.009499999999999953,0.5734265734265735,1,False,['p16_dct'],p16_dct,0.3355
+cifar10,3,256,local_only,hscore,0.321,0.345,0.023999999999999966,0.4265734265734266,1,False,['p16_random'],p16_random,0.321
+cifar10,3,256,local_only,logme,0.345,0.345,0.0,0.9790209790209792,1,False,['p08_dct'],p08_dct,0.345
+cifar10,3,256,local_only,cheap_probe,0.33775,0.345,0.007249999999999979,0.9281975705483088,2,False,"['p04_dct', 'p16_dct']",p16_dct,0.3355
+cifar10,3,256,orthonormal_only,rank,0.29888461538461547,0.345,0.0461153846153845,,13,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_deit_rowspace', 'p16_pca', 'p16_random']",p16_pca,0.33
+cifar10,3,256,orthonormal_only,reconstruction,0.33,0.345,0.014999999999999958,0.5,1,False,['p16_pca'],p16_pca,0.33
+cifar10,3,256,orthonormal_only,mean_tar,0.33,0.345,0.014999999999999958,0.6098901098901099,1,False,['p16_pca'],p16_pca,0.33
+cifar10,3,256,orthonormal_only,covariance_tar,0.34,0.345,0.004999999999999949,0.8296703296703297,1,False,['p04_dct'],p04_dct,0.34
+cifar10,3,256,orthonormal_only,crossfit_tar,0.3355,0.345,0.009499999999999953,0.6648351648351648,1,False,['p16_dct'],p16_dct,0.3355
+cifar10,3,256,orthonormal_only,hscore,0.321,0.345,0.023999999999999966,0.24175824175824176,1,False,['p16_random'],p16_random,0.321
+cifar10,3,256,orthonormal_only,logme,0.345,0.345,0.0,0.9835164835164836,1,False,['p08_dct'],p08_dct,0.345
+cifar10,3,256,orthonormal_only,cheap_probe,0.33775,0.345,0.007249999999999979,0.9201136842331273,2,False,"['p04_dct', 'p16_dct']",p16_dct,0.3355
+cifar10,3,768,local_only,rank,0.32025000000000003,0.336,0.015749999999999986,,12,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_pca', 'p16_random']",p16_pca,0.3285
+cifar10,3,768,local_only,reconstruction,0.3285,0.336,0.007500000000000007,0.5113843218869928,1,False,['p16_pca'],p16_pca,0.3285
+cifar10,3,768,local_only,mean_tar,0.3285,0.336,0.007500000000000007,0.5884422334042109,1,False,['p16_pca'],p16_pca,0.3285
+cifar10,3,768,local_only,covariance_tar,0.336,0.336,0.0,0.7705791151721809,1,False,['p02_dct'],p02_dct,0.336
+cifar10,3,768,local_only,crossfit_tar,0.329,0.336,0.007000000000000006,0.7145369977051133,1,False,['p16_dct'],p16_dct,0.329
+cifar10,3,768,local_only,hscore,0.281,0.336,0.05499999999999999,-0.5989501304292861,1,False,['p02_random'],p02_random,0.281
+cifar10,3,768,local_only,logme,0.3125,0.336,0.02350000000000002,0.5674264393540605,1,False,['p08_random'],p08_random,0.3125
+cifar10,3,768,local_only,cheap_probe,0.3295,0.336,0.006500000000000006,0.7372237231444082,1,False,['p08_dct'],p08_dct,0.3295
+cifar10,3,768,orthonormal_only,rank,0.32088461538461543,0.336,0.015115384615384586,,13,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_deit_rowspace', 'p16_pca', 'p16_random']",p16_pca,0.3285
+cifar10,3,768,orthonormal_only,reconstruction,0.3285,0.336,0.007500000000000007,0.5289276268645523,1,False,['p16_pca'],p16_pca,0.3285
+cifar10,3,768,orthonormal_only,mean_tar,0.3285,0.336,0.007500000000000007,0.5950435802226214,1,False,['p16_pca'],p16_pca,0.3285
+cifar10,3,768,orthonormal_only,covariance_tar,0.336,0.336,0.0,0.7410496438883571,1,False,['p02_dct'],p02_dct,0.336
+cifar10,3,768,orthonormal_only,crossfit_tar,0.329,0.336,0.007000000000000006,0.7190109927690008,1,False,['p16_dct'],p16_dct,0.329
+cifar10,3,768,orthonormal_only,hscore,0.281,0.336,0.05499999999999999,-0.5812694232730237,1,False,['p02_random'],p02_random,0.281
+cifar10,3,768,orthonormal_only,logme,0.3125,0.336,0.02350000000000002,0.5537211093738282,1,False,['p08_random'],p08_random,0.3125
+cifar10,3,768,orthonormal_only,cheap_probe,0.3295,0.336,0.006500000000000006,0.7396150260374186,1,False,['p08_dct'],p08_dct,0.3295
+cifar10,4,256,local_only,rank,0.3496666666666666,0.3875,0.037833333333333385,,12,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_pca', 'p16_random']",p16_pca,0.376
+cifar10,4,256,local_only,reconstruction,0.376,0.3875,0.01150000000000001,0.4825174825174825,1,False,['p16_pca'],p16_pca,0.376
+cifar10,4,256,local_only,mean_tar,0.376,0.3875,0.01150000000000001,0.5594405594405596,1,False,['p16_pca'],p16_pca,0.376
+cifar10,4,256,local_only,covariance_tar,0.3875,0.3875,0.0,0.8181818181818183,1,False,['p04_dct'],p04_dct,0.3875
+cifar10,4,256,local_only,crossfit_tar,0.3835,0.3875,0.0040000000000000036,0.6503496503496504,1,False,['p16_dct'],p16_dct,0.3835
+cifar10,4,256,local_only,hscore,0.376,0.3875,0.01150000000000001,0.2377622377622378,1,False,['p16_pca'],p16_pca,0.376
+cifar10,4,256,local_only,logme,0.3875,0.3875,0.0,0.9580419580419581,1,False,['p04_dct'],p04_dct,0.3875
+cifar10,4,256,local_only,cheap_probe,0.3835,0.3875,0.0040000000000000036,0.8140400987541044,1,False,['p16_dct'],p16_dct,0.3835
+cifar10,4,256,orthonormal_only,rank,0.33715384615384614,0.3875,0.050346153846153874,,13,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_deit_rowspace', 'p16_pca', 'p16_random']",p16_pca,0.376
+cifar10,4,256,orthonormal_only,reconstruction,0.376,0.3875,0.01150000000000001,0.5934065934065934,1,False,['p16_pca'],p16_pca,0.376
+cifar10,4,256,orthonormal_only,mean_tar,0.376,0.3875,0.01150000000000001,0.6538461538461539,1,False,['p16_pca'],p16_pca,0.376
+cifar10,4,256,orthonormal_only,covariance_tar,0.3875,0.3875,0.0,0.8571428571428571,1,False,['p04_dct'],p04_dct,0.3875
+cifar10,4,256,orthonormal_only,crossfit_tar,0.3835,0.3875,0.0040000000000000036,0.7252747252747254,1,False,['p16_dct'],p16_dct,0.3835
+cifar10,4,256,orthonormal_only,hscore,0.376,0.3875,0.01150000000000001,0.12637362637362637,1,False,['p16_pca'],p16_pca,0.376
+cifar10,4,256,orthonormal_only,logme,0.3875,0.3875,0.0,0.967032967032967,1,False,['p04_dct'],p04_dct,0.3875
+cifar10,4,256,orthonormal_only,cheap_probe,0.3835,0.3875,0.0040000000000000036,0.8539977308750584,1,False,['p16_dct'],p16_dct,0.3835
+cifar10,4,768,local_only,rank,0.36162500000000003,0.375,0.01337499999999997,,12,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_pca', 'p16_random']",p16_pca,0.366
+cifar10,4,768,local_only,reconstruction,0.366,0.375,0.009000000000000008,0.3964936687897147,1,False,['p16_pca'],p16_pca,0.366
+cifar10,4,768,local_only,mean_tar,0.366,0.375,0.009000000000000008,0.5193014423086528,1,False,['p16_pca'],p16_pca,0.366
+cifar10,4,768,local_only,covariance_tar,0.375,0.375,0.0,0.6596531834731535,1,False,['p02_dct'],p02_dct,0.375
+cifar10,4,768,local_only,crossfit_tar,0.375,0.375,0.0,0.7263202605262916,1,False,['p16_dct'],p16_dct,0.375
+cifar10,4,768,local_only,hscore,0.366,0.375,0.009000000000000008,-0.05614069646580031,1,False,['p16_pca'],p16_pca,0.366
+cifar10,4,768,local_only,logme,0.375,0.375,0.0,0.9473742528603802,1,False,['p02_dct'],p02_dct,0.375
+cifar10,4,768,local_only,cheap_probe,0.3715,0.375,0.003500000000000003,0.6596130188179561,1,False,['p08_dct'],p08_dct,0.3715
+cifar10,4,768,orthonormal_only,rank,0.36203846153846153,0.375,0.012961538461538469,,13,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_deit_rowspace', 'p16_pca', 'p16_random']",p16_pca,0.366
+cifar10,4,768,orthonormal_only,reconstruction,0.366,0.375,0.009000000000000008,0.41494768208391725,1,False,['p16_pca'],p16_pca,0.366
+cifar10,4,768,orthonormal_only,mean_tar,0.366,0.375,0.009000000000000008,0.5228340794257358,1,False,['p16_pca'],p16_pca,0.366
+cifar10,4,768,orthonormal_only,covariance_tar,0.375,0.375,0.0,0.6251878410064353,1,False,['p02_dct'],p02_dct,0.375
+cifar10,4,768,orthonormal_only,crossfit_tar,0.375,0.375,0.0,0.7192426489454564,1,False,['p16_dct'],p16_dct,0.375
+cifar10,4,768,orthonormal_only,hscore,0.366,0.375,0.009000000000000008,-0.09405480793902123,1,False,['p16_pca'],p16_pca,0.366
+cifar10,4,768,orthonormal_only,logme,0.375,0.375,0.0,0.9488470330318907,1,False,['p02_dct'],p02_dct,0.375
+cifar10,4,768,orthonormal_only,cheap_probe,0.3715,0.375,0.003500000000000003,0.6152801515483736,1,False,['p08_dct'],p08_dct,0.3715
+cifar100,0,256,local_only,rank,0.092375,0.11,0.017625000000000002,,12,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_pca', 'p16_random']",p16_pca,0.1065
+cifar100,0,256,local_only,reconstruction,0.1065,0.11,0.003500000000000003,0.5122838552504279,1,False,['p16_pca'],p16_pca,0.1065
+cifar100,0,256,local_only,mean_tar,0.1065,0.11,0.003500000000000003,0.6035124870073534,1,False,['p16_pca'],p16_pca,0.1065
+cifar100,0,256,local_only,covariance_tar,0.107,0.11,0.0030000000000000027,0.7333378475845165,1,False,['p04_dct'],p04_dct,0.107
+cifar100,0,256,local_only,crossfit_tar,0.11,0.11,0.0,0.7052674993516165,1,False,['p16_dct'],p16_dct,0.11
+cifar100,0,256,local_only,hscore,0.0935,0.11,0.0165,-0.37894970114415205,1,False,['p04_random'],p04_random,0.0935
+cifar100,0,256,local_only,logme,0.0965,0.11,0.013499999999999998,0.715793879938954,1,False,['p08_random'],p08_random,0.0965
+cifar100,0,256,local_only,cheap_probe,0.11,0.11,0.0,0.403169014084507,1,False,['p08_dct'],p08_dct,0.11
+cifar100,0,256,orthonormal_only,rank,0.08830769230769232,0.11,0.021692307692307677,,13,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_deit_rowspace', 'p16_pca', 'p16_random']",p16_pca,0.1065
+cifar100,0,256,orthonormal_only,reconstruction,0.1065,0.11,0.003500000000000003,0.5619856035435868,1,False,['p16_pca'],p16_pca,0.1065
+cifar100,0,256,orthonormal_only,mean_tar,0.1065,0.11,0.003500000000000003,0.6887078474798858,1,False,['p16_pca'],p16_pca,0.1065
+cifar100,0,256,orthonormal_only,covariance_tar,0.107,0.11,0.0030000000000000027,0.6969723416496445,1,False,['p04_dct'],p04_dct,0.107
+cifar100,0,256,orthonormal_only,crossfit_tar,0.11,0.11,0.0,0.7685979577875526,1,False,['p16_dct'],p16_dct,0.11
+cifar100,0,256,orthonormal_only,hscore,0.0395,0.11,0.07050000000000001,-0.5123986385250351,1,False,['p16_deit_rowspace'],p16_deit_rowspace,0.0395
+cifar100,0,256,orthonormal_only,logme,0.0965,0.11,0.013499999999999998,0.7438044752782766,1,False,['p08_random'],p08_random,0.0965
+cifar100,0,256,orthonormal_only,cheap_probe,0.11,0.11,0.0,0.36616128341725107,1,False,['p08_dct'],p08_dct,0.11
+cifar100,0,768,local_only,rank,0.09329166666666666,0.0985,0.005208333333333343,,12,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_pca', 'p16_random']",p16_pca,0.096
+cifar100,0,768,local_only,reconstruction,0.096,0.0985,0.0025000000000000022,0.5070548269468791,1,False,['p16_pca'],p16_pca,0.096
+cifar100,0,768,local_only,mean_tar,0.096,0.0985,0.0025000000000000022,0.5633942521631989,1,False,['p16_pca'],p16_pca,0.096
+cifar100,0,768,local_only,covariance_tar,0.0935,0.0985,0.0050000000000000044,0.5070548269468791,1,False,['p04_pca'],p04_pca,0.0935
+cifar100,0,768,local_only,crossfit_tar,0.096,0.0985,0.0025000000000000022,0.5774791084672789,1,False,['p16_pca'],p16_pca,0.096
+cifar100,0,768,local_only,hscore,0.0915,0.0985,0.007000000000000006,-0.3873335483621993,1,False,['p08_random'],p08_random,0.0915
+cifar100,0,768,local_only,logme,0.0915,0.0985,0.007000000000000006,0.2464849853213996,1,False,['p08_random'],p08_random,0.0915
+cifar100,0,768,local_only,cheap_probe,0.083,0.0985,0.0155,0.1144947411615141,1,False,['p02_random'],p02_random,0.083
+cifar100,0,768,orthonormal_only,rank,0.09346153846153847,0.0985,0.005038461538461533,,13,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_deit_rowspace', 'p16_pca', 'p16_random']",p16_pca,0.096
+cifar100,0,768,orthonormal_only,reconstruction,0.096,0.0985,0.0025000000000000022,0.4917202118977485,1,False,['p16_pca'],p16_pca,0.096
+cifar100,0,768,orthonormal_only,mean_tar,0.096,0.0985,0.0025000000000000022,0.5414447277076332,1,False,['p16_pca'],p16_pca,0.096
+cifar100,0,768,orthonormal_only,covariance_tar,0.0935,0.0985,0.0050000000000000044,0.5138199967021418,1,False,['p04_pca'],p04_pca,0.0935
+cifar100,0,768,orthonormal_only,crossfit_tar,0.096,0.0985,0.0025000000000000022,0.5524946201098297,1,False,['p16_pca'],p16_pca,0.096
+cifar100,0,768,orthonormal_only,hscore,0.0915,0.0985,0.007000000000000006,-0.36464644927248774,1,False,['p08_random'],p08_random,0.0915
+cifar100,0,768,orthonormal_only,logme,0.0915,0.0985,0.007000000000000006,0.20442300944063704,1,False,['p08_random'],p08_random,0.0915
+cifar100,0,768,orthonormal_only,cheap_probe,0.083,0.0985,0.0155,0.19021444121391617,1,False,['p02_random'],p02_random,0.083
+cifar100,1,256,local_only,rank,0.091875,0.112,0.020125000000000004,,12,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_pca', 'p16_random']",p16_pca,0.11
+cifar100,1,256,local_only,reconstruction,0.11,0.112,0.0020000000000000018,0.3817869252443987,1,False,['p16_pca'],p16_pca,0.11
+cifar100,1,256,local_only,mean_tar,0.11,0.112,0.0020000000000000018,0.3712790282193235,1,False,['p16_pca'],p16_pca,0.11
+cifar100,1,256,local_only,covariance_tar,0.112,0.112,0.0,0.6444843508712785,1,False,['p04_dct'],p04_dct,0.112
+cifar100,1,256,local_only,crossfit_tar,0.11,0.112,0.0020000000000000018,0.4063053516362408,1,False,['p16_pca'],p16_pca,0.11
+cifar100,1,256,local_only,hscore,0.0515,0.112,0.060500000000000005,0.11558686727582713,1,False,['p02_random'],p02_random,0.0515
+cifar100,1,256,local_only,logme,0.101,0.112,0.010999999999999996,0.6725054096048123,1,False,['p08_random'],p08_random,0.101
+cifar100,1,256,local_only,cheap_probe,0.112,0.112,0.0,0.5500887229918795,1,False,['p04_dct'],p04_dct,0.112
+cifar100,1,256,orthonormal_only,rank,0.08811538461538461,0.112,0.023884615384615393,,13,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_deit_rowspace', 'p16_pca', 'p16_random']",p16_pca,0.11
+cifar100,1,256,orthonormal_only,reconstruction,0.11,0.112,0.0020000000000000018,0.5089413342896748,1,False,['p16_pca'],p16_pca,0.11
+cifar100,1,256,orthonormal_only,mean_tar,0.11,0.112,0.0020000000000000018,0.5006882315714638,1,False,['p16_pca'],p16_pca,0.11
+cifar100,1,256,orthonormal_only,covariance_tar,0.112,0.112,0.0,0.6382399435416461,1,False,['p04_dct'],p04_dct,0.112
+cifar100,1,256,orthonormal_only,crossfit_tar,0.11,0.112,0.0020000000000000018,0.5337006424443076,1,False,['p16_pca'],p16_pca,0.11
+cifar100,1,256,orthonormal_only,hscore,0.043,0.112,0.069,-0.12379654077316414,1,False,['p16_deit_rowspace'],p16_deit_rowspace,0.043
+cifar100,1,256,orthonormal_only,logme,0.101,0.112,0.010999999999999996,0.709766833766141,1,False,['p08_random'],p08_random,0.101
+cifar100,1,256,orthonormal_only,cheap_probe,0.112,0.112,0.0,0.6450300854343427,1,False,['p04_dct'],p04_dct,0.112
+cifar100,1,768,local_only,rank,0.09791666666666667,0.101,0.0030833333333333407,,12,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_pca', 'p16_random']",p16_pca,0.0995
+cifar100,1,768,local_only,reconstruction,0.0995,0.101,0.0015000000000000013,0.3964936687897147,1,False,['p16_pca'],p16_pca,0.0995
+cifar100,1,768,local_only,mean_tar,0.0995,0.101,0.0015000000000000013,0.42807281055172736,1,False,['p16_pca'],p16_pca,0.0995
+cifar100,1,768,local_only,covariance_tar,0.097,0.101,0.0040000000000000036,0.05263190293668779,1,False,['p04_pca'],p04_pca,0.097
+cifar100,1,768,local_only,crossfit_tar,0.099,0.101,0.0020000000000000018,0.5263190293668779,1,False,['p08_pca'],p08_pca,0.099
+cifar100,1,768,local_only,hscore,0.0985,0.101,0.0025000000000000022,-0.4070200493770522,1,False,['p02_random'],p02_random,0.0985
+cifar100,1,768,local_only,logme,0.0985,0.101,0.0025000000000000022,-0.0701758705822504,1,False,['p02_random'],p02_random,0.0985
+cifar100,1,768,local_only,cheap_probe,0.0905,0.101,0.01050000000000001,0.16131622942663407,1,False,['p02_pca'],p02_pca,0.0905
+cifar100,1,768,orthonormal_only,rank,0.09803846153846153,0.101,0.0029615384615384738,,13,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_deit_rowspace', 'p16_pca', 'p16_random']",p16_pca,0.0995
+cifar100,1,768,orthonormal_only,reconstruction,0.0995,0.101,0.0015000000000000013,0.3558651156240197,1,False,['p16_pca'],p16_pca,0.0995
+cifar100,1,768,orthonormal_only,mean_tar,0.0995,0.101,0.0015000000000000013,0.3806929143884862,1,False,['p16_pca'],p16_pca,0.0995
+cifar100,1,768,orthonormal_only,covariance_tar,0.097,0.101,0.0040000000000000036,0.022069154457303543,1,False,['p04_pca'],p04_pca,0.097
+cifar100,1,768,orthonormal_only,crossfit_tar,0.099,0.101,0.0020000000000000018,0.46621088791053733,1,False,['p08_pca'],p08_pca,0.099
+cifar100,1,768,orthonormal_only,hscore,0.0985,0.101,0.0025000000000000022,-0.43862444483890795,1,False,['p02_random'],p02_random,0.0985
+cifar100,1,768,orthonormal_only,logme,0.0985,0.101,0.0025000000000000022,-0.06344881906474768,1,False,['p02_random'],p02_random,0.0985
+cifar100,1,768,orthonormal_only,cheap_probe,0.0905,0.101,0.01050000000000001,0.10800299446961843,1,False,['p02_pca'],p02_pca,0.0905
+cifar100,2,256,local_only,rank,0.10045833333333333,0.121,0.020541666666666666,,12,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_pca', 'p16_random']",p16_pca,0.1155
+cifar100,2,256,local_only,reconstruction,0.1155,0.121,0.005499999999999991,0.6105300740655784,1,False,['p16_pca'],p16_pca,0.1155
+cifar100,2,256,local_only,mean_tar,0.1155,0.121,0.005499999999999991,0.701758705822504,1,False,['p16_pca'],p16_pca,0.1155
+cifar100,2,256,local_only,covariance_tar,0.116,0.121,0.0049999999999999906,0.7228114669971789,1,False,['p04_dct'],p04_dct,0.116
+cifar100,2,256,local_only,crossfit_tar,0.121,0.121,0.0,0.803513718166767,1,False,['p16_dct'],p16_dct,0.121
+cifar100,2,256,local_only,hscore,0.086,0.121,0.035,-0.5017574746630903,1,False,['p04_random'],p04_random,0.086
+cifar100,2,256,local_only,logme,0.121,0.121,0.0,0.9473742528603802,1,False,['p16_dct'],p16_dct,0.121
+cifar100,2,256,local_only,cheap_probe,0.121,0.121,0.0,0.9125931264991962,1,False,['p16_dct'],p16_dct,0.121
+cifar100,2,256,orthonormal_only,rank,0.09580769230769232,0.121,0.02519230769230768,,13,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_deit_rowspace', 'p16_pca', 'p16_random']",p16_pca,0.1155
+cifar100,2,256,orthonormal_only,reconstruction,0.1155,0.121,0.005499999999999991,0.6666691963605293,1,False,['p16_pca'],p16_pca,0.1155
+cifar100,2,256,orthonormal_only,mean_tar,0.1155,0.121,0.005499999999999991,0.765843126397633,1,False,['p16_pca'],p16_pca,0.1155
+cifar100,2,256,orthonormal_only,covariance_tar,0.116,0.121,0.0049999999999999906,0.7493141380581156,1,False,['p04_dct'],p04_dct,0.116
+cifar100,2,256,orthonormal_only,crossfit_tar,0.121,0.121,0.0,0.8457332367052998,1,False,['p16_dct'],p16_dct,0.121
+cifar100,2,256,orthonormal_only,hscore,0.04,0.121,0.08099999999999999,-0.608817737172219,1,False,['p16_deit_rowspace'],p16_deit_rowspace,0.04
+cifar100,2,256,orthonormal_only,logme,0.121,0.121,0.0,0.9311330097928056,1,False,['p16_dct'],p16_dct,0.121
+cifar100,2,256,orthonormal_only,cheap_probe,0.121,0.121,0.0,0.9316223995179476,1,False,['p16_dct'],p16_dct,0.121
+cifar100,2,768,local_only,rank,0.11212500000000002,0.1185,0.006374999999999978,,12,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_pca', 'p16_random']",p16_pca,0.1125
+cifar100,2,768,local_only,reconstruction,0.1125,0.1185,0.0059999999999999915,0.3690736711434125,1,False,['p16_pca'],p16_pca,0.1125
+cifar100,2,768,local_only,mean_tar,0.1125,0.1185,0.0059999999999999915,0.4358584306836491,1,False,['p16_pca'],p16_pca,0.1125
+cifar100,2,768,local_only,covariance_tar,0.1155,0.1185,0.002999999999999989,0.40773853192986526,1,False,['p04_pca'],p04_pca,0.1155
+cifar100,2,768,local_only,crossfit_tar,0.1115,0.1185,0.006999999999999992,0.4042235445856423,1,False,['p08_pca'],p08_pca,0.1115
+cifar100,2,768,local_only,hscore,0.1125,0.1185,0.0059999999999999915,-0.5202181269450005,1,False,['p16_pca'],p16_pca,0.1125
+cifar100,2,768,local_only,logme,0.1185,0.1185,0.0,0.5483380256987843,1,False,['p08_dct'],p08_dct,0.1185
+cifar100,2,768,local_only,cheap_probe,0.11575,0.1185,0.0027499999999999886,0.8323252435468582,2,False,"['p02_dct', 'p04_pca']",p04_pca,0.1155
+cifar100,2,768,orthonormal_only,rank,0.11242307692307694,0.1185,0.006076923076923049,,13,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_deit_rowspace', 'p16_pca', 'p16_random']",p16_pca,0.1125
+cifar100,2,768,orthonormal_only,reconstruction,0.1125,0.1185,0.0059999999999999915,0.3074898422217491,1,False,['p16_pca'],p16_pca,0.1125
+cifar100,2,768,orthonormal_only,mean_tar,0.1125,0.1185,0.0059999999999999915,0.362893417396839,1,False,['p16_pca'],p16_pca,0.1125
+cifar100,2,768,orthonormal_only,covariance_tar,0.1155,0.1185,0.002999999999999989,0.3601232386380845,1,False,['p04_pca'],p04_pca,0.1155
+cifar100,2,768,orthonormal_only,crossfit_tar,0.1115,0.1185,0.006999999999999992,0.3435021660855575,1,False,['p08_pca'],p08_pca,0.1115
+cifar100,2,768,orthonormal_only,hscore,0.1125,0.1185,0.0059999999999999915,-0.5401848579571267,1,False,['p16_pca'],p16_pca,0.1125
+cifar100,2,768,orthonormal_only,logme,0.1185,0.1185,0.0,0.5651164667859172,1,False,['p08_dct'],p08_dct,0.1185
+cifar100,2,768,orthonormal_only,cheap_probe,0.116,0.1185,0.0024999999999999883,0.8374087302918737,1,False,['p16_deit_rowspace'],p16_deit_rowspace,0.116
+cifar100,3,256,local_only,rank,0.09825,0.1145,0.01625,,12,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_pca', 'p16_random']",p16_pca,0.108
+cifar100,3,256,local_only,reconstruction,0.108,0.1145,0.006500000000000006,0.3964936687897147,1,False,['p16_pca'],p16_pca,0.108
+cifar100,3,256,local_only,mean_tar,0.108,0.1145,0.006500000000000006,0.4877223005466402,1,False,['p16_pca'],p16_pca,0.108
+cifar100,3,256,local_only,covariance_tar,0.1145,0.1145,0.0,0.7298290540554041,1,False,['p04_dct'],p04_dct,0.1145
+cifar100,3,256,local_only,crossfit_tar,0.108,0.1145,0.006500000000000006,0.5789509323035658,1,False,['p16_pca'],p16_pca,0.108
+cifar100,3,256,local_only,hscore,0.1015,0.1145,0.012999999999999998,-0.2842122758581141,1,False,['p16_random'],p16_random,0.1015
+cifar100,3,256,local_only,logme,0.108,0.1145,0.006500000000000006,0.8666720016907923,1,False,['p16_pca'],p16_pca,0.108
+cifar100,3,256,local_only,cheap_probe,0.1115,0.1145,0.0030000000000000027,0.8380281690140844,2,False,"['p08_dct', 'p16_dct']",p16_dct,0.1115
+cifar100,3,256,orthonormal_only,rank,0.09350000000000001,0.1145,0.02099999999999999,,13,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_deit_rowspace', 'p16_pca', 'p16_random']",p16_pca,0.108
+cifar100,3,256,orthonormal_only,reconstruction,0.108,0.1145,0.006500000000000006,0.49311481879559826,1,False,['p16_pca'],p16_pca,0.108
+cifar100,3,256,orthonormal_only,mean_tar,0.108,0.1145,0.006500000000000006,0.5977984116125409,1,False,['p16_pca'],p16_pca,0.108
+cifar100,3,256,orthonormal_only,covariance_tar,0.1145,0.1145,0.0,0.7548238008379548,1,False,['p04_dct'],p04_dct,0.1145
+cifar100,3,256,orthonormal_only,crossfit_tar,0.108,0.1145,0.006500000000000006,0.6694240277504491,1,False,['p16_pca'],p16_pca,0.108
+cifar100,3,256,orthonormal_only,hscore,0.0365,0.1145,0.07800000000000001,-0.4380181909972074,1,False,['p16_deit_rowspace'],p16_deit_rowspace,0.0365
+cifar100,3,256,orthonormal_only,logme,0.108,0.1145,0.006500000000000006,0.862262225044817,1,False,['p16_pca'],p16_pca,0.108
+cifar100,3,256,orthonormal_only,cheap_probe,0.1115,0.1145,0.0030000000000000027,0.8480662983425414,2,False,"['p08_dct', 'p16_dct']",p16_dct,0.1115
+cifar100,3,768,local_only,rank,0.09433333333333332,0.1055,0.011166666666666672,,12,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_pca', 'p16_random']",p16_pca,0.101
+cifar100,3,768,local_only,reconstruction,0.101,0.1055,0.00449999999999999,-0.09106844088398502,1,False,['p16_pca'],p16_pca,0.101
+cifar100,3,768,local_only,mean_tar,0.101,0.1055,0.00449999999999999,-0.04553422044199251,1,False,['p16_pca'],p16_pca,0.101
+cifar100,3,768,local_only,covariance_tar,0.0755,0.1055,0.03,-0.056042117467067706,1,False,['p04_pca'],p04_pca,0.0755
+cifar100,3,768,local_only,crossfit_tar,0.1,0.1055,0.005499999999999991,0.1225921319592106,1,False,['p16_dct'],p16_dct,0.1
+cifar100,3,768,local_only,hscore,0.078,0.1055,0.027499999999999997,-0.3117342784105641,1,False,['p02_random'],p02_random,0.078
+cifar100,3,768,local_only,logme,0.1,0.1055,0.005499999999999991,0.15061319069274445,1,False,['p16_dct'],p16_dct,0.1
+cifar100,3,768,local_only,cheap_probe,0.0975,0.1055,0.007999999999999993,-0.13097858019988592,1,False,['p16_random'],p16_random,0.0975
+cifar100,3,768,orthonormal_only,rank,0.09461538461538462,0.1055,0.010884615384615381,,13,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_deit_rowspace', 'p16_pca', 'p16_random']",p16_pca,0.101
+cifar100,3,768,orthonormal_only,reconstruction,0.101,0.1055,0.00449999999999999,-0.08253102718210943,1,False,['p16_pca'],p16_pca,0.101
+cifar100,3,768,orthonormal_only,mean_tar,0.101,0.1055,0.00449999999999999,-0.041265513591054716,1,False,['p16_pca'],p16_pca,0.101
+cifar100,3,768,orthonormal_only,covariance_tar,0.0755,0.1055,0.03,-0.060522753266880246,1,False,['p04_pca'],p04_pca,0.0755
+cifar100,3,768,orthonormal_only,crossfit_tar,0.1,0.1055,0.005499999999999991,0.11279240381554954,1,False,['p16_dct'],p16_dct,0.1
+cifar100,3,768,orthonormal_only,hscore,0.078,0.1055,0.027499999999999997,-0.3218710060102268,1,False,['p02_random'],p02_random,0.078
+cifar100,3,768,orthonormal_only,logme,0.098,0.1055,0.007499999999999993,0.1458048146883933,1,False,['p16_deit_rowspace'],p16_deit_rowspace,0.098
+cifar100,3,768,orthonormal_only,cheap_probe,0.0975,0.1055,0.007999999999999993,-0.15042716501790165,1,False,['p16_random'],p16_random,0.0975
+cifar100,4,256,local_only,rank,0.09825,0.114,0.01575,,12,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_pca', 'p16_random']",p16_pca,0.113
+cifar100,4,256,local_only,reconstruction,0.113,0.114,0.0010000000000000009,0.4895104895104896,1,False,['p16_pca'],p16_pca,0.113
+cifar100,4,256,local_only,mean_tar,0.113,0.114,0.0010000000000000009,0.5524475524475525,1,False,['p16_pca'],p16_pca,0.113
+cifar100,4,256,local_only,covariance_tar,0.114,0.114,0.0,0.7762237762237763,1,False,['p04_dct'],p04_dct,0.114
+cifar100,4,256,local_only,crossfit_tar,0.113,0.114,0.0010000000000000009,0.5874125874125874,1,False,['p16_pca'],p16_pca,0.113
+cifar100,4,256,local_only,hscore,0.1015,0.114,0.012499999999999997,-0.21678321678321683,1,False,['p16_random'],p16_random,0.1015
+cifar100,4,256,local_only,logme,0.113,0.114,0.0010000000000000009,0.9090909090909092,1,False,['p16_pca'],p16_pca,0.113
+cifar100,4,256,local_only,cheap_probe,0.114,0.114,0.0,0.8175488922832171,1,False,['p04_dct'],p04_dct,0.114
+cifar100,4,256,orthonormal_only,rank,0.09361538461538463,0.114,0.020384615384615376,,13,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_deit_rowspace', 'p16_pca', 'p16_random']",p16_pca,0.113
+cifar100,4,256,orthonormal_only,reconstruction,0.113,0.114,0.0010000000000000009,0.5989010989010989,1,False,['p16_pca'],p16_pca,0.113
+cifar100,4,256,orthonormal_only,mean_tar,0.113,0.114,0.0010000000000000009,0.6483516483516483,1,False,['p16_pca'],p16_pca,0.113
+cifar100,4,256,orthonormal_only,covariance_tar,0.114,0.114,0.0,0.7637362637362637,1,False,['p04_dct'],p04_dct,0.114
+cifar100,4,256,orthonormal_only,crossfit_tar,0.113,0.114,0.0010000000000000009,0.6758241758241759,1,False,['p16_pca'],p16_pca,0.113
+cifar100,4,256,orthonormal_only,hscore,0.038,0.114,0.07600000000000001,-0.38461538461538464,1,False,['p16_deit_rowspace'],p16_deit_rowspace,0.038
+cifar100,4,256,orthonormal_only,logme,0.113,0.114,0.0010000000000000009,0.901098901098901,1,False,['p16_pca'],p16_pca,0.113
+cifar100,4,256,orthonormal_only,cheap_probe,0.114,0.114,0.0,0.8292042483657825,1,False,['p04_dct'],p04_dct,0.114
+cifar100,4,768,local_only,rank,0.10325,0.1095,0.0062500000000000056,,12,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_pca', 'p16_random']",p16_pca,0.1055
+cifar100,4,768,local_only,reconstruction,0.1055,0.1095,0.0040000000000000036,0.2842122758581141,1,False,['p16_pca'],p16_pca,0.1055
+cifar100,4,768,local_only,mean_tar,0.1055,0.1095,0.0040000000000000036,0.2912298629163391,1,False,['p16_pca'],p16_pca,0.1055
+cifar100,4,768,local_only,covariance_tar,0.108,0.1095,0.0015000000000000013,0.36140573349858945,1,False,['p04_pca'],p04_pca,0.108
+cifar100,4,768,local_only,crossfit_tar,0.1055,0.1095,0.0040000000000000036,0.23158037292142628,1,False,['p16_pca'],p16_pca,0.1055
+cifar100,4,768,local_only,hscore,0.1055,0.1095,0.0040000000000000036,0.6421092158275911,1,False,['p16_pca'],p16_pca,0.1055
+cifar100,4,768,local_only,logme,0.107,0.1095,0.0025000000000000022,0.2596507211543264,1,False,['p08_dct'],p08_dct,0.107
+cifar100,4,768,local_only,cheap_probe,0.105,0.1095,0.004500000000000004,-0.2504413066100261,2,False,"['p16_dct', 'p16_random']",p16_random,0.1055
+cifar100,4,768,orthonormal_only,rank,0.10357692307692307,0.1095,0.005923076923076934,,13,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_deit_rowspace', 'p16_pca', 'p16_random']",p16_pca,0.1055
+cifar100,4,768,orthonormal_only,reconstruction,0.1055,0.1095,0.0040000000000000036,0.22865100536332209,1,False,['p16_pca'],p16_pca,0.1055
+cifar100,4,768,orthonormal_only,mean_tar,0.1055,0.1095,0.0040000000000000036,0.2341606681431612,1,False,['p16_pca'],p16_pca,0.1055
+cifar100,4,768,orthonormal_only,covariance_tar,0.108,0.1095,0.0015000000000000013,0.34710875512986245,1,False,['p04_pca'],p04_pca,0.108
+cifar100,4,768,orthonormal_only,crossfit_tar,0.1055,0.1095,0.0040000000000000036,0.17630920895485075,1,False,['p16_pca'],p16_pca,0.1055
+cifar100,4,768,orthonormal_only,hscore,0.1055,0.1095,0.0040000000000000036,0.6225918941218167,1,False,['p16_pca'],p16_pca,0.1055
+cifar100,4,768,orthonormal_only,logme,0.1075,0.1095,0.0020000000000000018,0.35812808068954055,1,False,['p16_deit_rowspace'],p16_deit_rowspace,0.1075
+cifar100,4,768,orthonormal_only,cheap_probe,0.105,0.1095,0.004500000000000004,-0.2271476858991323,2,False,"['p16_dct', 'p16_random']",p16_random,0.1055

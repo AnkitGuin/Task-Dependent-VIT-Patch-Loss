@@ -1,0 +1,218 @@
+{
+  "adaptive_hscore_regret": 0.014999999999999977,
+  "profile_logme_regret": 0.009224999999999985,
+  "primary_logme_regret": 0.010074999999999976,
+  "best_fixed_policy_posthoc": "p04_dct",
+  "best_fixed_regret_posthoc": 0.0018249999999999974,
+  "lodo_policy_regret": 0.006625000000000001,
+  "dedup_exclusions": [
+    {
+      "dataset": "cifar10",
+      "seed": 0,
+      "test_examples_removed": 0,
+      "remaining_test_examples": 2000
+    },
+    {
+      "dataset": "cifar10",
+      "seed": 1,
+      "test_examples_removed": 0,
+      "remaining_test_examples": 2000
+    },
+    {
+      "dataset": "cifar10",
+      "seed": 2,
+      "test_examples_removed": 0,
+      "remaining_test_examples": 2000
+    },
+    {
+      "dataset": "cifar10",
+      "seed": 3,
+      "test_examples_removed": 0,
+      "remaining_test_examples": 2000
+    },
+    {
+      "dataset": "cifar10",
+      "seed": 4,
+      "test_examples_removed": 0,
+      "remaining_test_examples": 2000
+    },
+    {
+      "dataset": "cifar100",
+      "seed": 0,
+      "test_examples_removed": 0,
+      "remaining_test_examples": 2000
+    },
+    {
+      "dataset": "cifar100",
+      "seed": 1,
+      "test_examples_removed": 0,
+      "remaining_test_examples": 2000
+    },
+    {
+      "dataset": "cifar100",
+      "seed": 2,
+      "test_examples_removed": 0,
+      "remaining_test_examples": 2000
+    },
+    {
+      "dataset": "cifar100",
+      "seed": 3,
+      "test_examples_removed": 0,
+      "remaining_test_examples": 2000
+    },
+    {
+      "dataset": "cifar100",
+      "seed": 4,
+      "test_examples_removed": 1,
+      "remaining_test_examples": 1999
+    }
+  ],
+  "sensitivity_metadata": {
+    "status": "completed",
+    "cohort": "exploratory sensitivity, not primary",
+    "wallclock_sec": 403.6090156999999,
+    "protocol_sha256": "f659ba6bbe2b791f7a53f5c663e6404f5411b489516a0e63cedd8322284f201f",
+    "script_sha256": "dcca83785ec58053d0519280228d3a24274e2c24743bbe1847c7a6e3640538cf",
+    "artifact_sha256": {
+      "cifar10-b256-s0-n1000_pretest.json": "1ac66aba190dfe2f94b56bb2b98de9e5829ade1fd799e7f0fe3a6937ebd552ee",
+      "cifar10-b256-s0-n200_pretest.json": "479d5fe4edf603c6522ef350ea91c8e23b39a38dcb217a13687c9fbf631dacfc",
+      "cifar10-b256-s0-n400_pretest.json": "4bd66f1f9d560c8ec57353c58cf93aef720cbfe4086cfbffb23ba5986f9fd84e",
+      "cifar10-b256-s1-n1000_pretest.json": "83ce9e88500c9dc580d612cadb5226fd9ea736e2260648258c6af63daa008b39",
+      "cifar10-b256-s1-n200_pretest.json": "efed73fb93357844309db8c199535a61c1399580a379beeac81a606b0a4347fd",
+      "cifar10-b256-s1-n400_pretest.json": "8314d59e33113b4d7a8f0cd0ef64fec51248275e696a3ea7ec9f9062005d03d0",
+      "cifar10-b256-s2-n1000_pretest.json": "1e52703a2ccef8aff9bcdd4862560a39870789bc7f8b79697867db1ae8b6c9ff",
+      "cifar10-b256-s2-n200_pretest.json": "0557db3d306411c3460f5ef836ef51660ed3b4bec5ed4a90e172717ae0e418fa",
+      "cifar10-b256-s2-n400_pretest.json": "696f5dec4df909b3744feed71c476f0481ecfdf9496f926c0924b9b05a95cffe",
+      "cifar10-b256-s3-n1000_pretest.json": "00d89c9a6900ceb85b3631e42a34edadf0884079280d576c57d0d62966713de1",
+      "cifar10-b256-s3-n200_pretest.json": "4d78da5fc591a83de27a5d3902bae478bf5591c7d4d656d94b17815ca45a1e3a",
+      "cifar10-b256-s3-n400_pretest.json": "4468058c7b7be6a301ced7cf2aaeabca6b9db48809bdb107f8235a460ff7ce2d",
+      "cifar10-b256-s4-n1000_pretest.json": "440e058e9f67950b71d54317cead93d973a3f34c19f1434b47e8bc718ac0c99c",
+      "cifar10-b256-s4-n200_pretest.json": "d1f24e313874dcfeb34e534021c594f575dc0a3205e56e24813638baebff34d3",
+      "cifar10-b256-s4-n400_pretest.json": "cf2d32bf929d7708f178c532e63fdf523916bd186a84a3ea273f02913dfb3a9c",
+      "cifar10-b768-s0-n1000_pretest.json": "b3f76036723b2a46d64693f59a5939fb9997321fdf24d468677d98599efd380a",
+      "cifar10-b768-s0-n200_pretest.json": "a76ad95712f905215da44a72a72499e840b2f12b7c7009e1b97aa9a9e81374d1",
+      "cifar10-b768-s0-n400_pretest.json": "6d6950f6d36bfc427c3e727345259aa9a07d0cff605c667f6e07ac616b9df132",
+      "cifar10-b768-s1-n1000_pretest.json": "74eba97c4e48879313fb22337ff25cd27e21c257a921a6df3b5c917967f18b1f",
+      "cifar10-b768-s1-n200_pretest.json": "79fe392ead51ba0ffea674a15655f5348be9727057b474dd3898bbb400d41619",
+      "cifar10-b768-s1-n400_pretest.json": "df448d5aa0edc774588b4a53b2169640e39004c9ed69f2ce2a2b63e8d029f058",
+      "cifar10-b768-s2-n1000_pretest.json": "de455eba365784103fc2eb746fcfb6c686514ba9be4f376d2ae4d90f0ce25a26",
+      "cifar10-b768-s2-n200_pretest.json": "95d67cad61384ea03906139e34fe43939e5ee00868507fd143e415c741b25284",
+      "cifar10-b768-s2-n400_pretest.json": "94d708ee8cc94d971becff7b1c788076232ddc7980b744da4ccb6a445ed2182d",
+      "cifar10-b768-s3-n1000_pretest.json": "495680227883e9b1f0b74681f6d982cf11c805d446e73bcbeefa246653606fce",
+      "cifar10-b768-s3-n200_pretest.json": "dfab314752946b850bd9770898f2069114cc44f2acc469c1c5216a20fdb52fa8",
+      "cifar10-b768-s3-n400_pretest.json": "3db818bad6cea4b4a812518d47a481d46f53551a3a095061b58190490db9f382",
+      "cifar10-b768-s4-n1000_pretest.json": "8a5ab07a4256b73a02c9aa5e4abe70298214061329029d0588c3dcd16fea41c2",
+      "cifar10-b768-s4-n200_pretest.json": "8654e8a0476b0903c865f9725988fbd9a824f8186ae6d1535d795d5e78f2a205",
+      "cifar10-b768-s4-n400_pretest.json": "4a39d229f3977d4acaaaf6e88a2679e887851893a3f9a8fccecacc014bc1a816",
+      "cifar100-b256-s0-n1000_pretest.json": "7dfd12b3055ca0828469833ddb3d0712d4f70d067839f83d6ec39f4a031c104b",
+      "cifar100-b256-s0-n200_pretest.json": "079fd35991e7222afdebc6fe67a4dd85159fdbf794e8e2466f8813ccc49b6df6",
+      "cifar100-b256-s0-n400_pretest.json": "25bbc985dfe5ee8ec6a983c6c4c4e371653fcb633fcf5bf2cfc5a6dbd9b8ac6e",
+      "cifar100-b256-s1-n1000_pretest.json": "99a6b22185e7f75e9c14213f1d1fdb7692030af34a99ee94a9b1359df652825f",
+      "cifar100-b256-s1-n200_pretest.json": "2a75515811e9a271b098f39a33cc7339541c2cc06a08883643dc9b65fb98a6ee",
+      "cifar100-b256-s1-n400_pretest.json": "8faf5039baea180ca4eac2f3879e235bf396d8bddd73c4a53b10704f13e47f6a",
+      "cifar100-b256-s2-n1000_pretest.json": "aa6fd8ca30e87fdcabaf1409b6d3b191f5a0e23bb4901abebb4d57bf9be5cb8c",
+      "cifar100-b256-s2-n200_pretest.json": "2ac00f043cba5de693ded703852621059e635f2cb536d6abaa18e356801248dd",
+      "cifar100-b256-s2-n400_pretest.json": "adcbadd176efd549e038cf280578ef081dc6c11694e349742791373022c901cf",
+      "cifar100-b256-s3-n1000_pretest.json": "e0f98ed4e5982380bcf78398b927672d05a8fe4f572a58d5b3018df8c25d94e6",
+      "cifar100-b256-s3-n200_pretest.json": "8b4af644de486afdde3cd327572512b8702cdf0c204b811b43520ef4c490ab01",
+      "cifar100-b256-s3-n400_pretest.json": "3cc8b6f9ddb3a7744b69eb7030898034a5803100033d86e35c43eaf6f6a9a10c",
+      "cifar100-b256-s4-n1000_pretest.json": "d5d7ac4340e8052faece1ae1a3f6c7ace963b9bbb61e5be39e5c3c00eb11c528",
+      "cifar100-b256-s4-n200_pretest.json": "5ad098cd941e0d27ae5858e86ae34ab35425516a0d6742967eee9655f1e626f7",
+      "cifar100-b256-s4-n400_pretest.json": "d7116de868300ea6f02fd86d942551970645ebd8ec22edf99fe6344acd29acae",
+      "cifar100-b768-s0-n1000_pretest.json": "3987d0a5692f26b37e344b6bd47f36fcbc5e7d747ec0e3057738927745a081d7",
+      "cifar100-b768-s0-n200_pretest.json": "fdc1098b6b1850dc05e5d34df5786a2b288d443f21e681397a2a00a173e50f13",
+      "cifar100-b768-s0-n400_pretest.json": "1347898412d4f7f7d23dacf8e1000d425e45a00305140c61796901b2aea39301",
+      "cifar100-b768-s1-n1000_pretest.json": "fa049bd8fcd30ea951c477d5d024285800467b3143da3b5619de1cfbdbbdc98d",
+      "cifar100-b768-s1-n200_pretest.json": "858b679b21cb5f54636edc1e8e77cca33729d0b08bec5664d471a58ad14be1cf",
+      "cifar100-b768-s1-n400_pretest.json": "1997db75df017b978da6b400f9101571f3f663283aa187e9f77fb7fd7bb41736",
+      "cifar100-b768-s2-n1000_pretest.json": "87f1b3c0300a473ab1ba8a02673de6635b99c0c68494bfcde7956604c8ef147c",
+      "cifar100-b768-s2-n200_pretest.json": "f8265ed9db42f8537a2bf14663c193afe77a89fad2566ae3bbcfc8f369c3404b",
+      "cifar100-b768-s2-n400_pretest.json": "4b250fa015fb74c2ac07018812cf820381129d0fa5d1bb6adc2e2fce67eda86a",
+      "cifar100-b768-s3-n1000_pretest.json": "1e1e14ddd1090eabb32547e5f961c7ad5daf6bf7ed9707ef174ccc87af1e7e7c",
+      "cifar100-b768-s3-n200_pretest.json": "9b132eb2a924007df1faecf3ef8525b9500a11542200f0d914a68c80a4a1c1a4",
+      "cifar100-b768-s3-n400_pretest.json": "efda014467d9a4189134246a39c5289ab55231f75b59dfd704b02d37fb6ec84b",
+      "cifar100-b768-s4-n1000_pretest.json": "87b996fda4764c49686ccbda655e954f2d24775d43352a1cf10d38749111d35a",
+      "cifar100-b768-s4-n200_pretest.json": "16d9e31b2267d9b1bf7ec5baae9f27e7625898f1b13db43dcd037aa0a3fcfe3e",
+      "cifar100-b768-s4-n400_pretest.json": "7bd1f93ef2033115add0135ac950599593e738950433bf4ccf28f5090281e234",
+      "scores.csv": "f426dd00aa082bdd655bb2b99df02cc89a71fe11432d8c0ac286c18ffc0d6dc0",
+      "selection_by_unit.csv": "7f2f3d43ba987765c3c3f00d76d1b209da4517f8f0e01ea64323662b94db3599",
+      "subset_indices.json": "b8bb0ca97cb5f26706cf1bd95a31f1ad69b082c4db3a21786f7b1cb4aa3928a7"
+    }
+  },
+  "profile_metadata": {
+    "status": "completed",
+    "cohort": "exploratory profile-evidence sensitivity",
+    "config": {
+      "study": "frozen_tokenizer_selection_v1",
+      "datasets": [
+        "cifar10",
+        "cifar100"
+      ],
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "budgets": [
+        256,
+        768
+      ],
+      "patch_sizes": [
+        2,
+        4,
+        8,
+        16
+      ],
+      "operator_samples": 1000,
+      "diagnostic_samples": 1000,
+      "validation_samples": 500,
+      "test_samples": 2000,
+      "pca_patch_cap": 8000,
+      "ridge_alphas": [
+        0.1,
+        1.0,
+        10.0,
+        100.0,
+        1000.0
+      ],
+      "covariance_shrinkage": 0.1,
+      "cheap_probe_alpha": 10.0,
+      "allow_download": true,
+      "pretrained": true,
+      "data_root": "data/selection_local",
+      "output": "runs/selection_primary",
+      "threads": 2,
+      "bootstrap_samples": 2000
+    },
+    "wallclock_sec": 248.032454900007,
+    "protocol_sha256": "38154e37c2a88b8b6c8879dffa120f2be48b95008e1d4833737acb484bf8cab6",
+    "script_sha256": "7057a7a10f17d5ad8198134f1aa0a4ae4cd223643e3cb000c415b939ac3e6b96",
+    "artifact_sha256": {
+      "E11-cifar10-b256-s0_pretest.json": "db43778469699da5bbbedbd6715fa8f411b8ddfc257600266c736d791425ca36",
+      "E11-cifar10-b256-s1_pretest.json": "419652883ad718c47db6839d01f0572b33104a97102686f9744c4a7c468e6c04",
+      "E11-cifar10-b256-s2_pretest.json": "5025cdceb8a3e6704e1c5d2445ec70caf30f6ddff81573c64f0fb383de95d6d2",
+      "E11-cifar10-b256-s3_pretest.json": "b1ca5f343b524188bd65c99db291b189612b9c701326595dc46201050e3a6522",
+      "E11-cifar10-b256-s4_pretest.json": "c47f1373d8c3713f2206bbf7022e83f4c59628fceb5e13a7d9ebed52617e5515",
+      "E11-cifar10-b768-s0_pretest.json": "43f929d22642f5a46ba36abb2c2a7fdf6d73d4fa84353057acee63a2ff312146",
+      "E11-cifar10-b768-s1_pretest.json": "e2cf5612a7de8c9ef344b69d6731287c5e3324112dc003d2894632d3470cc0b4",
+      "E11-cifar10-b768-s2_pretest.json": "e99980f84464942559f1c52dd8410fa2d26fe7e4f45cf0eee9e95071ba8f426b",
+      "E11-cifar10-b768-s3_pretest.json": "c40c55b4bb5ce5da47d1756769e3d580b849e79b7fcd7b880c35b7a23515725b",
+      "E11-cifar10-b768-s4_pretest.json": "d80690ad8bbdd39bddfaa24d31289953e1d633cc1230d3ec25cca4f87f7086db",
+      "E11-cifar100-b256-s0_pretest.json": "f461cb0e5ef4d2a0515d234b75d769643567c0c7500653ae25e45744ce1caf1a",
+      "E11-cifar100-b256-s1_pretest.json": "c5759161b1f44dcf8fef79f24503f4aac6a660ea23d8ec95c3637abe4d30f275",
+      "E11-cifar100-b256-s2_pretest.json": "51b25e5848806304772de88faae3a958c666280cd70d2d8c1c4fdad5768183f2",
+      "E11-cifar100-b256-s3_pretest.json": "3ace5095effe029bc23a5a419475e364920052fd4a92357461db373918489063",
+      "E11-cifar100-b256-s4_pretest.json": "bd7753ebd19aa1079cd5f219e84b13d3079c3a5c86bc24ba13ee7cf36e6d8c4d",
+      "E11-cifar100-b768-s0_pretest.json": "dbacadbd593a88d7e6b21ce364159eddbccef7eadcfe9cf5d3088f3cc492343d",
+      "E11-cifar100-b768-s1_pretest.json": "b30f2563f5ab00e82487f2854d919759515e8e5353d293e97865e1c768ee067a",
+      "E11-cifar100-b768-s2_pretest.json": "ae06d3d5b08d455f9a8311ee68eca602d4cb7763425a69f87ae4fb1c7719ff45",
+      "E11-cifar100-b768-s3_pretest.json": "a7d62a8feed74aa33a2dfdd7ff952d4873a561a4bf78a168051a1c00b6576a42",
+      "E11-cifar100-b768-s4_pretest.json": "e4ad1e5e5ab55e1db465b6a529bf311647cc3a7bd5e26cba30e2383524177b25",
+      "scores.csv": "71b9bed0297f6c56a727c1ef46d846c3d44520ad603ea727726d9964a5169566",
+      "selection_by_unit.csv": "eddfc2e20e8ea0829310667c90f64a0ff77865e6bc2cc538608e84dca628ea2b"
+    }
+  },
+  "interpretation": "All sensitivity and policy comparisons are exploratory; no unseen-domain guarantee"
+}

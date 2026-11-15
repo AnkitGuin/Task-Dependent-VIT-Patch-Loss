@@ -1,0 +1,4 @@
+dataset,official_train_size,official_test_size,training_rows_matching_test_content_removed,training_rows_in_conflicting_label_groups_removed,repeated_training_rows_removed,clean_training_pool_size,repeated_official_test_rows_retained,policy
+cifar10,50000,10000,0,0,0,50000,0,test-priority content deduplication; full official test retained
+cifar100,50000,10000,10,18,5,49967,2,test-priority content deduplication; full official test retained
+svhn,73257,26032,0,2,0,73255,0,test-priority content deduplication; full official test retained

@@ -1,0 +1,20 @@
+At 1,000 diagnostic labels, the exploratory adaptive shrinkage H-score has mean regret 1.50 percentage points. The profiled-evidence LogME variant has 0.92 points, compared with 1.01 for the primary short iteration cap. These variants use diagnostic data only, but their evaluation is post-primary and does not establish a prospectively selected new method.
+
+An audit of all fourteen fixed policies finds a lowest observed post-hoc regret of 0.18 points for \texttt{p04\_dct}. This fixed policy is identified after observing test outcomes and is not a validated deployment choice. The separate leave-one-dataset-out policy, selected using only the other dataset\textquotesingle s validation accuracies, has mean regret 0.66 points. These controls limit claims that a more elaborate score is necessary.
+
+The content audit finds one exact image shared by operator/diagnostic subsets and one shared by diagnostic/test subsets, in separate CIFAR-100 seed draws. Official indices remain disjoint. Primary partitions are retained, while an exploratory evaluation removes test images matching any fitting/diagnostic/validation image by exact pixel hash. The exclusion count and resulting selection outcomes are reported with the artifacts; near-duplicate independence is not certified.
+\begin{table}[t]
+\centering\small
+\caption{Exploratory diagnostic-label sensitivity. Values are mean selection regret in accuracy percentage points, conditional on the unchanged primary bank and downstream heads. Adaptive H-score is an additional established baseline; this analysis was not in the primary protocol.}\label{tab:labels}
+\begin{tabular}{lrrr}\toprule Score & 200 labels & 400 labels & 1,000 labels\\\midrule
+adaptive hscore & 3.72 & 2.42 & 1.50\\
+cheap probe & 1.54 & 0.76 & 0.47\\
+covariance tar & 0.45 & 0.25 & 0.34\\
+crossfit tar & 0.58 & 0.55 & 0.47\\
+hscore & 7.95 & 7.95 & 3.88\\
+logme & 2.95 & 2.93 & 1.01\\
+mean tar & 0.79 & 0.79 & 0.79\\
+rank & 2.66 & 2.66 & 2.66\\
+reconstruction & 0.79 & 0.79 & 0.79\\
+profiled LogME & -- & -- & 0.92\\
+\bottomrule\end{tabular}\end{table}

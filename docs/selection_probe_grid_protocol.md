@@ -1,0 +1,5 @@
+# Exploratory validation-probe grid baseline
+
+The primary cheap probe used fixed alpha=10. After the downstream penalty-boundary audit, add a separate stronger empirical selector: fit diagnostic-half ridge probes over the same broad ten-value grid used in the expanded-head follow-up, and score a tokenizer by its largest accuracy on the other diagnostic half. Candidate and penalty are thus chosen jointly from diagnostic validation data; the separate official test set remains unused. This is a standard validation-based baseline, not an unbiased estimate of its selected validation accuracy or a new method.
+
+Keep the same 1,000 labeled diagnostic examples, the primary halves and all operator maps. Freeze all candidate scores/choices before joining either original-grid or expanded-grid downstream test outcomes. Save full diagnostic validation curves and marginal computation times. Report this as post-primary exploratory evidence and compare selection regret under both downstream grids. No test outcome chooses the penalty grid or probe formula.

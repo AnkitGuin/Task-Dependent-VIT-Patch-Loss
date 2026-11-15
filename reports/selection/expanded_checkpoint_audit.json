@@ -1,0 +1,1407 @@
+{
+  "checked_checkpoints": 280,
+  "checked_raw_references": 20,
+  "all_split_hashes_match": true,
+  "records": [
+    {
+      "run_id": "E11-cifar10-b256-s0",
+      "candidate": "p02_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s0",
+      "candidate": "p02_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s0",
+      "candidate": "p02_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s0",
+      "candidate": "p04_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s0",
+      "candidate": "p04_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s0",
+      "candidate": "p04_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s0",
+      "candidate": "p08_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s0",
+      "candidate": "p08_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s0",
+      "candidate": "p08_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s0",
+      "candidate": "p16_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s0",
+      "candidate": "p16_deit_native_svd",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s0",
+      "candidate": "p16_deit_rowspace",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s0",
+      "candidate": "p16_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s0",
+      "candidate": "p16_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s0",
+      "candidate": "p02_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s0",
+      "candidate": "p02_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s0",
+      "candidate": "p02_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s0",
+      "candidate": "p04_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s0",
+      "candidate": "p04_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s0",
+      "candidate": "p04_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s0",
+      "candidate": "p08_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s0",
+      "candidate": "p08_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s0",
+      "candidate": "p08_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s0",
+      "candidate": "p16_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s0",
+      "candidate": "p16_deit_native_svd",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s0",
+      "candidate": "p16_deit_rowspace",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s0",
+      "candidate": "p16_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s0",
+      "candidate": "p16_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s1",
+      "candidate": "p02_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s1",
+      "candidate": "p02_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s1",
+      "candidate": "p02_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s1",
+      "candidate": "p04_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s1",
+      "candidate": "p04_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s1",
+      "candidate": "p04_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s1",
+      "candidate": "p08_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s1",
+      "candidate": "p08_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s1",
+      "candidate": "p08_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s1",
+      "candidate": "p16_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s1",
+      "candidate": "p16_deit_native_svd",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s1",
+      "candidate": "p16_deit_rowspace",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s1",
+      "candidate": "p16_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s1",
+      "candidate": "p16_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s1",
+      "candidate": "p02_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s1",
+      "candidate": "p02_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s1",
+      "candidate": "p02_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s1",
+      "candidate": "p04_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s1",
+      "candidate": "p04_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s1",
+      "candidate": "p04_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s1",
+      "candidate": "p08_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s1",
+      "candidate": "p08_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s1",
+      "candidate": "p08_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s1",
+      "candidate": "p16_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s1",
+      "candidate": "p16_deit_native_svd",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s1",
+      "candidate": "p16_deit_rowspace",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s1",
+      "candidate": "p16_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s1",
+      "candidate": "p16_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s2",
+      "candidate": "p02_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s2",
+      "candidate": "p02_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s2",
+      "candidate": "p02_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s2",
+      "candidate": "p04_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s2",
+      "candidate": "p04_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s2",
+      "candidate": "p04_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s2",
+      "candidate": "p08_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s2",
+      "candidate": "p08_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s2",
+      "candidate": "p08_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s2",
+      "candidate": "p16_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s2",
+      "candidate": "p16_deit_native_svd",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s2",
+      "candidate": "p16_deit_rowspace",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s2",
+      "candidate": "p16_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s2",
+      "candidate": "p16_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s2",
+      "candidate": "p02_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s2",
+      "candidate": "p02_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s2",
+      "candidate": "p02_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s2",
+      "candidate": "p04_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s2",
+      "candidate": "p04_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s2",
+      "candidate": "p04_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s2",
+      "candidate": "p08_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s2",
+      "candidate": "p08_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s2",
+      "candidate": "p08_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s2",
+      "candidate": "p16_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s2",
+      "candidate": "p16_deit_native_svd",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s2",
+      "candidate": "p16_deit_rowspace",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s2",
+      "candidate": "p16_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s2",
+      "candidate": "p16_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s3",
+      "candidate": "p02_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s3",
+      "candidate": "p02_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s3",
+      "candidate": "p02_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s3",
+      "candidate": "p04_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s3",
+      "candidate": "p04_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s3",
+      "candidate": "p04_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s3",
+      "candidate": "p08_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s3",
+      "candidate": "p08_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s3",
+      "candidate": "p08_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s3",
+      "candidate": "p16_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s3",
+      "candidate": "p16_deit_native_svd",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s3",
+      "candidate": "p16_deit_rowspace",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s3",
+      "candidate": "p16_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s3",
+      "candidate": "p16_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s3",
+      "candidate": "p02_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s3",
+      "candidate": "p02_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s3",
+      "candidate": "p02_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s3",
+      "candidate": "p04_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s3",
+      "candidate": "p04_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s3",
+      "candidate": "p04_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s3",
+      "candidate": "p08_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s3",
+      "candidate": "p08_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s3",
+      "candidate": "p08_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s3",
+      "candidate": "p16_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s3",
+      "candidate": "p16_deit_native_svd",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s3",
+      "candidate": "p16_deit_rowspace",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s3",
+      "candidate": "p16_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s3",
+      "candidate": "p16_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s4",
+      "candidate": "p02_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s4",
+      "candidate": "p02_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s4",
+      "candidate": "p02_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s4",
+      "candidate": "p04_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s4",
+      "candidate": "p04_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s4",
+      "candidate": "p04_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s4",
+      "candidate": "p08_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s4",
+      "candidate": "p08_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s4",
+      "candidate": "p08_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s4",
+      "candidate": "p16_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s4",
+      "candidate": "p16_deit_native_svd",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s4",
+      "candidate": "p16_deit_rowspace",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s4",
+      "candidate": "p16_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s4",
+      "candidate": "p16_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s4",
+      "candidate": "p02_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s4",
+      "candidate": "p02_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s4",
+      "candidate": "p02_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s4",
+      "candidate": "p04_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s4",
+      "candidate": "p04_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s4",
+      "candidate": "p04_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s4",
+      "candidate": "p08_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s4",
+      "candidate": "p08_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s4",
+      "candidate": "p08_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s4",
+      "candidate": "p16_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s4",
+      "candidate": "p16_deit_native_svd",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s4",
+      "candidate": "p16_deit_rowspace",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s4",
+      "candidate": "p16_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s4",
+      "candidate": "p16_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s0",
+      "candidate": "p02_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s0",
+      "candidate": "p02_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s0",
+      "candidate": "p02_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s0",
+      "candidate": "p04_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s0",
+      "candidate": "p04_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s0",
+      "candidate": "p04_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s0",
+      "candidate": "p08_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s0",
+      "candidate": "p08_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s0",
+      "candidate": "p08_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s0",
+      "candidate": "p16_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s0",
+      "candidate": "p16_deit_native_svd",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s0",
+      "candidate": "p16_deit_rowspace",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s0",
+      "candidate": "p16_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s0",
+      "candidate": "p16_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s0",
+      "candidate": "p02_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s0",
+      "candidate": "p02_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s0",
+      "candidate": "p02_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s0",
+      "candidate": "p04_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s0",
+      "candidate": "p04_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s0",
+      "candidate": "p04_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s0",
+      "candidate": "p08_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s0",
+      "candidate": "p08_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s0",
+      "candidate": "p08_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s0",
+      "candidate": "p16_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s0",
+      "candidate": "p16_deit_native_svd",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s0",
+      "candidate": "p16_deit_rowspace",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s0",
+      "candidate": "p16_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s0",
+      "candidate": "p16_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s1",
+      "candidate": "p02_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s1",
+      "candidate": "p02_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s1",
+      "candidate": "p02_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s1",
+      "candidate": "p04_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s1",
+      "candidate": "p04_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s1",
+      "candidate": "p04_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s1",
+      "candidate": "p08_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s1",
+      "candidate": "p08_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s1",
+      "candidate": "p08_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s1",
+      "candidate": "p16_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s1",
+      "candidate": "p16_deit_native_svd",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s1",
+      "candidate": "p16_deit_rowspace",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s1",
+      "candidate": "p16_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s1",
+      "candidate": "p16_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s1",
+      "candidate": "p02_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s1",
+      "candidate": "p02_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s1",
+      "candidate": "p02_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s1",
+      "candidate": "p04_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s1",
+      "candidate": "p04_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s1",
+      "candidate": "p04_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s1",
+      "candidate": "p08_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s1",
+      "candidate": "p08_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s1",
+      "candidate": "p08_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s1",
+      "candidate": "p16_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s1",
+      "candidate": "p16_deit_native_svd",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s1",
+      "candidate": "p16_deit_rowspace",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s1",
+      "candidate": "p16_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s1",
+      "candidate": "p16_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s2",
+      "candidate": "p02_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s2",
+      "candidate": "p02_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s2",
+      "candidate": "p02_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s2",
+      "candidate": "p04_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s2",
+      "candidate": "p04_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s2",
+      "candidate": "p04_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s2",
+      "candidate": "p08_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s2",
+      "candidate": "p08_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s2",
+      "candidate": "p08_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s2",
+      "candidate": "p16_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s2",
+      "candidate": "p16_deit_native_svd",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s2",
+      "candidate": "p16_deit_rowspace",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s2",
+      "candidate": "p16_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s2",
+      "candidate": "p16_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s2",
+      "candidate": "p02_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s2",
+      "candidate": "p02_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s2",
+      "candidate": "p02_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s2",
+      "candidate": "p04_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s2",
+      "candidate": "p04_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s2",
+      "candidate": "p04_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s2",
+      "candidate": "p08_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s2",
+      "candidate": "p08_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s2",
+      "candidate": "p08_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s2",
+      "candidate": "p16_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s2",
+      "candidate": "p16_deit_native_svd",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s2",
+      "candidate": "p16_deit_rowspace",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s2",
+      "candidate": "p16_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s2",
+      "candidate": "p16_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s3",
+      "candidate": "p02_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s3",
+      "candidate": "p02_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s3",
+      "candidate": "p02_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s3",
+      "candidate": "p04_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s3",
+      "candidate": "p04_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s3",
+      "candidate": "p04_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s3",
+      "candidate": "p08_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s3",
+      "candidate": "p08_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s3",
+      "candidate": "p08_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s3",
+      "candidate": "p16_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s3",
+      "candidate": "p16_deit_native_svd",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s3",
+      "candidate": "p16_deit_rowspace",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s3",
+      "candidate": "p16_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s3",
+      "candidate": "p16_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s3",
+      "candidate": "p02_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s3",
+      "candidate": "p02_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s3",
+      "candidate": "p02_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s3",
+      "candidate": "p04_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s3",
+      "candidate": "p04_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s3",
+      "candidate": "p04_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s3",
+      "candidate": "p08_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s3",
+      "candidate": "p08_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s3",
+      "candidate": "p08_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s3",
+      "candidate": "p16_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s3",
+      "candidate": "p16_deit_native_svd",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s3",
+      "candidate": "p16_deit_rowspace",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s3",
+      "candidate": "p16_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s3",
+      "candidate": "p16_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s4",
+      "candidate": "p02_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s4",
+      "candidate": "p02_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s4",
+      "candidate": "p02_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s4",
+      "candidate": "p04_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s4",
+      "candidate": "p04_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s4",
+      "candidate": "p04_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s4",
+      "candidate": "p08_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s4",
+      "candidate": "p08_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s4",
+      "candidate": "p08_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s4",
+      "candidate": "p16_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s4",
+      "candidate": "p16_deit_native_svd",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s4",
+      "candidate": "p16_deit_rowspace",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s4",
+      "candidate": "p16_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s4",
+      "candidate": "p16_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s4",
+      "candidate": "p02_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s4",
+      "candidate": "p02_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s4",
+      "candidate": "p02_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s4",
+      "candidate": "p04_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s4",
+      "candidate": "p04_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s4",
+      "candidate": "p04_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s4",
+      "candidate": "p08_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s4",
+      "candidate": "p08_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s4",
+      "candidate": "p08_random",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s4",
+      "candidate": "p16_dct",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s4",
+      "candidate": "p16_deit_native_svd",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s4",
+      "candidate": "p16_deit_rowspace",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s4",
+      "candidate": "p16_pca",
+      "predictions_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s4",
+      "candidate": "p16_random",
+      "predictions_match": true
+    }
+  ]
+}

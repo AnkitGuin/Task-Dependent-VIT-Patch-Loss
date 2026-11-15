@@ -1,62 +1,51 @@
-# Task-Dependent Information Loss in Vision Transformer Patchification
+# Selecting Frozen Linear Patch Operators
 
-A CPU-friendly research implementation that separates reversible patch extraction, linear projection bottlenecks, task-signal alignment, filtering, overlap, and model optimization.
+**An Empirical Audit under Matched Feature Budgets**
 
-**Research software under development; not peer-reviewed.** This repository contains code, tests, experiment configurations and technical documentation. The unpublished manuscript, generated figures/tables, recorded runs, model weights and evidence archives are intentionally withheld. Running the experiments generates artifacts locally.
+Author: **Ankit Guin**. Research manuscript and reproducible code; journal acceptance is not claimed.
 
-## Scientific scope
+This revision evaluates frozen shared linear patch maps, not complete pretrained Transformers. It addresses competitive baselines, exact-content separation, full-test uncertainty, fixed-policy controls and practical selection costs.
 
-- Ordered non-overlapping patch extraction preserves every pixel and is invertible.
-- A fixed rank-deficient projection discards directions; whether those directions matter depends on the task.
-- For an equal-prior isotropic Gaussian location model, projected Bayes risk depends on the retained class contrast. This does not characterize arbitrary image distributions or nonlinear transformers.
-- A learned projection can change its row space; a frozen-map impossibility result does not automatically apply after training.
-- Probe or neural-network failure alone does not prove irrecoverable information loss.
+## Versioned code and evidence
 
-The code includes bounded null-space collision tasks, Gaussian alignment controls, gratings and markers, relational XOR, low-pass comparisons, overlapping tokenization, tiny ViTs and a CNN baseline. These are controlled synthetic studies, not natural-image or state-of-the-art benchmarks. No novelty claim is made for standard linear algebra, Gaussian discrimination, smaller patches, overlap or convolutional stems.
+Use [release v2026.11.15-v2](https://github.com/AnkitGuin/Task-Dependent-VIT-Patch-Loss/releases/tag/v2026.11.15-v2) for the matching source/manuscript and checkpoint/prediction evidence archives. Both have per-file SHA256 manifests and external archive checksums. Raw dataset images and full downloaded pretrained weights are excluded; preparation verifies their upstream checksums.
 
-## Installation and checks
+The [paper PDF](paper/main.pdf), [LaTeX source](paper/revision_main.tex), [response to review](docs/reviewer_response_20261115.md), [final protocol](docs/selection_revision_protocol.md), [reproduction guide](docs/selection_revision_reproducibility.md) and [claim register](docs/revision_claim_register.md) document the evidence and its limits. See [machine-readable results](reports/selection_revision/).
 
-Use Python 3.11 or newer with a working PyTorch installation. From the repository root:
+## Final revision evidence
+
+- CIFAR-10, CIFAR-100 and independent cropped SVHN; five fresh training-subset seeds, two scalar-feature budgets, fourteen candidates: **30 units, 420 heads**.
+- All 10,000 official test images per CIFAR dataset and all 26,032 SVHN test images; exact-content filtering of training before operator/head fitting.
+- Eleven main selectors, including profile-evidence LogME, adaptive H-score, diagnostic probes and a fixed DCT rule developed on historical CIFAR results and locked before SVHN evaluation.
+- One validation-only ridge grid from 10^-2 through 10^10. Every choice is saved before test inference.
+- Paired seed/image uncertainty, matched patch-size comparisons, complete fractional selection frequencies, predetermined shrinkage sensitivity and isolated end-to-end selection time/peak-memory measurements.
+- Independent NumPy patch extraction and direct-solve verification replay **all 420 heads**, with exact full-test prediction equality. Local test suite: **72 passed**.
+
+| Main selector | Mean regret (percentage points) |
+|---|---:|
+| Covariance retention | 0.221 |
+| Fixed DCT, p=4 | 0.294 |
+| Diagnostic probe | 0.336 |
+| Tuned diagnostic probe | 0.502 |
+| Adaptive H-score | 0.932 |
+| Profile LogME | 0.983 |
+
+These are conditional observations, not a universal ranking. Covariance's pooled advantage over fixed DCT has an interval spanning zero. On SVHN it selects exactly the same PCA candidate as unlabeled reconstruction, so its positive gain over fixed DCT does not establish a need for label-dependent selection. Absolute SVHN accuracy is weak, even below the empirical test-majority reference. Negative findings and the original preliminary/exploratory cohorts remain explicit.
+
+## Reproduce
+
+Use Python 3.11+; the recorded final environment is CPython 3.13 on Windows, CPU. Install `requirements-revision-lock.txt` with the CPU PyTorch index, then the local package. Exact commands, asset preparation, environment limitations, replay and PDF generation are in the reproduction guide.
 
 ```bash
-python -m pip install -e '.[dev]'
-python -m patchloss.cli doctor
-python -m patchloss.cli test-theory --config configs/smoke.yaml
+python -m pip install --extra-index-url https://download.pytorch.org/whl/cpu -r requirements-revision-lock.txt
+python -m pip install -e . --no-deps
+python scripts/download_selection_assets.py --config configs/selection_study.yaml
+python scripts/download_revision_svhn.py
 python -m pytest -q
-ruff check .
+python scripts/run_selection_revision.py
+python scripts/verify_selection_revision.py
+python scripts/benchmark_selection_revision.py
+python scripts/analyze_selection_revision.py
 ```
 
-The reviewed implementation passed 53 tests and Ruff locally. Tests and the core synthetic experiments do not download data. The optional MNIST pilot requires the `natural` dependency extra and an explicit `allow_download: true` setting; it remains outside the verified training results.
-
-## Run experiments
-
-```bash
-python -m patchloss.cli run --config configs/exact_collision.yaml --seed 0 --output runs/example
-python -m patchloss.cli run --config configs/gaussian_alignment.yaml --seed 0 --output runs/example
-python -m patchloss.cli run-suite --suite full --device cpu --output runs/my_cohort --report-output reports/my_cohort
-python -m patchloss.cli audit --input runs/my_cohort --output reports/my_cohort/results_audit.md
-python scripts/verify_saved_models.py --input runs/my_cohort --output reports/my_cohort/checkpoint_audit.json
-```
-
-The full suite uses three seeds for E06/E09 and one seed for other synthetic experiments by default. Pass `--seeds 0 1 2` to expand all experiments. Use a new cohort directory after changing code or configuration: figures reject incompatible configuration/source mixtures. E10 is skipped while downloads are disabled.
-
-Each run records its configuration, seed, environment, source and dataset fingerprints, completion status, metrics, histories and artifact hashes. Trained experiments save validation-selected checkpoints. The replay script reloads E06/E09 checkpoints and compares their held-out metrics and regenerated data hashes with the original records. Generated files are ignored by Git.
-
-## Layout
-
-```text
-configs/                  Experiment configurations
-src/patchloss/
-  data/                   Synthetic generators and optional MNIST
-  operators/              Patch extraction, projections, overlap, low-pass
-  theory/                 Rank, null spaces, Gaussian risk and mean TAR
-  models/                 Probes, tiny ViT, CNN and tokenizer stems
-  training/               Training, evaluation and checkpoints
-  experiments/            E00–E10 experiment runner
-  reporting/              Integrity checks, aggregation, figures and tables
-tests/                    Mathematical and software regression checks
-scripts/                  Experiment, reporting and checkpoint replay helpers
-docs/                     Methods, scope, reproducibility and prior art
-```
-
-See [mathematical notes](docs/math_notes.md), [methods](docs/methodology.md), [code-review corrections](docs/code_review.md), [reproduction instructions](docs/reproducibility.md), [limitations](docs/limitations.md) and [literature review](docs/literature_review.md). Broader empirical validation and a systematic novelty review remain necessary before publication.
+Extract the evidence archive into this checkout to inspect saved heads and regenerate results without training. Run resource measurements with no other project experiments executing. Historical results require their distinct protocols; do not mix cohorts or silently resume with a different source fingerprint. Use `CITATION.cff` when citing the research artifact. Software is MIT-licensed; upstream dataset/weight terms remain separate.

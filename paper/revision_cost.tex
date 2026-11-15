@@ -1,0 +1,17 @@
+\begin{table}[tb]\centering\small
+\caption{Selection costs on identical CPU hardware (two numerical threads): median of three fresh-process repeats for each domain and budget, at seed 10. Warm time includes all required extraction, statistics and scoring; cold includes bank fitting once. Peak RSS includes cold operator construction; incremental RSS is relative to the loaded-input baseline (10 ms sampling). Input decoding, imports, downstream head fitting and test inference are excluded. Regret repeats the full-cohort mean from Table~\ref{tab:revision}.}\label{tab:cost}
+\begin{tabular}{lrrrrr}\toprule
+Selector & Warm (s) & Cold (s) & RSS (MiB) & $\Delta$RSS & Regret\\\midrule
+Rank / uniform ties & 0.043 & 0.313 & 433 & 148 & 1.729\\
+Reconstruction & 0.566 & 0.826 & 518 & 234 & 0.456\\
+Mean retention & 0.574 & 0.829 & 518 & 234 & 0.456\\
+Covariance retention & 0.872 & 1.161 & 517 & 233 & 0.221\\
+Cross-fitted retention & 0.572 & 0.829 & 518 & 234 & 0.440\\
+Fixed H-score & 1.623 & 2.090 & 497 & 212 & 3.780\\
+Adaptive H-score & 1.799 & 2.126 & 503 & 218 & 0.932\\
+Profile LogME & 3.034 & 3.282 & 500 & 214 & 0.983\\
+Diagnostic probe & 1.932 & 2.271 & 497 & 211 & 0.336\\
+Tuned diagnostic probe & 1.926 & 2.262 & 497 & 211 & 0.502\\
+Fixed DCT (p=4) & $<0.001$ & $<0.001$ & 285 & $<1$ & 0.294\\
+\bottomrule\end{tabular}
+\end{table}

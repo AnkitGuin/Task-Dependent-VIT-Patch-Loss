@@ -1,0 +1,3 @@
+metric,mean_regret,same_choice_fraction
+covariance_tar,0.0081599999999999,0.0
+mean_tar,0.007875,1.0

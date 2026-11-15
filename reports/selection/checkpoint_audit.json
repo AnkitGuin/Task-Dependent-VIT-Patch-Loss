@@ -1,0 +1,2389 @@
+{
+  "checked_checkpoints": 280,
+  "source_sha256": "52a8616b557b4b98924233bdbc4d395c855a715cdd44f92e402a63305eca8e7c",
+  "records": [
+    {
+      "run_id": "E11-cifar10-b256-s0",
+      "candidate": "p02_dct",
+      "accuracy": 0.272,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s0",
+      "candidate": "p02_pca",
+      "accuracy": 0.271,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s0",
+      "candidate": "p02_random",
+      "accuracy": 0.2595,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s0",
+      "candidate": "p04_dct",
+      "accuracy": 0.368,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s0",
+      "candidate": "p04_pca",
+      "accuracy": 0.3235,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s0",
+      "candidate": "p04_random",
+      "accuracy": 0.314,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s0",
+      "candidate": "p08_dct",
+      "accuracy": 0.3675,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s0",
+      "candidate": "p08_pca",
+      "accuracy": 0.3495,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s0",
+      "candidate": "p08_random",
+      "accuracy": 0.347,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s0",
+      "candidate": "p16_dct",
+      "accuracy": 0.3635,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s0",
+      "candidate": "p16_deit_native_svd",
+      "accuracy": 0.1795,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s0",
+      "candidate": "p16_deit_rowspace",
+      "accuracy": 0.1925,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s0",
+      "candidate": "p16_pca",
+      "accuracy": 0.3495,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s0",
+      "candidate": "p16_random",
+      "accuracy": 0.3465,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s0",
+      "candidate": "p02_dct",
+      "accuracy": 0.355,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s0",
+      "candidate": "p02_pca",
+      "accuracy": 0.312,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s0",
+      "candidate": "p02_random",
+      "accuracy": 0.309,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s0",
+      "candidate": "p04_dct",
+      "accuracy": 0.3555,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s0",
+      "candidate": "p04_pca",
+      "accuracy": 0.3435,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s0",
+      "candidate": "p04_random",
+      "accuracy": 0.3365,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s0",
+      "candidate": "p08_dct",
+      "accuracy": 0.3475,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s0",
+      "candidate": "p08_pca",
+      "accuracy": 0.347,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s0",
+      "candidate": "p08_random",
+      "accuracy": 0.3465,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s0",
+      "candidate": "p16_dct",
+      "accuracy": 0.349,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s0",
+      "candidate": "p16_deit_native_svd",
+      "accuracy": 0.33,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s0",
+      "candidate": "p16_deit_rowspace",
+      "accuracy": 0.348,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s0",
+      "candidate": "p16_pca",
+      "accuracy": 0.3465,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s0",
+      "candidate": "p16_random",
+      "accuracy": 0.3435,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s1",
+      "candidate": "p02_dct",
+      "accuracy": 0.28,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s1",
+      "candidate": "p02_pca",
+      "accuracy": 0.2785,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s1",
+      "candidate": "p02_random",
+      "accuracy": 0.234,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s1",
+      "candidate": "p04_dct",
+      "accuracy": 0.36,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s1",
+      "candidate": "p04_pca",
+      "accuracy": 0.325,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s1",
+      "candidate": "p04_random",
+      "accuracy": 0.3395,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s1",
+      "candidate": "p08_dct",
+      "accuracy": 0.361,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s1",
+      "candidate": "p08_pca",
+      "accuracy": 0.3515,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s1",
+      "candidate": "p08_random",
+      "accuracy": 0.337,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s1",
+      "candidate": "p16_dct",
+      "accuracy": 0.3535,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s1",
+      "candidate": "p16_deit_native_svd",
+      "accuracy": 0.192,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s1",
+      "candidate": "p16_deit_rowspace",
+      "accuracy": 0.185,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s1",
+      "candidate": "p16_pca",
+      "accuracy": 0.351,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s1",
+      "candidate": "p16_random",
+      "accuracy": 0.337,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s1",
+      "candidate": "p02_dct",
+      "accuracy": 0.3485,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s1",
+      "candidate": "p02_pca",
+      "accuracy": 0.318,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s1",
+      "candidate": "p02_random",
+      "accuracy": 0.332,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s1",
+      "candidate": "p04_dct",
+      "accuracy": 0.354,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s1",
+      "candidate": "p04_pca",
+      "accuracy": 0.341,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s1",
+      "candidate": "p04_random",
+      "accuracy": 0.3445,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s1",
+      "candidate": "p08_dct",
+      "accuracy": 0.351,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s1",
+      "candidate": "p08_pca",
+      "accuracy": 0.342,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s1",
+      "candidate": "p08_random",
+      "accuracy": 0.339,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s1",
+      "candidate": "p16_dct",
+      "accuracy": 0.3485,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s1",
+      "candidate": "p16_deit_native_svd",
+      "accuracy": 0.311,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s1",
+      "candidate": "p16_deit_rowspace",
+      "accuracy": 0.3375,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s1",
+      "candidate": "p16_pca",
+      "accuracy": 0.342,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s1",
+      "candidate": "p16_random",
+      "accuracy": 0.3365,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s2",
+      "candidate": "p02_dct",
+      "accuracy": 0.2815,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s2",
+      "candidate": "p02_pca",
+      "accuracy": 0.283,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s2",
+      "candidate": "p02_random",
+      "accuracy": 0.3015,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s2",
+      "candidate": "p04_dct",
+      "accuracy": 0.3725,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s2",
+      "candidate": "p04_pca",
+      "accuracy": 0.3445,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s2",
+      "candidate": "p04_random",
+      "accuracy": 0.34,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s2",
+      "candidate": "p08_dct",
+      "accuracy": 0.376,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s2",
+      "candidate": "p08_pca",
+      "accuracy": 0.368,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s2",
+      "candidate": "p08_random",
+      "accuracy": 0.359,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s2",
+      "candidate": "p16_dct",
+      "accuracy": 0.374,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s2",
+      "candidate": "p16_deit_native_svd",
+      "accuracy": 0.1725,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s2",
+      "candidate": "p16_deit_rowspace",
+      "accuracy": 0.1685,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s2",
+      "candidate": "p16_pca",
+      "accuracy": 0.36,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s2",
+      "candidate": "p16_random",
+      "accuracy": 0.3515,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s2",
+      "candidate": "p02_dct",
+      "accuracy": 0.3615,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s2",
+      "candidate": "p02_pca",
+      "accuracy": 0.333,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s2",
+      "candidate": "p02_random",
+      "accuracy": 0.341,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s2",
+      "candidate": "p04_dct",
+      "accuracy": 0.362,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s2",
+      "candidate": "p04_pca",
+      "accuracy": 0.3465,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s2",
+      "candidate": "p04_random",
+      "accuracy": 0.346,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s2",
+      "candidate": "p08_dct",
+      "accuracy": 0.3515,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s2",
+      "candidate": "p08_pca",
+      "accuracy": 0.3525,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s2",
+      "candidate": "p08_random",
+      "accuracy": 0.351,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s2",
+      "candidate": "p16_dct",
+      "accuracy": 0.359,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s2",
+      "candidate": "p16_deit_native_svd",
+      "accuracy": 0.318,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s2",
+      "candidate": "p16_deit_rowspace",
+      "accuracy": 0.3475,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s2",
+      "candidate": "p16_pca",
+      "accuracy": 0.35,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s2",
+      "candidate": "p16_random",
+      "accuracy": 0.3455,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s3",
+      "candidate": "p02_dct",
+      "accuracy": 0.26,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s3",
+      "candidate": "p02_pca",
+      "accuracy": 0.2615,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s3",
+      "candidate": "p02_random",
+      "accuracy": 0.239,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s3",
+      "candidate": "p04_dct",
+      "accuracy": 0.34,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s3",
+      "candidate": "p04_pca",
+      "accuracy": 0.307,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s3",
+      "candidate": "p04_random",
+      "accuracy": 0.3215,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s3",
+      "candidate": "p08_dct",
+      "accuracy": 0.345,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s3",
+      "candidate": "p08_pca",
+      "accuracy": 0.3275,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s3",
+      "candidate": "p08_random",
+      "accuracy": 0.3205,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s3",
+      "candidate": "p16_dct",
+      "accuracy": 0.3355,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s3",
+      "candidate": "p16_deit_native_svd",
+      "accuracy": 0.177,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s3",
+      "candidate": "p16_deit_rowspace",
+      "accuracy": 0.177,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s3",
+      "candidate": "p16_pca",
+      "accuracy": 0.33,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s3",
+      "candidate": "p16_random",
+      "accuracy": 0.321,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s3",
+      "candidate": "p02_dct",
+      "accuracy": 0.336,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s3",
+      "candidate": "p02_pca",
+      "accuracy": 0.2905,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s3",
+      "candidate": "p02_random",
+      "accuracy": 0.281,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s3",
+      "candidate": "p04_dct",
+      "accuracy": 0.33,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s3",
+      "candidate": "p04_pca",
+      "accuracy": 0.3295,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s3",
+      "candidate": "p04_random",
+      "accuracy": 0.3215,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s3",
+      "candidate": "p08_dct",
+      "accuracy": 0.3295,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s3",
+      "candidate": "p08_pca",
+      "accuracy": 0.328,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s3",
+      "candidate": "p08_random",
+      "accuracy": 0.3125,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s3",
+      "candidate": "p16_dct",
+      "accuracy": 0.329,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s3",
+      "candidate": "p16_deit_native_svd",
+      "accuracy": 0.3005,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s3",
+      "candidate": "p16_deit_rowspace",
+      "accuracy": 0.3285,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s3",
+      "candidate": "p16_pca",
+      "accuracy": 0.3285,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s3",
+      "candidate": "p16_random",
+      "accuracy": 0.327,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s4",
+      "candidate": "p02_dct",
+      "accuracy": 0.2885,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s4",
+      "candidate": "p02_pca",
+      "accuracy": 0.2905,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s4",
+      "candidate": "p02_random",
+      "accuracy": 0.2835,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s4",
+      "candidate": "p04_dct",
+      "accuracy": 0.3875,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s4",
+      "candidate": "p04_pca",
+      "accuracy": 0.3555,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s4",
+      "candidate": "p04_random",
+      "accuracy": 0.365,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s4",
+      "candidate": "p08_dct",
+      "accuracy": 0.381,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s4",
+      "candidate": "p08_pca",
+      "accuracy": 0.3765,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s4",
+      "candidate": "p08_random",
+      "accuracy": 0.3425,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s4",
+      "candidate": "p16_dct",
+      "accuracy": 0.3835,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s4",
+      "candidate": "p16_deit_native_svd",
+      "accuracy": 0.1865,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s4",
+      "candidate": "p16_deit_rowspace",
+      "accuracy": 0.187,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s4",
+      "candidate": "p16_pca",
+      "accuracy": 0.376,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b256-s4",
+      "candidate": "p16_random",
+      "accuracy": 0.366,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s4",
+      "candidate": "p02_dct",
+      "accuracy": 0.375,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s4",
+      "candidate": "p02_pca",
+      "accuracy": 0.3505,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s4",
+      "candidate": "p02_random",
+      "accuracy": 0.3185,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s4",
+      "candidate": "p04_dct",
+      "accuracy": 0.373,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s4",
+      "candidate": "p04_pca",
+      "accuracy": 0.367,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s4",
+      "candidate": "p04_random",
+      "accuracy": 0.3595,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s4",
+      "candidate": "p08_dct",
+      "accuracy": 0.3715,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s4",
+      "candidate": "p08_pca",
+      "accuracy": 0.367,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s4",
+      "candidate": "p08_random",
+      "accuracy": 0.3565,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s4",
+      "candidate": "p16_dct",
+      "accuracy": 0.375,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s4",
+      "candidate": "p16_deit_native_svd",
+      "accuracy": 0.335,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s4",
+      "candidate": "p16_deit_rowspace",
+      "accuracy": 0.367,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s4",
+      "candidate": "p16_pca",
+      "accuracy": 0.366,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar10-b768-s4",
+      "candidate": "p16_random",
+      "accuracy": 0.36,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s0",
+      "candidate": "p02_dct",
+      "accuracy": 0.0635,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s0",
+      "candidate": "p02_pca",
+      "accuracy": 0.0635,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s0",
+      "candidate": "p02_random",
+      "accuracy": 0.0565,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s0",
+      "candidate": "p04_dct",
+      "accuracy": 0.107,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s0",
+      "candidate": "p04_pca",
+      "accuracy": 0.096,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s0",
+      "candidate": "p04_random",
+      "accuracy": 0.0935,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s0",
+      "candidate": "p08_dct",
+      "accuracy": 0.11,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s0",
+      "candidate": "p08_pca",
+      "accuracy": 0.1055,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s0",
+      "candidate": "p08_random",
+      "accuracy": 0.0965,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s0",
+      "candidate": "p16_dct",
+      "accuracy": 0.11,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s0",
+      "candidate": "p16_deit_native_svd",
+      "accuracy": 0.0405,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s0",
+      "candidate": "p16_deit_rowspace",
+      "accuracy": 0.0395,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s0",
+      "candidate": "p16_pca",
+      "accuracy": 0.1065,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s0",
+      "candidate": "p16_random",
+      "accuracy": 0.1,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s0",
+      "candidate": "p02_dct",
+      "accuracy": 0.0975,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s0",
+      "candidate": "p02_pca",
+      "accuracy": 0.0845,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s0",
+      "candidate": "p02_random",
+      "accuracy": 0.083,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s0",
+      "candidate": "p04_dct",
+      "accuracy": 0.0985,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s0",
+      "candidate": "p04_pca",
+      "accuracy": 0.0935,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s0",
+      "candidate": "p04_random",
+      "accuracy": 0.092,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s0",
+      "candidate": "p08_dct",
+      "accuracy": 0.095,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s0",
+      "candidate": "p08_pca",
+      "accuracy": 0.098,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s0",
+      "candidate": "p08_random",
+      "accuracy": 0.0915,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s0",
+      "candidate": "p16_dct",
+      "accuracy": 0.095,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s0",
+      "candidate": "p16_deit_native_svd",
+      "accuracy": 0.079,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s0",
+      "candidate": "p16_deit_rowspace",
+      "accuracy": 0.0955,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s0",
+      "candidate": "p16_pca",
+      "accuracy": 0.096,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s0",
+      "candidate": "p16_random",
+      "accuracy": 0.095,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s1",
+      "candidate": "p02_dct",
+      "accuracy": 0.066,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s1",
+      "candidate": "p02_pca",
+      "accuracy": 0.0655,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s1",
+      "candidate": "p02_random",
+      "accuracy": 0.0515,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s1",
+      "candidate": "p04_dct",
+      "accuracy": 0.112,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s1",
+      "candidate": "p04_pca",
+      "accuracy": 0.096,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s1",
+      "candidate": "p04_random",
+      "accuracy": 0.099,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s1",
+      "candidate": "p08_dct",
+      "accuracy": 0.094,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s1",
+      "candidate": "p08_pca",
+      "accuracy": 0.108,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s1",
+      "candidate": "p08_random",
+      "accuracy": 0.101,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s1",
+      "candidate": "p16_dct",
+      "accuracy": 0.096,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s1",
+      "candidate": "p16_deit_native_svd",
+      "accuracy": 0.041,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s1",
+      "candidate": "p16_deit_rowspace",
+      "accuracy": 0.043,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s1",
+      "candidate": "p16_pca",
+      "accuracy": 0.11,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s1",
+      "candidate": "p16_random",
+      "accuracy": 0.1035,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s1",
+      "candidate": "p02_dct",
+      "accuracy": 0.0985,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s1",
+      "candidate": "p02_pca",
+      "accuracy": 0.0905,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s1",
+      "candidate": "p02_random",
+      "accuracy": 0.0985,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s1",
+      "candidate": "p04_dct",
+      "accuracy": 0.1,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s1",
+      "candidate": "p04_pca",
+      "accuracy": 0.097,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s1",
+      "candidate": "p04_random",
+      "accuracy": 0.1,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s1",
+      "candidate": "p08_dct",
+      "accuracy": 0.101,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s1",
+      "candidate": "p08_pca",
+      "accuracy": 0.099,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s1",
+      "candidate": "p08_random",
+      "accuracy": 0.0955,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s1",
+      "candidate": "p16_dct",
+      "accuracy": 0.1005,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s1",
+      "candidate": "p16_deit_native_svd",
+      "accuracy": 0.091,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s1",
+      "candidate": "p16_deit_rowspace",
+      "accuracy": 0.0995,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s1",
+      "candidate": "p16_pca",
+      "accuracy": 0.0995,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s1",
+      "candidate": "p16_random",
+      "accuracy": 0.095,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s2",
+      "candidate": "p02_dct",
+      "accuracy": 0.071,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s2",
+      "candidate": "p02_pca",
+      "accuracy": 0.072,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s2",
+      "candidate": "p02_random",
+      "accuracy": 0.0655,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s2",
+      "candidate": "p04_dct",
+      "accuracy": 0.116,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s2",
+      "candidate": "p04_pca",
+      "accuracy": 0.1045,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s2",
+      "candidate": "p04_random",
+      "accuracy": 0.086,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s2",
+      "candidate": "p08_dct",
+      "accuracy": 0.1185,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s2",
+      "candidate": "p08_pca",
+      "accuracy": 0.1155,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s2",
+      "candidate": "p08_random",
+      "accuracy": 0.11,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s2",
+      "candidate": "p16_dct",
+      "accuracy": 0.121,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s2",
+      "candidate": "p16_deit_native_svd",
+      "accuracy": 0.038,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s2",
+      "candidate": "p16_deit_rowspace",
+      "accuracy": 0.04,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s2",
+      "candidate": "p16_pca",
+      "accuracy": 0.1155,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s2",
+      "candidate": "p16_random",
+      "accuracy": 0.11,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s2",
+      "candidate": "p02_dct",
+      "accuracy": 0.116,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s2",
+      "candidate": "p02_pca",
+      "accuracy": 0.101,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s2",
+      "candidate": "p02_random",
+      "accuracy": 0.1115,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s2",
+      "candidate": "p04_dct",
+      "accuracy": 0.116,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s2",
+      "candidate": "p04_pca",
+      "accuracy": 0.1155,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s2",
+      "candidate": "p04_random",
+      "accuracy": 0.1125,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s2",
+      "candidate": "p08_dct",
+      "accuracy": 0.1185,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s2",
+      "candidate": "p08_pca",
+      "accuracy": 0.1115,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s2",
+      "candidate": "p08_random",
+      "accuracy": 0.1075,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s2",
+      "candidate": "p16_dct",
+      "accuracy": 0.115,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s2",
+      "candidate": "p16_deit_native_svd",
+      "accuracy": 0.093,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s2",
+      "candidate": "p16_deit_rowspace",
+      "accuracy": 0.116,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s2",
+      "candidate": "p16_pca",
+      "accuracy": 0.1125,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s2",
+      "candidate": "p16_random",
+      "accuracy": 0.108,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s3",
+      "candidate": "p02_dct",
+      "accuracy": 0.075,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s3",
+      "candidate": "p02_pca",
+      "accuracy": 0.0735,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s3",
+      "candidate": "p02_random",
+      "accuracy": 0.0735,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s3",
+      "candidate": "p04_dct",
+      "accuracy": 0.1145,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s3",
+      "candidate": "p04_pca",
+      "accuracy": 0.0975,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s3",
+      "candidate": "p04_random",
+      "accuracy": 0.103,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s3",
+      "candidate": "p08_dct",
+      "accuracy": 0.1115,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s3",
+      "candidate": "p08_pca",
+      "accuracy": 0.106,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s3",
+      "candidate": "p08_random",
+      "accuracy": 0.1035,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s3",
+      "candidate": "p16_dct",
+      "accuracy": 0.1115,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s3",
+      "candidate": "p16_deit_native_svd",
+      "accuracy": 0.039,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s3",
+      "candidate": "p16_deit_rowspace",
+      "accuracy": 0.0365,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s3",
+      "candidate": "p16_pca",
+      "accuracy": 0.108,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s3",
+      "candidate": "p16_random",
+      "accuracy": 0.1015,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s3",
+      "candidate": "p02_dct",
+      "accuracy": 0.1025,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s3",
+      "candidate": "p02_pca",
+      "accuracy": 0.092,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s3",
+      "candidate": "p02_random",
+      "accuracy": 0.078,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s3",
+      "candidate": "p04_dct",
+      "accuracy": 0.1025,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s3",
+      "candidate": "p04_pca",
+      "accuracy": 0.0755,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s3",
+      "candidate": "p04_random",
+      "accuracy": 0.1055,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s3",
+      "candidate": "p08_dct",
+      "accuracy": 0.08,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s3",
+      "candidate": "p08_pca",
+      "accuracy": 0.097,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s3",
+      "candidate": "p08_random",
+      "accuracy": 0.1005,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s3",
+      "candidate": "p16_dct",
+      "accuracy": 0.1,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s3",
+      "candidate": "p16_deit_native_svd",
+      "accuracy": 0.083,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s3",
+      "candidate": "p16_deit_rowspace",
+      "accuracy": 0.098,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s3",
+      "candidate": "p16_pca",
+      "accuracy": 0.101,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s3",
+      "candidate": "p16_random",
+      "accuracy": 0.0975,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s4",
+      "candidate": "p02_dct",
+      "accuracy": 0.07,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s4",
+      "candidate": "p02_pca",
+      "accuracy": 0.071,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s4",
+      "candidate": "p02_random",
+      "accuracy": 0.069,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s4",
+      "candidate": "p04_dct",
+      "accuracy": 0.114,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s4",
+      "candidate": "p04_pca",
+      "accuracy": 0.095,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s4",
+      "candidate": "p04_random",
+      "accuracy": 0.107,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s4",
+      "candidate": "p08_dct",
+      "accuracy": 0.1105,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s4",
+      "candidate": "p08_pca",
+      "accuracy": 0.111,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s4",
+      "candidate": "p08_random",
+      "accuracy": 0.1075,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s4",
+      "candidate": "p16_dct",
+      "accuracy": 0.1095,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s4",
+      "candidate": "p16_deit_native_svd",
+      "accuracy": 0.0375,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s4",
+      "candidate": "p16_deit_rowspace",
+      "accuracy": 0.038,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s4",
+      "candidate": "p16_pca",
+      "accuracy": 0.113,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b256-s4",
+      "candidate": "p16_random",
+      "accuracy": 0.1015,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s4",
+      "candidate": "p02_dct",
+      "accuracy": 0.102,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s4",
+      "candidate": "p02_pca",
+      "accuracy": 0.0945,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s4",
+      "candidate": "p02_random",
+      "accuracy": 0.0845,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s4",
+      "candidate": "p04_dct",
+      "accuracy": 0.105,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s4",
+      "candidate": "p04_pca",
+      "accuracy": 0.108,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s4",
+      "candidate": "p04_random",
+      "accuracy": 0.106,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s4",
+      "candidate": "p08_dct",
+      "accuracy": 0.107,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s4",
+      "candidate": "p08_pca",
+      "accuracy": 0.1095,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s4",
+      "candidate": "p08_random",
+      "accuracy": 0.107,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s4",
+      "candidate": "p16_dct",
+      "accuracy": 0.1045,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s4",
+      "candidate": "p16_deit_native_svd",
+      "accuracy": 0.09,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s4",
+      "candidate": "p16_deit_rowspace",
+      "accuracy": 0.1075,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s4",
+      "candidate": "p16_pca",
+      "accuracy": 0.1055,
+      "predictions_match": true,
+      "data_hashes_match": true
+    },
+    {
+      "run_id": "E11-cifar100-b768-s4",
+      "candidate": "p16_random",
+      "accuracy": 0.1055,
+      "predictions_match": true,
+      "data_hashes_match": true
+    }
+  ],
+  "exact_duplicate_image_audit": [
+    {
+      "dataset": "cifar10",
+      "seed": 0,
+      "left": "operator",
+      "right": "diagnostic",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar10",
+      "seed": 0,
+      "left": "operator",
+      "right": "validation",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar10",
+      "seed": 0,
+      "left": "diagnostic",
+      "right": "validation",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar10",
+      "seed": 0,
+      "left": "operator",
+      "right": "test",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar10",
+      "seed": 0,
+      "left": "diagnostic",
+      "right": "test",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar10",
+      "seed": 0,
+      "left": "validation",
+      "right": "test",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar10",
+      "seed": 1,
+      "left": "operator",
+      "right": "diagnostic",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar10",
+      "seed": 1,
+      "left": "operator",
+      "right": "validation",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar10",
+      "seed": 1,
+      "left": "diagnostic",
+      "right": "validation",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar10",
+      "seed": 1,
+      "left": "operator",
+      "right": "test",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar10",
+      "seed": 1,
+      "left": "diagnostic",
+      "right": "test",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar10",
+      "seed": 1,
+      "left": "validation",
+      "right": "test",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar10",
+      "seed": 2,
+      "left": "operator",
+      "right": "diagnostic",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar10",
+      "seed": 2,
+      "left": "operator",
+      "right": "validation",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar10",
+      "seed": 2,
+      "left": "diagnostic",
+      "right": "validation",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar10",
+      "seed": 2,
+      "left": "operator",
+      "right": "test",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar10",
+      "seed": 2,
+      "left": "diagnostic",
+      "right": "test",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar10",
+      "seed": 2,
+      "left": "validation",
+      "right": "test",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar10",
+      "seed": 3,
+      "left": "operator",
+      "right": "diagnostic",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar10",
+      "seed": 3,
+      "left": "operator",
+      "right": "validation",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar10",
+      "seed": 3,
+      "left": "diagnostic",
+      "right": "validation",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar10",
+      "seed": 3,
+      "left": "operator",
+      "right": "test",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar10",
+      "seed": 3,
+      "left": "diagnostic",
+      "right": "test",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar10",
+      "seed": 3,
+      "left": "validation",
+      "right": "test",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar10",
+      "seed": 4,
+      "left": "operator",
+      "right": "diagnostic",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar10",
+      "seed": 4,
+      "left": "operator",
+      "right": "validation",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar10",
+      "seed": 4,
+      "left": "diagnostic",
+      "right": "validation",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar10",
+      "seed": 4,
+      "left": "operator",
+      "right": "test",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar10",
+      "seed": 4,
+      "left": "diagnostic",
+      "right": "test",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar10",
+      "seed": 4,
+      "left": "validation",
+      "right": "test",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar100",
+      "seed": 0,
+      "left": "operator",
+      "right": "diagnostic",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar100",
+      "seed": 0,
+      "left": "operator",
+      "right": "validation",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar100",
+      "seed": 0,
+      "left": "diagnostic",
+      "right": "validation",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar100",
+      "seed": 0,
+      "left": "operator",
+      "right": "test",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar100",
+      "seed": 0,
+      "left": "diagnostic",
+      "right": "test",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar100",
+      "seed": 0,
+      "left": "validation",
+      "right": "test",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar100",
+      "seed": 1,
+      "left": "operator",
+      "right": "diagnostic",
+      "identical_image_hashes": 1
+    },
+    {
+      "dataset": "cifar100",
+      "seed": 1,
+      "left": "operator",
+      "right": "validation",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar100",
+      "seed": 1,
+      "left": "diagnostic",
+      "right": "validation",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar100",
+      "seed": 1,
+      "left": "operator",
+      "right": "test",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar100",
+      "seed": 1,
+      "left": "diagnostic",
+      "right": "test",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar100",
+      "seed": 1,
+      "left": "validation",
+      "right": "test",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar100",
+      "seed": 2,
+      "left": "operator",
+      "right": "diagnostic",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar100",
+      "seed": 2,
+      "left": "operator",
+      "right": "validation",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar100",
+      "seed": 2,
+      "left": "diagnostic",
+      "right": "validation",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar100",
+      "seed": 2,
+      "left": "operator",
+      "right": "test",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar100",
+      "seed": 2,
+      "left": "diagnostic",
+      "right": "test",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar100",
+      "seed": 2,
+      "left": "validation",
+      "right": "test",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar100",
+      "seed": 3,
+      "left": "operator",
+      "right": "diagnostic",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar100",
+      "seed": 3,
+      "left": "operator",
+      "right": "validation",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar100",
+      "seed": 3,
+      "left": "diagnostic",
+      "right": "validation",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar100",
+      "seed": 3,
+      "left": "operator",
+      "right": "test",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar100",
+      "seed": 3,
+      "left": "diagnostic",
+      "right": "test",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar100",
+      "seed": 3,
+      "left": "validation",
+      "right": "test",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar100",
+      "seed": 4,
+      "left": "operator",
+      "right": "diagnostic",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar100",
+      "seed": 4,
+      "left": "operator",
+      "right": "validation",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar100",
+      "seed": 4,
+      "left": "diagnostic",
+      "right": "validation",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar100",
+      "seed": 4,
+      "left": "operator",
+      "right": "test",
+      "identical_image_hashes": 0
+    },
+    {
+      "dataset": "cifar100",
+      "seed": 4,
+      "left": "diagnostic",
+      "right": "test",
+      "identical_image_hashes": 1
+    },
+    {
+      "dataset": "cifar100",
+      "seed": 4,
+      "left": "validation",
+      "right": "test",
+      "identical_image_hashes": 0
+    }
+  ],
+  "duplicate_policy": "Official partitions retained as prospectively specified; counts disclosed, no test-driven exclusions"
+}

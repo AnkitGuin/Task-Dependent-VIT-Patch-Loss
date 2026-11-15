@@ -1,14 +1,16 @@
-# Limitations
+# Limitations and unresolved threats to validity
 
-- Synthetic null-space tasks are deliberately constructed for a fixed projection; they do not estimate collision prevalence in natural images.
-- The exact Gaussian Bayes formula assumes equal priors, isotropic shared noise and a fixed linear representation.
-- Mean TAR measures retained class-mean energy. It is not mutual information and cannot characterize arbitrary nonlinear label relations.
-- Tiny-model training outcomes mix representation, architecture, optimization, sample size and compute effects. Weak probe accuracy is not a Bayes-risk certificate.
-- The Transformer cost proxy excludes elementwise operations, backward and optimizer work. CNN FLOPs and compute-matched architectural comparisons remain unmeasured.
-- Overlap can change the scalar feature budget and rank simultaneously; higher rank alone does not establish a fair accuracy advantage.
-- The periodic binomial low-pass control is not a general anti-aliasing architecture. Clipping noisy inputs can leave higher-order information uncharacterized by mean contrast or linear probes.
-- Uniform random grating phase has the same population distribution after a fixed offset. The matched phase sweep is not a held-out translation-robustness experiment.
-- Noiseless XOR repeats four support images across splits and tests representation/probe capacity rather than unseen-template generalization.
-- Numerical rank uses a relative SVD tolerance. Exact collision statements concern exact arithmetic; measured floating-point residuals and conditioning must be considered separately.
-- Optional MNIST training, large natural-image validation, GPU reproducibility, comprehensive seed uncertainty and systematic full-text novelty review remain open.
-- The manuscript and generated results are intentionally absent from this code-only release. Reproduce the supplied experiments locally before making empirical claims.
+1. **Synthetic domain**: S1 is deliberately worst-case for one frozen W. This does not estimate how often real images collide. S2 is an isotropic Gaussian location model, not a natural-image model; Bayes formula does not apply to arbitrary nonlinear networks or class covariances.
+2. **Projected vs learned W**: E06 demonstrates optimization with an easy, designed planted direction. Learned W may fail under other labels/noise/schedules. Frozen-vector risk bound is invalid after learning W.
+3. **Measurement and compute**: CPU models are tiny; the declared attention/FLOPs proxy omits some operations and is not a calibrated FLOPs count. Different parameter counts, token counts and optimization paths can confound comparisons. There is no large-scale compute-matched ViT benchmark.
+4. **Weak-probe attribution**: failure of logistic or ViT does not prove lost information. E04 has an XOR task recoverable by nonlinear probes even though class-mean TAR is undefined; E09 fails to learn that relation in short training.
+5. **Finite samples and uncertainty**: Monte Carlo Bayes comparisons use binomial SE; trained comparisons have three seeds but no formal population confidence guarantees. Several plots use only one synthetic seed; no multiple-testing significance conclusions.
+6. **Anti-aliasing**: the binomial filter is not Qian et al.'s ARM. Boundary behavior is circular, no downsampling in the filter itself; downsampling occurs in subsequent projection. The observed trade-off is strongly task-designed, not universal robustness gain.
+7. **Overlap**: E08 changes scalar token budget and often rank; no matched token-budget overlap advantage has been established.
+8. **Natural data**: MNIST is optional and was not downloaded or evaluated during this delivery; no ImageNet/CIFAR claims. The enabled pilot has no systematic hyperparameter search or dataset-card analysis.
+9. **Numerics**: SVD rank depends on a relative 1e-10 tolerance. Collision equalities hold in exact arithmetic; float64 implementation has a measured nonzero residual (~1.43e-15 in the corrected run). Full-rank inversion can be poorly conditioned under finite precision or quantization.
+10. **Literature depth**: official records/abstracts of six primary papers were checked, but this is not a systematic, full-text, up-to-2026 novelty review. No claim of original new mathematical theorem, SOTA, or peer review.
+11. **Phase controls**: E05 uses uniform random grating phase and applies the same fixed offset in training and test. Such offsets preserve the population distribution; these measurements do not establish held-out translation robustness.
+12. **Finite-support XOR**: The noiseless E04 control repeats its four rendered support images across splits. It demonstrates sufficient nonlinear information and probe capacity, not unseen-template generalization.
+13. **Filtering information claim**: The binomial filter exactly annihilates the periodic checkerboard component, but E07 adds noise and clips intensities first. Higher-order class information after filtering is uncharacterized; near-chance linear-probe accuracy is not a zero-Bayes-information proof.
+14. **Historical evidence**: Earlier run files remain intact but predate scientific corrections to the S1 distribution and Gaussian validation. Use the 2026-11-14 cohort for current results. Artifact hashes establish consistency with recorded files, not authenticity or correctness of scientific conclusions. The review reused preinstalled scientific dependencies rather than testing a clean dependency installation.

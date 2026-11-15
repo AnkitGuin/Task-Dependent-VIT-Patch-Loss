@@ -1,0 +1,9 @@
+{
+  "cpu": "12th Gen Intel(R) Core(TM) i5-12450H",
+  "physical_cores": 8,
+  "logical_processors": 12,
+  "ram_bytes": 16870006784,
+  "platform": "Windows-11-10.0.26300-SP0",
+  "numerical_threads": 2,
+  "benchmark_isolated_from_project_experiments": true
+}

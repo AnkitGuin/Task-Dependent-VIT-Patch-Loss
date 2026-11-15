@@ -1,0 +1,10 @@
+# Separate exploratory sensitivity analysis
+
+Specified on 2026-11-14 after primary execution began and before inspecting aggregate test-selection comparisons. This is **not** part of the original prospective primary protocol and must be labeled exploratory. It does not modify the frozen primary cohort or choose a new winning method for that cohort.
+
+1. Reuse the primary frozen operators, downstream heads and test outcomes. Recompute diagnostics on nested stratified subsets of 200 and 400 diagnostic examples, in addition to the original 1,000. These sizes divide into two balanced folds even for CIFAR-100. Operator-fit images, downstream training examples, validation choices and test examples remain fixed. This isolates diagnostic label-budget sensitivity without retraining target heads.
+2. Add the stronger adaptive shrinkage H-score baseline from Ibrahim et al.'s established formulation: estimate total feature covariance with Ledoit–Wolf shrinkage alpha, and use `(1-alpha)*trace(Sigma_alpha^-1*B)`. Report this separately from the fixed-0.1 shrinkage primary baseline. Alpha is estimated from diagnostic features without test labels or tuning.
+3. Freeze all subset-based score maxima before joining the saved test outcomes. Keep undefined-score fallback counts and uniform tie expectations. Report all score variants and label budgets rather than selecting a best budget after seeing outcomes.
+4. Save subset indices, source/primary fingerprints, scores, choices, execution cost and checksums in `runs/selection_sensitivity/`. Conditional paired-seed summaries preserve both scalar budgets and report the small number of datasets as a limitation.
+
+Motivation: a closer read of the transferability literature shows that robust covariance estimation is established prior art; the fixed-shrinkage control should not stand in for its adaptive version. Diagnostic sample complexity is also a practical question distinct from adding more downstream training data. Neither addition establishes an original estimator.

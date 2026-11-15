@@ -1,0 +1,161 @@
+dataset,seed,budget,metric,selected_accuracy,oracle_accuracy,regret,spearman,tie_count,undefined_fallback,eligible_candidates,realized_candidate,realized_accuracy
+cifar10,0,256,rank,0.3058571428571429,0.368,0.0621428571428571,,14,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_deit_native_svd', 'p16_deit_rowspace', 'p16_pca', 'p16_random']",p08_dct,0.3675
+cifar10,0,256,reconstruction,0.3495,0.368,0.0185,0.5748898678414096,1,False,['p16_pca'],p16_pca,0.3495
+cifar10,0,256,mean_tar,0.3495,0.368,0.0185,0.7202643171806168,1,False,['p16_pca'],p16_pca,0.3495
+cifar10,0,256,covariance_tar,0.368,0.368,0.0,0.8712876559475043,1,False,['p04_dct'],p04_dct,0.368
+cifar10,0,256,crossfit_tar,0.3635,0.368,0.0045,0.7753303964757711,1,False,['p16_dct'],p16_dct,0.3635
+cifar10,0,256,hscore,0.3255,0.368,0.0424999999999999,-0.0748075260156948,1,False,['p08_random'],p08_random,0.3255
+cifar10,0,256,logme,0.368,0.368,0.0,0.948295403316602,1,False,['p04_dct'],p04_dct,0.368
+cifar10,0,256,cheap_probe,0.3675,0.368,0.0005,0.9437712461642408,1,False,['p08_dct'],p08_dct,0.3675
+cifar10,0,768,rank,0.3459642857142856,0.3555,0.0095357142857143,,14,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_deit_native_svd', 'p16_deit_rowspace', 'p16_pca', 'p16_random']",p04_dct,0.3525
+cifar10,0,768,reconstruction,0.3485,0.3555,0.007,0.0352035416544446,1,False,['p16_pca'],p16_pca,0.3485
+cifar10,0,768,mean_tar,0.3485,0.3555,0.007,0.1078108463167366,1,False,['p16_pca'],p16_pca,0.3485
+cifar10,0,768,covariance_tar,0.3515,0.3555,0.004,0.1012101822565282,1,False,['p02_dct'],p02_dct,0.3515
+cifar10,0,768,crossfit_tar,0.3545,0.3555,0.001,0.2574258983481262,1,False,['p08_dct'],p08_dct,0.3545
+cifar10,0,768,hscore,0.341,0.3555,0.0144999999999999,-0.2354236848140984,1,False,['p16_deit_native_svd'],p16_deit_native_svd,0.341
+cifar10,0,768,logme,0.354,0.3555,0.0015,0.8338838929396569,1,False,['p08_random'],p08_random,0.354
+cifar10,0,768,cheap_probe,0.3515,0.3555,0.004,-0.0033149353404963,1,False,['p04_pca'],p04_pca,0.3515
+cifar10,1,256,rank,0.2938571428571429,0.3395,0.0456428571428571,,14,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_deit_native_svd', 'p16_deit_rowspace', 'p16_pca', 'p16_random']",p16_deit_native_svd,0.192
+cifar10,1,256,reconstruction,0.332,0.3395,0.0075,0.4092411717329187,1,False,['p16_pca'],p16_pca,0.332
+cifar10,1,256,mean_tar,0.332,0.3395,0.0075,0.4400442706805577,1,False,['p16_pca'],p16_pca,0.332
+cifar10,1,256,covariance_tar,0.3335,0.3395,0.006,0.5736263736263736,1,False,['p04_dct'],p04_dct,0.3335
+cifar10,1,256,crossfit_tar,0.336,0.3395,0.0035,0.5208791208791209,1,False,['p16_dct'],p16_dct,0.336
+cifar10,1,256,hscore,0.3315,0.3395,0.008,0.0549450549450549,1,False,['p08_random'],p08_random,0.3315
+cifar10,1,256,logme,0.336,0.3395,0.0035,0.7626373626373627,1,False,['p16_dct'],p16_dct,0.336
+cifar10,1,256,cheap_probe,0.3335,0.3395,0.006,0.8008805726386151,1,False,['p04_dct'],p04_dct,0.3335
+cifar10,1,768,rank,0.3438571428571428,0.3505,0.0066428571428571,,14,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_deit_native_svd', 'p16_deit_rowspace', 'p16_pca', 'p16_random']",p02_random,0.3505
+cifar10,1,768,reconstruction,0.3445,0.3505,0.006,0.2004410148684672,1,False,['p16_pca'],p16_pca,0.3445
+cifar10,1,768,mean_tar,0.3445,0.3505,0.006,0.2533045792293816,1,False,['p16_pca'],p16_pca,0.3445
+cifar10,1,768,covariance_tar,0.3485,0.3505,0.002,0.2202648515038101,1,False,['p02_dct'],p02_dct,0.3485
+cifar10,1,768,crossfit_tar,0.3445,0.3505,0.006,0.281939009924877,1,False,['p16_pca'],p16_pca,0.3445
+cifar10,1,768,hscore,0.3365,0.3505,0.0139999999999999,-0.2334807425940387,1,False,['p16_deit_native_svd'],p16_deit_native_svd,0.3365
+cifar10,1,768,logme,0.3505,0.3505,0.0,0.5660806683647921,1,False,['p02_random'],p02_random,0.3505
+cifar10,1,768,cheap_probe,0.344,0.3505,0.0065,0.2691044751449636,1,False,['p04_random'],p04_random,0.344
+cifar10,2,256,rank,0.3140714285714286,0.376,0.0619285714285713,,14,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_deit_native_svd', 'p16_deit_rowspace', 'p16_pca', 'p16_random']",p02_random,0.321
+cifar10,2,256,reconstruction,0.36,0.376,0.016,0.621978021978022,1,False,['p16_pca'],p16_pca,0.36
+cifar10,2,256,mean_tar,0.36,0.376,0.016,0.7582417582417583,1,False,['p16_pca'],p16_pca,0.36
+cifar10,2,256,covariance_tar,0.3405,0.376,0.0354999999999999,0.7744779163977817,1,False,['p04_dct'],p04_dct,0.3405
+cifar10,2,256,crossfit_tar,0.376,0.376,0.0,0.7978021978021977,1,False,['p08_dct'],p08_dct,0.376
+cifar10,2,256,hscore,0.331,0.376,0.0449999999999999,-0.0769230769230769,1,False,['p04_random'],p04_random,0.331
+cifar10,2,256,logme,0.376,0.376,0.0,0.9384615384615383,1,False,['p08_dct'],p08_dct,0.376
+cifar10,2,256,cheap_probe,0.374,0.376,0.002,0.9032967032967032,1,False,['p16_dct'],p16_dct,0.374
+cifar10,2,768,rank,0.3522857142857143,0.362,0.0097142857142856,,14,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_deit_native_svd', 'p16_deit_rowspace', 'p16_pca', 'p16_random']",p04_random,0.352
+cifar10,2,768,reconstruction,0.3535,0.362,0.0085,-0.0341786315783778,1,False,['p16_pca'],p16_pca,0.3535
+cifar10,2,768,mean_tar,0.3535,0.362,0.0085,0.0550662128759525,1,False,['p16_pca'],p16_pca,0.3535
+cifar10,2,768,covariance_tar,0.3615,0.362,0.0005,0.3120178302155142,1,False,['p02_dct'],p02_dct,0.3615
+cifar10,2,768,crossfit_tar,0.3535,0.362,0.0085,0.0418503217857239,1,False,['p16_pca'],p16_pca,0.3535
+cifar10,2,768,hscore,0.3605,0.362,0.0015,-0.1123350742669431,1,False,['p16_deit_native_svd'],p16_deit_native_svd,0.3605
+cifar10,2,768,logme,0.3555,0.362,0.0065,0.3017628465602199,1,False,['p08_dct'],p08_dct,0.3555
+cifar10,2,768,cheap_probe,0.357,0.362,0.005,-0.1240316922478844,1,False,['p16_dct'],p16_dct,0.357
+cifar10,3,256,rank,0.2900714285714286,0.345,0.0549285714285713,,14,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_deit_native_svd', 'p16_deit_rowspace', 'p16_pca', 'p16_random']",p04_random,0.3215
+cifar10,3,256,reconstruction,0.33,0.345,0.0149999999999999,0.5638766519823789,1,False,['p16_pca'],p16_pca,0.33
+cifar10,3,256,mean_tar,0.33,0.345,0.0149999999999999,0.68646906226167,1,False,['p16_pca'],p16_pca,0.33
+cifar10,3,256,covariance_tar,0.34,0.345,0.0049999999999999,0.853685885120282,1,False,['p04_dct'],p04_dct,0.34
+cifar10,3,256,crossfit_tar,0.3355,0.345,0.0094999999999999,0.7304734893297258,1,False,['p16_dct'],p16_dct,0.3355
+cifar10,3,256,hscore,0.321,0.345,0.0239999999999999,0.030803098947639,1,False,['p16_random'],p16_random,0.321
+cifar10,3,256,logme,0.345,0.345,0.0,0.9856991663244494,1,False,['p08_dct'],p08_dct,0.345
+cifar10,3,256,cheap_probe,0.33775,0.345,0.0072499999999999,0.896362176555523,2,False,"['p04_dct', 'p16_dct']",p04_dct,0.34
+cifar10,3,768,rank,0.3271785714285714,0.3355,0.0083214285714285,,14,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_deit_native_svd', 'p16_deit_rowspace', 'p16_pca', 'p16_random']",p04_random,0.329
+cifar10,3,768,reconstruction,0.3335,0.3355,0.002,0.6342638238860846,1,False,['p16_pca'],p16_pca,0.3335
+cifar10,3,768,mean_tar,0.3335,0.3355,0.002,0.6762534150144317,1,False,['p16_pca'],p16_pca,0.3335
+cifar10,3,768,covariance_tar,0.3355,0.3355,0.0,0.782332382075519,1,False,['p02_dct'],p02_dct,0.3355
+cifar10,3,768,crossfit_tar,0.3335,0.3355,0.002,0.7226629631036575,1,False,['p16_dct'],p16_dct,0.3335
+cifar10,3,768,hscore,0.321,0.3355,0.0145,-0.5038750935401648,1,False,['p16_deit_native_svd'],p16_deit_native_svd,0.321
+cifar10,3,768,logme,0.33,0.3355,0.0055,0.6099540606012522,1,False,['p08_random'],p08_random,0.33
+cifar10,3,768,cheap_probe,0.3335,0.3355,0.002,0.7391791456153499,1,False,['p08_dct'],p08_dct,0.3335
+cifar10,4,256,rank,0.3238571428571428,0.3875,0.0636428571428571,,14,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_deit_native_svd', 'p16_deit_rowspace', 'p16_pca', 'p16_random']",p16_random,0.366
+cifar10,4,256,reconstruction,0.376,0.3875,0.0115,0.6175824175824175,1,False,['p16_pca'],p16_pca,0.376
+cifar10,4,256,mean_tar,0.376,0.3875,0.0115,0.6747252747252748,1,False,['p16_pca'],p16_pca,0.376
+cifar10,4,256,covariance_tar,0.3875,0.3875,0.0,0.8492854424134765,1,False,['p04_dct'],p04_dct,0.3875
+cifar10,4,256,crossfit_tar,0.3835,0.3875,0.004,0.7362637362637363,1,False,['p16_dct'],p16_dct,0.3835
+cifar10,4,256,hscore,0.376,0.3875,0.0115,0.0593406593406593,1,False,['p16_pca'],p16_pca,0.376
+cifar10,4,256,logme,0.3875,0.3875,0.0,0.978021978021978,1,False,['p04_dct'],p04_dct,0.3875
+cifar10,4,256,cheap_probe,0.3835,0.3875,0.004,0.8436143812595929,1,False,['p16_dct'],p16_dct,0.3835
+cifar10,4,768,rank,0.3640714285714285,0.3755,0.0114285714285714,,14,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_deit_native_svd', 'p16_deit_rowspace', 'p16_pca', 'p16_random']",p02_dct,0.37
+cifar10,4,768,reconstruction,0.3735,0.3755,0.002,0.6172626797879739,1,False,['p16_pca'],p16_pca,0.3735
+cifar10,4,768,mean_tar,0.3735,0.3755,0.002,0.6592984895226388,1,False,['p16_pca'],p16_pca,0.3735
+cifar10,4,768,covariance_tar,0.37,0.3755,0.0055,0.4353657606465459,1,False,['p02_dct'],p02_dct,0.37
+cifar10,4,768,crossfit_tar,0.374,0.3755,0.0015,0.6342638238860846,1,False,['p16_dct'],p16_dct,0.374
+cifar10,4,768,hscore,0.359,0.3755,0.0165,0.32486683662458,1,False,['p16_deit_native_svd'],p16_deit_native_svd,0.359
+cifar10,4,768,logme,0.37,0.3755,0.0055,0.5989041681990555,1,False,['p02_dct'],p02_dct,0.37
+cifar10,4,768,cheap_probe,0.3755,0.3755,0.0,0.3725064589331339,1,False,['p08_dct'],p08_dct,0.3755
+cifar100,0,256,rank,0.0845714285714285,0.11,0.0254285714285714,,14,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_deit_native_svd', 'p16_deit_rowspace', 'p16_pca', 'p16_random']",p16_deit_native_svd,0.036
+cifar100,0,256,reconstruction,0.1065,0.11,0.0035,0.5925124505452494,1,False,['p16_pca'],p16_pca,0.1065
+cifar100,0,256,mean_tar,0.1065,0.11,0.0035,0.7466978465979164,1,False,['p16_pca'],p16_pca,0.1065
+cifar100,0,256,covariance_tar,0.107,0.11,0.003,0.6563892574813542,1,False,['p04_dct'],p04_dct,0.107
+cifar100,0,256,crossfit_tar,0.11,0.11,0.0,0.8105746535340214,1,False,['p16_dct'],p16_dct,0.11
+cifar100,0,256,hscore,0.036,0.11,0.074,-0.6101336386655541,1,False,['p16_deit_native_svd'],p16_deit_native_svd,0.036
+cifar100,0,256,logme,0.0965,0.11,0.0134999999999999,0.7511031436279927,1,False,['p08_random'],p08_random,0.0965
+cifar100,0,256,cheap_probe,0.11,0.11,0.0,0.3955643459720273,1,False,['p08_dct'],p08_dct,0.11
+cifar100,0,768,rank,0.10525,0.115,0.00975,,14,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_deit_native_svd', 'p16_deit_rowspace', 'p16_pca', 'p16_random']",p04_random,0.115
+cifar100,0,768,reconstruction,0.1095,0.115,0.0055,0.0396476732706858,1,False,['p16_pca'],p16_pca,0.1095
+cifar100,0,768,mean_tar,0.1095,0.115,0.0055,0.1035244802067907,1,False,['p16_pca'],p16_pca,0.1095
+cifar100,0,768,covariance_tar,0.1085,0.115,0.0065,0.2422913366541911,1,False,['p04_pca'],p04_pca,0.1085
+cifar100,0,768,crossfit_tar,0.1095,0.115,0.0055,0.0418503217857239,1,False,['p16_pca'],p16_pca,0.1095
+cifar100,0,768,hscore,0.094,0.115,0.021,0.1938330693233529,1,False,['p16_deit_native_svd'],p16_deit_native_svd,0.094
+cifar100,0,768,logme,0.094,0.115,0.021,-0.0770926980263335,1,False,['p16_deit_native_svd'],p16_deit_native_svd,0.094
+cifar100,0,768,cheap_probe,0.092,0.115,0.023,0.3229526821430512,1,False,['p02_random'],p02_random,0.092
+cifar100,1,256,rank,0.0832857142857143,0.112,0.0287142857142857,,14,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_deit_native_svd', 'p16_deit_rowspace', 'p16_pca', 'p16_random']",p02_pca,0.0675
+cifar100,1,256,reconstruction,0.099,0.112,0.0129999999999999,0.4950498045156274,1,False,['p16_pca'],p16_pca,0.099
+cifar100,1,256,mean_tar,0.099,0.112,0.0129999999999999,0.532453567523475,1,False,['p16_pca'],p16_pca,0.099
+cifar100,1,256,covariance_tar,0.112,0.112,0.0,0.5704845814977973,1,False,['p04_dct'],p04_dct,0.112
+cifar100,1,256,crossfit_tar,0.099,0.112,0.0129999999999999,0.5962599867721556,1,False,['p16_pca'],p16_pca,0.099
+cifar100,1,256,hscore,0.041,0.112,0.071,-0.45764604150778,1,False,['p16_deit_native_svd'],p16_deit_native_svd,0.041
+cifar100,1,256,logme,0.0965,0.112,0.0155,0.7678772523375733,1,False,['p08_random'],p08_random,0.0965
+cifar100,1,256,cheap_probe,0.112,0.112,0.0,0.7505537051362746,1,False,['p04_dct'],p04_dct,0.112
+cifar100,1,768,rank,0.1032142857142857,0.1105,0.0072857142857142,,14,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_deit_native_svd', 'p16_deit_rowspace', 'p16_pca', 'p16_random']",p08_random,0.103
+cifar100,1,768,reconstruction,0.1065,0.1105,0.004,-0.1349570733586609,1,False,['p16_pca'],p16_pca,0.1065
+cifar100,1,768,mean_tar,0.1065,0.1105,0.004,-0.1414386227481164,1,False,['p16_pca'],p16_pca,0.1065
+cifar100,1,768,covariance_tar,0.1065,0.1105,0.004,-0.2674073961331576,1,False,['p04_pca'],p04_pca,0.1065
+cifar100,1,768,crossfit_tar,0.099,0.1105,0.0114999999999999,-0.1988980632395387,1,False,['p08_pca'],p08_pca,0.099
+cifar100,1,768,hscore,0.1045,0.1105,0.006,0.4685154378531357,1,False,['p16_deit_native_svd'],p16_deit_native_svd,0.1045
+cifar100,1,768,logme,0.1045,0.1105,0.006,0.5768043833946623,1,False,['p16_deit_native_svd'],p16_deit_native_svd,0.1045
+cifar100,1,768,cheap_probe,0.097,0.1105,0.0134999999999999,-0.3908294768308418,1,False,['p02_pca'],p02_pca,0.097
+cifar100,2,256,rank,0.0912142857142857,0.1155,0.0242857142857142,,14,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_deit_native_svd', 'p16_deit_rowspace', 'p16_pca', 'p16_random']",p16_pca,0.1155
+cifar100,2,256,reconstruction,0.1155,0.1155,0.0,0.781940222838526,1,False,['p16_pca'],p16_pca,0.1155
+cifar100,2,256,mean_tar,0.1155,0.1155,0.0,0.87004616344005,1,False,['p16_pca'],p16_pca,0.1155
+cifar100,2,256,covariance_tar,0.1135,0.1155,0.002,0.781940222838526,1,False,['p04_dct'],p04_dct,0.1135
+cifar100,2,256,crossfit_tar,0.1125,0.1155,0.003,0.8489531069468053,1,False,['p16_dct'],p16_dct,0.1125
+cifar100,2,256,hscore,0.0465,0.1155,0.069,-0.497798564398611,1,False,['p16_deit_native_svd'],p16_deit_native_svd,0.0465
+cifar100,2,256,logme,0.1125,0.1155,0.003,0.8083720050189832,1,False,['p16_dct'],p16_dct,0.1125
+cifar100,2,256,cheap_probe,0.1125,0.1155,0.003,0.8073817053576278,1,False,['p16_dct'],p16_dct,0.1125
+cifar100,2,768,rank,0.1131785714285714,0.116,0.0028214285714285,,14,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_deit_native_svd', 'p16_deit_rowspace', 'p16_pca', 'p16_random']",p16_dct,0.1135
+cifar100,2,768,reconstruction,0.115,0.116,0.001,0.358903068055616,1,False,['p16_pca'],p16_pca,0.115
+cifar100,2,768,mean_tar,0.115,0.116,0.001,0.4106753166912001,1,False,['p16_pca'],p16_pca,0.115
+cifar100,2,768,covariance_tar,0.115,0.116,0.001,0.4861507802993126,1,False,['p04_pca'],p04_pca,0.115
+cifar100,2,768,crossfit_tar,0.114,0.116,0.002,0.4122385085097013,1,False,['p08_pca'],p08_pca,0.114
+cifar100,2,768,hscore,0.113,0.116,0.003,-0.1687098598298984,1,False,['p16_deit_native_svd'],p16_deit_native_svd,0.113
+cifar100,2,768,logme,0.113,0.116,0.003,0.3241005201995418,1,False,['p16_deit_native_svd'],p16_deit_native_svd,0.113
+cifar100,2,768,cheap_probe,0.1135,0.116,0.0025,0.3714802252435118,1,False,['p16_deit_rowspace'],p16_deit_rowspace,0.1135
+cifar100,3,256,rank,0.0903214285714285,0.1145,0.0241785714285714,,14,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_deit_native_svd', 'p16_deit_rowspace', 'p16_pca', 'p16_random']",p04_random,0.103
+cifar100,3,256,reconstruction,0.1035,0.1145,0.011,0.5682833168798301,1,False,['p16_pca'],p16_pca,0.1035
+cifar100,3,256,mean_tar,0.1035,0.1145,0.011,0.6872263366918876,1,False,['p16_pca'],p16_pca,0.1035
+cifar100,3,256,covariance_tar,0.1145,0.1145,0.0,0.7850059898001629,1,False,['p04_dct'],p04_dct,0.1145
+cifar100,3,256,crossfit_tar,0.1035,0.1145,0.011,0.7444951980828783,1,False,['p16_pca'],p16_pca,0.1035
+cifar100,3,256,hscore,0.039,0.1145,0.0755,-0.544054183214411,1,False,['p16_deit_native_svd'],p16_deit_native_svd,0.039
+cifar100,3,256,logme,0.1035,0.1145,0.011,0.8744514604701263,1,False,['p16_pca'],p16_pca,0.1035
+cifar100,3,256,cheap_probe,0.1115,0.1145,0.003,0.8453043834465622,2,False,"['p08_dct', 'p16_dct']",p16_dct,0.1115
+cifar100,3,768,rank,0.1074642857142857,0.111,0.0035357142857142,,14,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_deit_native_svd', 'p16_deit_rowspace', 'p16_pca', 'p16_random']",p08_pca,0.109
+cifar100,3,768,reconstruction,0.109,0.111,0.002,0.1026911077293847,1,False,['p16_pca'],p16_pca,0.109
+cifar100,3,768,mean_tar,0.109,0.111,0.002,0.1272476769690202,1,False,['p16_pca'],p16_pca,0.109
+cifar100,3,768,covariance_tar,0.1095,0.111,0.0015,-0.0267889846250568,1,False,['p04_pca'],p04_pca,0.1095
+cifar100,3,768,crossfit_tar,0.1095,0.111,0.0015,0.198903664987095,1,False,['p16_dct'],p16_dct,0.1095
+cifar100,3,768,hscore,0.1065,0.111,0.0045,-0.3192354001152612,1,False,['p16_deit_native_svd'],p16_deit_native_svd,0.1065
+cifar100,3,768,logme,0.1065,0.111,0.0045,0.2611926000943045,1,False,['p16_deit_native_svd'],p16_deit_native_svd,0.1065
+cifar100,3,768,cheap_probe,0.1085,0.111,0.0025,0.3923399425857421,1,False,['p16_random'],p16_random,0.1085
+cifar100,4,256,rank,0.0862142857142857,0.114,0.0277857142857143,,14,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_deit_native_svd', 'p16_deit_rowspace', 'p16_pca', 'p16_random']",p02_random,0.0795
+cifar100,4,256,reconstruction,0.101,0.114,0.0129999999999999,0.4153846153846154,1,False,['p16_pca'],p16_pca,0.101
+cifar100,4,256,mean_tar,0.101,0.114,0.0129999999999999,0.4400442706805577,1,False,['p16_pca'],p16_pca,0.101
+cifar100,4,256,covariance_tar,0.114,0.114,0.0,0.5544557810575028,1,False,['p04_dct'],p04_dct,0.114
+cifar100,4,256,crossfit_tar,0.101,0.114,0.0129999999999999,0.4620464842145855,1,False,['p16_pca'],p16_pca,0.101
+cifar100,4,256,hscore,0.0375,0.114,0.0765,-0.3186813186813187,1,False,['p16_deit_native_svd'],p16_deit_native_svd,0.0375
+cifar100,4,256,logme,0.101,0.114,0.0129999999999999,0.7978021978021977,1,False,['p16_pca'],p16_pca,0.101
+cifar100,4,256,cheap_probe,0.114,0.114,0.0,0.8132720808016696,1,False,['p04_dct'],p04_dct,0.114
+cifar100,4,768,rank,0.1078214285714285,0.112,0.0041785714285714,,14,False,"['p02_dct', 'p02_pca', 'p02_random', 'p04_dct', 'p04_pca', 'p04_random', 'p08_dct', 'p08_pca', 'p08_random', 'p16_dct', 'p16_deit_native_svd', 'p16_deit_rowspace', 'p16_pca', 'p16_random']",p02_random,0.0845
+cifar100,4,768,reconstruction,0.1105,0.112,0.0015,0.2170369990350987,1,False,['p16_pca'],p16_pca,0.1105
+cifar100,4,768,mean_tar,0.1105,0.112,0.0015,0.2508752603086546,1,False,['p16_pca'],p16_pca,0.1105
+cifar100,4,768,covariance_tar,0.1095,0.112,0.0025,0.0246395344946,1,False,['p04_pca'],p04_pca,0.1095
+cifar100,4,768,crossfit_tar,0.1105,0.112,0.0015,0.3132492769578745,1,False,['p16_pca'],p16_pca,0.1105
+cifar100,4,768,hscore,0.107,0.112,0.005,-0.0425124018728544,1,False,['p16_deit_native_svd'],p16_deit_native_svd,0.107
+cifar100,4,768,logme,0.107,0.112,0.005,0.3714241426786226,1,False,['p16_deit_native_svd'],p16_deit_native_svd,0.107
+cifar100,4,768,cheap_probe,0.11125,0.112,0.00075,0.5854464765335808,2,False,"['p16_dct', 'p16_random']",p16_random,0.1105

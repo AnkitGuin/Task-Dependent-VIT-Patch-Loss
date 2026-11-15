@@ -1,0 +1,26 @@
+{
+  "pdf_pages": 13,
+  "pdf_sha256": "79fec314a50b00829e0c7218625c0114c59d363553f48c36420d3f156f48f976",
+  "unresolved_reference_markers": false,
+  "overfull_boxes": 0,
+  "expanded_result_values_found": true,
+  "primary_replayed_checkpoints": 280,
+  "expanded_replayed_checkpoints": 280,
+  "expanded_replayed_raw_references": 20,
+  "nonfatal_build_notices": [
+    "Fontconfig default-config notice",
+    "bibliography underfull spacing warnings"
+  ],
+  "source_inputs_sha256": {
+    "paper\\main.tex": "585de5113505053d181c8999f2be7246810f74daf0dcaee36f82ba3af2832a33",
+    "paper\\results_generated.tex": "33aff3d3379d7276545eb3261c8dbb78b5030a42d05eb678cc88f49bce7b1115",
+    "paper\\selection_followup_results.tex": "322662979ab97d35fb3891a4bac545d0cd46c87d0e71e61bed62b0dc8aa91f0c",
+    "paper\\selection_followups.tex": "6b621c507239af912226d511fada14bee6e921c045f169885e1e65ed537ebcee",
+    "paper\\selection_results.tex": "fa502c9b5776ce2158f62aca708fb0aa1d0aadedc6c026c703cbc0c49d9bb063",
+    "paper\\selection_secondary_results.tex": "74a8ec68d4a0264229a899015b979a18d238a8dbb53b507a6725de631c9df5bd",
+    "paper\\selection_sensitivity.tex": "e702ca5ea9c7f9b2a6c777151d78a6732efb944342e3d516b3e937f702765014",
+    "paper\\selection_tables.tex": "fbf81d791aa83c7e88e0664c69961455e337d52342d7108940478e8e83174a55",
+    "paper\\tables_generated.tex": "d4240f115c6ff514956e7d4f0bfdecced30f298c34fe400f73f7898fdde217cb",
+    "paper\\theory.tex": "e6f5bd7bd7589450e42c7c565bb70eacbec48b0cf913f8ad52400b98bccb0fca"
+  }
+}

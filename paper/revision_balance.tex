@@ -1,0 +1,12 @@
+\begin{table}[tb]\centering\small
+\caption{Secondary, post-outcome class-prior context. Majority is the observed test majority-class frequency (a test-informed descriptive constant-class reference, not a prospectively selected rule). Remaining columns are macro-average class recall (balanced accuracy, percent); the oracle is defined on that secondary endpoint. Primary selection and regret remain ordinary full-test accuracy.}\label{tab:balance}
+\begin{tabular}{lrrrrrr}\toprule
+Domain & $B$ & Majority & Bal. oracle & Bal. cov. & Bal. LogME & Bal. DCT\\\midrule
+CIFAR-10 & 256 & 10.00 & 36.00 & 35.87 & 35.43 & 35.87\\
+CIFAR-10 & 768 & 10.00 & 35.49 & 35.12 & 35.15 & 35.11\\
+CIFAR-100 & 256 & 1.00 & 10.85 & 10.85 & 8.98 & 10.85\\
+CIFAR-100 & 768 & 1.00 & 10.73 & 10.39 & 9.97 & 10.60\\
+SVHN & 256 & 19.59 & 16.64 & 16.30 & 14.73 & 15.95\\
+SVHN & 768 & 19.59 & 16.74 & 16.65 & 16.41 & 16.54\\
+\bottomrule\end{tabular}
+\end{table}

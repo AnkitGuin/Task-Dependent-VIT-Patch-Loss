@@ -1,0 +1,31 @@
+{
+  "pages": 18,
+  "sha256": "0a26bd96e5527ba413a1cea32e66ae91e5ce7b36ab9cbf0a9fc0d2f31cdf7708",
+  "author": "Ankit Guin",
+  "unresolved_reference_markers": 0,
+  "all_pages_rendered": true,
+  "public_version": "v2026.11.15-v2",
+  "final_pdf": "output/pdf/ankit_guin_patch_selection_revision.pdf",
+  "page_text_lengths": [
+    3587,
+    3737,
+    4250,
+    3482,
+    3213,
+    2366,
+    3138,
+    3897,
+    1720,
+    3169,
+    2527,
+    3732,
+    2530,
+    1258,
+    1091,
+    1108,
+    3284,
+    2787
+  ],
+  "visual_inspection": "passed: all-page contact sheets and full-size key tables/figures inspected",
+  "overfull_boxes": 0
+}

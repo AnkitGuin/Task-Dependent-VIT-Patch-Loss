@@ -1,0 +1,11 @@
+dataset,seed,test_examples_removed,remaining_test_examples
+cifar10,0,0,2000
+cifar10,1,0,2000
+cifar10,2,0,2000
+cifar10,3,0,2000
+cifar10,4,0,2000
+cifar100,0,0,2000
+cifar100,1,0,2000
+cifar100,2,0,2000
+cifar100,3,0,2000
+cifar100,4,1,1999

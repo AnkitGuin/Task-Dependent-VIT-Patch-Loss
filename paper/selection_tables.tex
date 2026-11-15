@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering\small
+\caption{Primary tokenizer selection across two CIFAR datasets, two scalar budgets and five seeds. Regret is in accuracy percentage points. Intervals resample paired seed blocks within each fixed dataset, preserving budgets; they do not quantify generalization to new domains. Correlations exclude undefined constant-score cases.}\label{tab:selection}
+\begin{tabular}{lrrr}\toprule Score & Mean regret [95\% CI] & Mean $\rho$ & Undefined units\\\midrule
+Covariance TAR & 0.34 [0.15, 0.59] & 0.585 & 0\\
+Diagnostic probe & 0.47 [0.34, 0.59] & 0.599 & 0\\
+Cross-fitted TAR & 0.47 [0.34, 0.61] & 0.616 & 0\\
+Mean TAR & 0.79 [0.70, 0.89] & 0.561 & 0\\
+Reconstruction & 0.79 [0.70, 0.89] & 0.490 & 0\\
+LogME (11 steps) & 1.01 [0.76, 1.26] & 0.636 & 0\\
+Rank / uniform tie & 2.66 [2.58, 2.74] & -- & 0\\
+Fixed-shrink H-score & 3.88 [3.56, 4.22] & -0.346 & 0\\
+\bottomrule\end{tabular}\end{table}
+\begin{table}[t]
+\centering\small
+\caption{Observed pretrained patch-matrix geometry. Numerical ranks use a relative $10^{-10}$ threshold on float64 SVD of stored float32 weights. This audits only the patch projection, not the full encoder.}\label{tab:pretrained}
+\begin{tabular}{lrrrr}\toprule Patch map & $m$ & $d$ & Rank & Condition\\\midrule
+deit\_tiny & 768 & 192 & 192 & 399.3\\
+vit\_b16 & 768 & 768 & 768 & 44752.6\\
+\bottomrule\end{tabular}\end{table}

@@ -1,0 +1,21 @@
+study: frozen_linear_patch_revision_v2
+datasets: [cifar10, cifar100, svhn]
+seeds: [10, 11, 12, 13, 14]
+budgets: [256, 768]
+patch_sizes: [2, 4, 8, 16]
+operator_samples: 1000
+diagnostic_samples: 1000
+validation_samples: 500
+test_samples: full
+pca_patch_cap: 8000
+ridge_alphas: [0.01, 0.1, 1.0, 10.0, 100.0, 1000.0, 10000.0, 100000.0, 1000000.0, 10000000.0, 100000000.0, 1000000000.0, 10000000000.0]
+covariance_shrinkage: 0.1
+shrinkage_sensitivity: [0.01, 0.1, 0.5]
+cheap_probe_alpha: 10.0
+fixed_candidate: p04_dct
+pretrained: true
+data_root: data/selection_local
+output: runs/selection_revision_final
+threads: 2
+test_batch_size: 512
+bootstrap_samples: 4000

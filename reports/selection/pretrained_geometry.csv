@@ -1,0 +1,3 @@
+model,patch_size,channels,embedding_dim,patch_dim,rank_rtol_1e10,rank_float32_convention,condition_nonzero,sigma_min,sigma_max,stored_dtype,svd_dtype,weights_sha256,full_column_rank
+deit_tiny,16,3,192,768,192,192,399.32305738784936,0.0069577525584397434,2.7783910241842893,float32,float64,a1311bcf4f24e3c95adaa75535db67bc4412d95535b98f7c1dfd1164dda41c97,False
+vit_b16,16,3,768,768,768,764,44752.5809370865,2.5997421330649357e-05,1.1634517022554245,float32,float64,c867db91d3e12c6cbadabb610d73c24a546bf82d8c03a9fea34f43a712ddb0e9,True
